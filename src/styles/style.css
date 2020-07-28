@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +114,55 @@ a:any-link {
   background-size: cover;
   position: relative;
   z-index: 10;
+}
+
+.landingpage .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+  top: 0;
+  width: 100%;
+}
+
+.landingpage .header .header-logo {
+  text-align: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.landingpage .header .header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landingpage .header .header-items a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  color: #0dc1f7;
+  padding: 0px 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.landingpage .header .header-items a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .landingpage .overlay {
@@ -273,5 +339,108 @@ a:any-link {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
   padding-top: 1rem;
+}
+
+.achievement {
+  width: 100%;
+  height: 100vh;
+}
+
+.achievement .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.achievement .container .badge-container {
+  width: 100%;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.achievement .container .badge-container .badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 700px;
+  height: 180px;
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+}
+
+.achievement .container .badge-container .badge .logo {
+  padding: 5px;
+  width: 20%;
+}
+
+.achievement .container .badge-container .badge .logo img {
+  width: 100px;
+}
+
+.achievement .container .badge-container .badge .text-container {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.achievement .container .badge-container .badge .text-container h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  color: #0dc1f7;
+  padding: 0.3rem 0rem;
+}
+
+.achievement .container .badge-container .badge .text-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.achievement .container .video-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.achievement .container .video-container iframe {
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
