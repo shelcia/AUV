@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+  background-color: #161a22;
+}
+
+a,
+a:visited,
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:-moz-any-link {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:any-link {
+  text-decoration: none;
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  background-color: #161a22;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+          box-shadow: 0px 6px 6px #00000029;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container .nav-logo {
+  text-align: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.nav-container .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-container .nav-items a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  color: #0dc1f7;
+  padding: 0px 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.nav-container .nav-items a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.landingpage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("bg.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.landingpage .overlay {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #161a2285;
+  z-index: 11;
+  text-align: center;
+}
+
+.landingpage .overlay h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+.landingpage .overlay button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  border: 1px solid #0dc1f7;
+  display: block;
+  border-radius: 50ex;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 5vh;
+}
+
+.landingpage .overlay button:hover {
+  background-color: #0dc1f7;
+}
+
+.landingpage .overlay button:focus {
+  outline: none;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=style.css.map */
