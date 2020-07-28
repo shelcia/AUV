@@ -122,11 +122,55 @@ a:any-link {
 .about {
   @include fullWidthHeight();
   .container {
+    width: 100%;
+    margin-top: 20vh;
     @include displayFlex(space-between);
     flex-direction: column;
     .info-container {
       @include displayFlex(space-between);
       flex-direction: row;
+      width: 85%;
+      margin: auto;
+      .text-container {
+        width: 50%;
+        h6 {
+          @include robotoStyle(1rem);
+          color: $primary;
+          padding: 1rem 0rem;
+        }
+        p {
+          @include robotoStyle(0.8rem);
+        }
+      }
+      .video {
+        iframe {
+          border: none;
+        }
+      }
+    }
+    .cards-container {
+      @include displayFlex(space-evenly);
+      width: 85%;
+      flex-direction: row;
+      margin: 20px auto;
+      padding: 20px 0px;
+      .cards {
+        @include displayFlex(center);
+        flex-direction: column;
+        height: 130px;
+        width: 220px;
+        background-color: $bg;
+        box-shadow: 20px 20px 6px #00000029;
+        color: $secondary;
+        .icon {
+          height: 50px;
+          width: auto;
+        }
+        p {
+          @include robotoStyle(0.8rem);
+          padding-top: 1rem;
+        }
+      }
     }
   }
 }

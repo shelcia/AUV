@@ -159,6 +159,8 @@ a:any-link {
 }
 
 .about .container {
+  width: 100%;
+  margin-top: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,5 +190,88 @@ a:any-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 85%;
+  margin: auto;
+}
+
+.about .container .info-container .text-container {
+  width: 50%;
+}
+
+.about .container .info-container .text-container h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  color: #0dc1f7;
+  padding: 1rem 0rem;
+}
+
+.about .container .info-container .text-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+.about .container .info-container .video iframe {
+  border: none;
+}
+
+.about .container .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 85%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px auto;
+  padding: 20px 0px;
+}
+
+.about .container .cards-container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 130px;
+  width: 220px;
+  background-color: #161a22;
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about .container .cards-container .cards .icon {
+  height: 50px;
+  width: auto;
+}
+
+.about .container .cards-container .cards p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

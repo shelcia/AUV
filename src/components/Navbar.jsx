@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="nav-items">
         <a href="#about">About</a>
-        <a href="#acheivement">Acheivments</a>
+        <a href="#achievement">Achievements</a>
         <a href="#sponsors">Sponsors</a>
         <a href="#post">Post</a>
         <a href="#team">Team</a>
