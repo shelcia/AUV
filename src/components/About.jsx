@@ -56,20 +56,6 @@ const About = () => {
                 <p>17th place in SAUVC</p>
               </div>
             </div>
-            {/* <div className="cards-mini">
-              <div>
-                <p>2 Vehicles</p>
-              </div>
-              <div>
-                <p>30 Happy Members</p>
-              </div>
-              <div>
-                <p>9000+ lines of code</p>
-              </div>
-              <div>
-                <p>17th place in SAUVC</p>
-              </div>
-            </div> */}
           </div>
         </ScrollAnimation>
       </div>

@@ -578,17 +578,112 @@ a:any-link {
   outline: none;
 }
 
+.posts {
+  width: 100%;
+  height: 100vh;
+}
+
 .posts .grid {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 150px auto;
+      grid-template-columns: 150px auto;
 }
 
-.posts .instgram {
+.posts .grid .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.posts .grid .nav p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  padding: 10px 0px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.posts .grid .nav p:hover {
+  color: #0dc1f7;
+}
+
+.posts .grid .nav .active {
+  color: #0dc1f7;
+}
+
+.posts .grid .media-container {
+  margin-top: 20vh;
+}
+
+.posts .grid .media-container .instgram {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   grid-gap: 5px;
+}
+
+.posts .grid .media-container .youtube {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.posts .grid .media-container .youtube iframe {
+  border: none;
+}
+
+.posts .grid .media-container .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.posts .grid .media-container .gallery .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.posts .grid .media-container .gallery .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.posts .grid .media-container .gallery .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
