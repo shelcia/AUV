@@ -257,6 +257,8 @@ a:any-link {
   }
 }
 
+//SPONSORS PAGE
+
 .sponsors {
   @include fullWidthHeight();
 
@@ -301,8 +303,6 @@ a:any-link {
     }
   }
   .button-container {
-    // display: inline;
-
     width: 80%;
     margin: auto;
     @include displayFlex(space-evenly);
