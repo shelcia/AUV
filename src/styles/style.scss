@@ -31,7 +31,6 @@ $noopacity: rgba(0, 0, 0, 0);
   cursor: pointer;
   background-color: $noopacity;
   box-shadow: 20px 20px 6px #00000029;
-
   transition: all 0.2s ease-in;
   &:hover {
     background-color: $primary;
@@ -177,16 +176,17 @@ a:any-link {
       }
     }
     .cards-container {
-      @include displayFlex(space-evenly);
       width: 85%;
-      flex-direction: row;
       margin: 20px auto;
       padding: 20px 0px;
-      .cards {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 220px 220px 220px 220px;
+      grid-template-rows: 130px;
+      overflow-x: scroll;
+      div.cards {
         @include displayFlex(center);
         flex-direction: column;
-        height: 130px;
-        width: 220px;
         background-color: $bg;
         box-shadow: 20px 20px 6px #00000029;
         color: $secondary;
@@ -314,5 +314,30 @@ a:any-link {
       @include robotoStyle(0.8rem);
       @include buttonStyle();
     }
+  }
+}
+
+//POSTS
+
+.posts {
+  .grid {
+    display: grid;
+  }
+  .instgram {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+  }
+}
+
+//ABOUT CONTAINER FOR MOBILE VIEW RESPONSIVE
+
+@media (max-width: 500px) {
+  .about .container .info-container {
+    flex-direction: column;
+  }
+  .about .container .info-container .text-container {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }

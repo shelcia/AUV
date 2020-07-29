@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -289,25 +290,20 @@ a:any-link {
 }
 
 .about .container .cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 85%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 20px auto;
   padding: 20px 0px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 220px 220px 220px 220px;
+      grid-template-columns: 220px 220px 220px 220px;
+  -ms-grid-rows: 130px;
+      grid-template-rows: 130px;
+  overflow-x: scroll;
 }
 
-.about .container .cards-container .cards {
+.about .container .cards-container div.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,20 +317,18 @@ a:any-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 130px;
-  width: 220px;
   background-color: #161a22;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.about .container .cards-container .cards .icon {
+.about .container .cards-container div.cards .icon {
   height: 50px;
   width: auto;
 }
 
-.about .container .cards-container .cards p {
+.about .container .cards-container div.cards p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -582,5 +576,31 @@ a:any-link {
 
 .sponsors .button-container button:focus {
   outline: none;
+}
+
+.posts .grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.posts .instgram {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+}
+
+@media (max-width: 500px) {
+  .about .container .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .container .info-container .text-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
