@@ -30,7 +30,15 @@ $noopacity: rgba(0, 0, 0, 0);
   padding: 0.6rem 2rem;
   cursor: pointer;
   background-color: $noopacity;
+  box-shadow: 20px 20px 6px #00000029;
+
   transition: all 0.2s ease-in;
+  &:hover {
+    background-color: $primary;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 * {
   margin: 0;
@@ -134,12 +142,6 @@ a:any-link {
       @include robotoStyle(1.2rem);
       @include buttonStyle();
       margin-top: 5vh;
-      &:hover {
-        background-color: $primary;
-      }
-      &:focus {
-        outline: none;
-      }
     }
   }
 }
@@ -251,6 +253,66 @@ a:any-link {
       iframe {
         border: none;
       }
+    }
+  }
+}
+
+.sponsors {
+  @include fullWidthHeight();
+
+  .text-container {
+    padding: 0.3rem 0rem;
+    @include displayFlex(center);
+    h3 {
+      @include robotoStyle(1.2rem);
+      color: $primary;
+    }
+  }
+
+  .cards-container {
+    margin: 2vh auto;
+    @include displayFlex(space-evenly);
+    .card {
+      @include displayFlex(center);
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 150px;
+      width: 200px;
+      color: $primary;
+      background-color: $bg;
+      box-shadow: 20px 20px 6px #00000029;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: $bg;
+        background-color: $primary;
+        box-shadow: 40px 40px 6px #00000029;
+      }
+      img {
+        height: 40px;
+        width: auto;
+        box-shadow: 20px 20px 6px #00000029;
+      }
+      p {
+        @include robotoStyle(1rem);
+        padding-top: 1.5rem;
+      }
+    }
+  }
+  .button-container {
+    // display: inline;
+
+    width: 80%;
+    margin: auto;
+    @include displayFlex(space-evenly);
+    margin-top: 5vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    button {
+      display: inline;
+      @include robotoStyle(0.8rem);
+      @include buttonStyle();
     }
   }
 }

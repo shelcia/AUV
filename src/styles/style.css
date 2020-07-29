@@ -206,6 +206,8 @@ a:any-link {
   padding: 0.6rem 2rem;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   margin-top: 5vh;
@@ -442,5 +444,143 @@ a:any-link {
 
 .achievement .container .video-container iframe {
   border: none;
+}
+
+.sponsors {
+  width: 100%;
+  height: 100vh;
+}
+
+.sponsors .text-container {
+  padding: 0.3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sponsors .text-container h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  color: #0dc1f7;
+}
+
+.sponsors .cards-container {
+  margin: 2vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sponsors .cards-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+  width: 200px;
+  color: #0dc1f7;
+  background-color: #161a22;
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.sponsors .cards-container .card:hover {
+  color: #161a22;
+  background-color: #0dc1f7;
+  -webkit-box-shadow: 40px 40px 6px #00000029;
+          box-shadow: 40px 40px 6px #00000029;
+}
+
+.sponsors .cards-container .card img {
+  height: 40px;
+  width: auto;
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+}
+
+.sponsors .cards-container .card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+
+.sponsors .button-container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sponsors .button-container button {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  border: 1px solid #0dc1f7;
+  display: block;
+  border-radius: 50ex;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.sponsors .button-container button:hover {
+  background-color: #0dc1f7;
+}
+
+.sponsors .button-container button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

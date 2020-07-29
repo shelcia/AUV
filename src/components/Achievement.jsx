@@ -1,5 +1,6 @@
 import React from "react";
 import SAUVC from "../assets/logo/sauvclogo.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Achievements = () => {
   return (
@@ -7,38 +8,42 @@ const Achievements = () => {
       <div className="achievement" id="achievement">
         <div className="container">
           <div className="badge-container">
-            <div className="badge">
-              <div className="logo">
-                <img src={SAUVC} alt=""></img>
+            <ScrollAnimation animateIn="slideInDown">
+              <div className="badge">
+                <div className="logo">
+                  <img src={SAUVC} alt=""></img>
+                </div>
+                <div className="text-container">
+                  <h6>17th Place in SAUVC 2019</h6>
+                  <p>
+                    The SAUVC competition challenges participant teams to build
+                    an AUV which can perform given tasks. These tasks are
+                    simulations of tasks operational AUVs would have to be able
+                    to perform. The tasks involve four widely faced challenges
+                    underwater such as AUV navigation, visual identification,
+                    acoustic localization and robotic manipulation.
+                  </p>
+                </div>
               </div>
-              <div className="text-container">
-                <h6>17th Place in SAUVC 2019</h6>
-                <p>
-                  The SAUVC competition challenges participant teams to build an
-                  AUV which can perform given tasks. These tasks are simulations
-                  of tasks operational AUVs would have to be able to perform.
-                  The tasks involve four widely faced challenges underwater such
-                  as AUV navigation, visual identification, acoustic
-                  localization and robotic manipulation.
-                </p>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="slideInDown">
+              <div style={{ marginTop: "20px" }} className="badge">
+                <div className="logo">
+                  <img src={SAUVC} alt=""></img>
+                </div>
+                <div className="text-container">
+                  <h6>Qualified in SAUVC 2020</h6>
+                  <p>
+                    The SAUVC competition challenges participant teams to build
+                    an AUV which can perform given tasks. These tasks are
+                    simulations of tasks operational AUVs would have to be able
+                    to perform. The tasks involve four widely faced challenges
+                    underwater such as AUV navigation, visual identification,
+                    acoustic localization and robotic manipulation.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div style={{ marginTop: "20px" }} className="badge">
-              <div className="logo">
-                <img src={SAUVC} alt=""></img>
-              </div>
-              <div className="text-container">
-                <h6>Qualified in SAUVC 2020</h6>
-                <p>
-                  The SAUVC competition challenges participant teams to build an
-                  AUV which can perform given tasks. These tasks are simulations
-                  of tasks operational AUVs would have to be able to perform.
-                  The tasks involve four widely faced challenges underwater such
-                  as AUV navigation, visual identification, acoustic
-                  localization and robotic manipulation.
-                </p>
-              </div>
-            </div>
+            </ScrollAnimation>
           </div>
           <div className="video-container">
             <iframe
