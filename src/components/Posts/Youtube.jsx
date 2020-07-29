@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Youtube = ({ setView }) => {
   const [links] = useState([
@@ -14,23 +15,27 @@ const Youtube = ({ setView }) => {
   ]);
   return (
     <React.Fragment>
-      <div className="nav">
-        <p onClick={() => setView("instagram")}>instagram</p>
-        <p className="active">Youtube</p>
-        <p onClick={() => setView("gallery")}>Gallery</p>
-      </div>
-      <div className="media-container">
-        <div className="youtube">
-          {links.map((link) => (
-            <iframe
-              title="video"
-              width="300"
-              height="200"
-              src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
-            ></iframe>
-          ))}
+      <ScrollAnimation animateIn="fadeInLeft">
+        <div className="nav">
+          <p onClick={() => setView("instagram")}>instagram</p>
+          <p className="active">Youtube</p>
+          <p onClick={() => setView("gallery")}>Gallery</p>
         </div>
-      </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInRight">
+        <div className="media-container">
+          <div className="youtube">
+            {links.map((link) => (
+              <iframe
+                title="video"
+                width="300"
+                height="200"
+                src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
+              ></iframe>
+            ))}
+          </div>
+        </div>
+      </ScrollAnimation>
     </React.Fragment>
   );
 };

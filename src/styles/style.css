@@ -654,6 +654,7 @@ a:any-link {
 }
 
 .posts .grid .media-container .gallery {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
@@ -684,6 +685,57 @@ a:any-link {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  -webkit-transition: all 0.2 ease-in;
+  transition: all 0.2 ease-in;
+  cursor: pointer;
+}
+
+.posts .grid .media-container .gallery .column img:hover {
+  border: 3px solid #0dc1f7;
+  -webkit-box-shadow: 40px 40px 6px #000000;
+          box-shadow: 40px 40px 6px #000000;
+}
+
+.posts .grid .modal {
+  z-index: 100;
+  position: fixed;
+  top: 0vh;
+  width: 100%;
+  height: 100vh;
+  background-color: #161a22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.posts .grid .modal img {
+  width: 42%;
+  height: auto;
+}
+
+.posts .grid .modal .closecursor {
+  color: #0dc1f7;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.posts .grid .modal .closecursor:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 500px) {

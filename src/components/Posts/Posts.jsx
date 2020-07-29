@@ -4,7 +4,7 @@ import Youtube from "./Youtube";
 import Gallery from "./Gallery";
 
 const Posts = () => {
-  const [view, setView] = useState("instagram");
+  const [view, setView] = useState("youtube");
 
   return (
     <React.Fragment>
