@@ -27,6 +27,7 @@ const Youtube = ({ setView }) => {
           <div className="youtube">
             {links.map((link) => (
               <iframe
+                key={link.id}
                 title="video"
                 width="300"
                 height="200"
