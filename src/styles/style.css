@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -736,6 +736,31 @@ a:any-link {
 
 .posts .grid .modal .closecursor:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.teams {
+  width: 100%;
+  height: 100vh;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+
+.contact .grid {
+  margin: auto;
+  margin-top: 20vh;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+
+.contact .grid div {
+  border: 1px solid white;
 }
 
 @media (max-width: 500px) {

@@ -417,6 +417,27 @@ a:any-link {
   }
 }
 
+//TEAMS
+
+.teams {
+  @include fullWidthHeight();
+}
+
+.contact {
+  @include fullWidthHeight();
+  .grid {
+    margin: auto;
+    margin-top: 20vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-gap: 6%;
+    div {
+      border: 1px solid white;
+    }
+  }
+}
+
 //ABOUT CONTAINER FOR MOBILE VIEW RESPONSIVE
 
 @media (max-width: 500px) {

@@ -5,6 +5,8 @@ import AboutPage from "./components/About";
 import AchievementsPage from "./components/Achievement";
 import Sponsors from "./components/Sponsors";
 import Posts from "./components/Posts/Posts";
+import Teams from "./components/Teams/Teams";
+import Contact from "./components/Contact";
 import "animate.css/animate.min.css";
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
       <AchievementsPage />
       <Sponsors />
       <Posts />
+      <Teams />
+      <Contact />
     </React.Fragment>
   );
 };
