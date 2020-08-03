@@ -18,7 +18,7 @@ const Contacts = () => {
               src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
               allowfullscreen
             ></iframe>
-            <p>Mail to:</p>{" "}
+            <p>Mail to:</p>
             <a href="mailto:auv@iiitdm.ac.in">auv@iiitdm.ac.in</a>
             <p>Contact us</p>
             <a href="!#">33483758357</a>
