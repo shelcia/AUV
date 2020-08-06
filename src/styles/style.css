@@ -898,6 +898,7 @@ a:any-link {
 
 .contact footer #heart {
   color: #d1046b;
+  padding: 0.2rem 0.4rem;
 }
 
 @media (max-width: 500px) {

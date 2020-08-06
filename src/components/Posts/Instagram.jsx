@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import InstagramEmbed from "react-instagram-embed";
+import React from "react";
+// import InstagramEmbed from "react-instagram-embed";
 
 const Instagram = ({ setView }) => {
-  const links = useState([
-    { id: 1, url: "CDOzSQtAqRz/" },
-    { id: 2, url: "CCq--regz9o/" },
-    { id: 3, url: "CClmUCyg1c8/" },
-  ]);
+  // const links = useState([
+  //   { id: 1, url: "CDOzSQtAqRz/" },
+  //   { id: 2, url: "CCq--regz9o/" },
+  //   { id: 3, url: "CClmUCyg1c8/" },
+  // ]);
   return (
     <React.Fragment>
       <div className="nav">
