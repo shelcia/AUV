@@ -305,6 +305,7 @@ a:any-link {
   .button-container {
     width: 80%;
     margin: auto;
+    padding-bottom: 10px;
     @include displayFlex(space-evenly);
     margin-top: 5vh;
     flex-direction: row;
@@ -342,7 +343,7 @@ a:any-link {
       }
     }
     .media-container {
-      margin-top: 20vh;
+      margin-top: 18vh;
       .instgram {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -427,13 +428,80 @@ a:any-link {
   @include fullWidthHeight();
   .grid {
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 14vh;
     width: 90%;
     display: grid;
     grid-template-columns: 47% 47%;
     grid-gap: 6%;
     div {
-      border: 1px solid white;
+      padding: 10px;
+      .form {
+        background-color: $bg;
+        box-shadow: 20px 20px 6px #00000029;
+        @include displayFlex(center);
+        padding: 0.75rem 0rem;
+        flex-direction: column;
+        div.headliner {
+          @include robotoStyle(1.2rem);
+          color: $primary;
+          border: none;
+        }
+
+        input {
+          width: 80%;
+          margin: auto;
+          margin-top: 2vh;
+          padding: 0.75rem 0rem;
+          background-color: $noopacity !important;
+          border: none;
+          border-bottom: 1px solid $primary;
+          @include robotoStyle(1rem);
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          margin-top: 1.5rem;
+          @include buttonStyle();
+          @include robotoStyle(1rem);
+        }
+      }
+      div.links {
+        p {
+          @include robotoStyle(1rem);
+          color: $primary;
+          a {
+            @include robotoStyle(1rem);
+          }
+        }
+      }
+      .icon-container {
+        a {
+          cursor: pointer;
+          color: $primary;
+          font-size: 1.2rem;
+          i {
+            padding: 0rem 0.8rem;
+            transition: all 0.2 ease-in;
+            &:hover {
+              color: darken($color: $primary, $amount: 20);
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    @include displayFlex(center);
+    @include robotoStyle(1rem);
+    color: $secondary;
+    width: 100%;
+    height: 10vh;
+    background-color: $bg;
+    box-shadow: 0px -6px 6px #00000029;
+
+    #heart {
+      color: #d1046b;
     }
   }
 }

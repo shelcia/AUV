@@ -20,22 +20,30 @@ const Sponsors = () => {
             <h3>Our Sponsors</h3>
           </div>
           <div className="cards-container">
-            <div className="card">
-              <img src={BlueRobotics} alt="Bluerobotics logo" />
-              <p>Blue Robotics</p>
-            </div>
-            <div className="card">
-              <img src={SimScale} alt="Simscale logo" />
-              <p>Simscale</p>
-            </div>
-            <div className="card">
-              <img src={DRDO} alt="DRDO logo" />
-              <p>DRDO</p>
-            </div>
-            <div className="card">
-              <img src={IIITDM} alt="IIITDM logo" />
-              <p>IIITDM</p>
-            </div>
+            <a href="https://bluerobotics.com/" target="blank">
+              <div className="card">
+                <img src={BlueRobotics} alt="Bluerobotics logo" />
+                <p>Blue Robotics</p>
+              </div>
+            </a>
+            <a href="https://www.simscale.com/" target="blank">
+              <div className="card">
+                <img src={SimScale} alt="Simscale logo" />
+                <p>Simscale</p>
+              </div>
+            </a>
+            <a href="https://www.drdo.gov.in/home" target="blank">
+              <div className="card">
+                <img src={DRDO} alt="DRDO logo" />
+                <p>DRDO</p>
+              </div>
+            </a>
+            <a href="https://www.iiitdm.ac.in/" target="blank">
+              <div className="card">
+                <img src={IIITDM} alt="IIITDM logo" />
+                <p>IIITDM</p>
+              </div>
+            </a>
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="bounceInRight">
@@ -44,7 +52,13 @@ const Sponsors = () => {
           </div>
           <div className="button-container">
             <button type="button">Marketing Proposal</button>
-            <button type="button">Donate US</button>
+            <a
+              href="https://www.ketto.org/fundraiser/fund-the-auv-society-for-team-orca"
+              target="blank"
+            >
+              <button type="button">Donate US</button>
+            </a>
+
             <button type="button">Complete Documentation</button>
           </div>
         </ScrollAnimation>
