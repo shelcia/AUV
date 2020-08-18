@@ -218,9 +218,9 @@ a:any-link {
     width: 90%;
     margin: auto;
     margin-top: 15vh;
-    @include border(white);
+    // @include border(white);
     .badge-container {
-      @include border(green);
+      // @include border(green);
 
       width: 100%;
       margin: auto;
@@ -256,7 +256,7 @@ a:any-link {
       }
     }
     .video-container {
-      @include border(coral);
+      // @include border(coral);
       height: 100%;
       width: 100%;
       @include displayFlex(space-evenly);
@@ -370,7 +370,7 @@ a:any-link {
         overflow-y: scroll;
         iframe {
           border: none;
-          width: 300px;
+          width: 25vw;
           height: 200px;
         }
       }
@@ -447,7 +447,7 @@ a:any-link {
     width: 90%;
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-gap: 4%;
+    grid-gap: 2%;
     div {
       padding: 10px;
       .form {
