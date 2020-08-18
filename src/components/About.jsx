@@ -32,8 +32,6 @@ const About = () => {
               <div className="video">
                 <iframe
                   title="video"
-                  width="420"
-                  height="200"
                   src="https://www.youtube.com/embed/NsHS6F2bjII?playlist=NsHS6F2bjII&loop=1"
                 ></iframe>
               </div>

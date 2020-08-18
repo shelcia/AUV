@@ -178,16 +178,18 @@ a:any-link {
       .video {
         iframe {
           border: none;
+          width: 40vw;
+          height: 200px;
         }
       }
     }
     .cards-container {
       width: 85%;
-      margin: 20px auto;
+      margin: 6vh auto;
       padding: 20px 0px;
       display: grid;
       grid-gap: 0.5%;
-      grid-template-columns: 24vw 24vw 24vw 24vw;
+      grid-template-columns: 21vw 21vw 21vw 21vw;
       grid-template-rows: 130px;
       overflow-x: scroll;
       div.cards {
@@ -229,7 +231,7 @@ a:any-link {
         @include displayFlex(space-between);
         flex-wrap: wrap;
         width: 100%;
-        height: 180px;
+        height: 200px;
         box-shadow: 20px 20px 6px #00000029;
         .logo {
           padding: 5px;
@@ -285,7 +287,7 @@ a:any-link {
   }
 
   .cards-container {
-    margin: 2vh auto;
+    margin: 5vh auto;
     @include displayFlex(space-evenly);
     .card {
       @include displayFlex(center);
@@ -343,7 +345,7 @@ a:any-link {
       flex-direction: column;
       height: 100vh;
       p {
-        @include robotoStyle(1rem);
+        @include robotoStyle($fontmedium);
         padding: 10px 0px;
         transition: all 0.2s ease-in;
         cursor: pointer;
@@ -511,7 +513,7 @@ a:any-link {
     @include robotoStyle($fontmedium);
     color: $secondary;
     width: 100%;
-    height: 50px;
+    padding: 1rem 0rem;
     background-color: $bg;
     box-shadow: 0px -6px 6px #00000029;
 
