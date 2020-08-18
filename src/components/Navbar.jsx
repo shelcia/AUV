@@ -1,7 +1,7 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import Logo from "../assets/logo.png";
+import Logo from "../assets/new_logo.png";
 
 const Navbar = () => {
   return (

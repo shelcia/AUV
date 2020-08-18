@@ -48,15 +48,11 @@ const Achievements = () => {
           <div className="video-container">
             <iframe
               title="video"
-              width="260"
-              height="150"
               src="https://www.youtube.com/embed/c58AMctLp04?playlist=c58AMctLp04&loop=1"
             ></iframe>
             <iframe
               style={{ marginTop: "20px" }}
               title="video"
-              width="260"
-              height="150"
               src="https://www.youtube.com/embed/Wj7A49-mySk?playlist=NsHS6F2bjII&loop=1"
             ></iframe>
           </div>

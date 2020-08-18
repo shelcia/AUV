@@ -94,7 +94,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
+  font-size: 1.2rem;
   color: #0dc1f7;
   padding: 0px 1.5rem;
   -webkit-transition: all 0.2s ease-in;
@@ -155,7 +155,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
+  font-size: 1.4rem;
   color: #0dc1f7;
   padding: 0px 1.5rem;
   -webkit-transition: all 0.2s ease-in;
@@ -191,7 +191,7 @@ a:any-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 2.4rem;
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 
@@ -200,7 +200,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: 1px solid #0dc1f7;
   display: block;
   border-radius: 50ex;
@@ -272,7 +272,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #0dc1f7;
   padding: 1rem 0rem;
 }
@@ -282,7 +282,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .about .container .info-container .video iframe {
@@ -291,8 +291,8 @@ a:any-link {
 
 .about .container .cards-container {
   width: 85%;
-  margin: 20px auto;
-  padding: 20px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
@@ -333,7 +333,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-top: 1rem;
 }
 
@@ -354,10 +354,12 @@ a:any-link {
           justify-content: space-between;
   width: 90%;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 15vh;
+  border: 2px solid white;
 }
 
 .achievement .container .badge-container {
+  border: 2px solid green;
   width: 100%;
   margin: auto;
   -webkit-box-orient: vertical;
@@ -378,7 +380,7 @@ a:any-link {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 700px;
+  width: 100%;
   height: 180px;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
@@ -396,6 +398,7 @@ a:any-link {
 .achievement .container .badge-container .badge .text-container {
   width: 80%;
   padding: 0.5rem;
+  word-wrap: break-word;
 }
 
 .achievement .container .badge-container .badge .text-container h6 {
@@ -403,7 +406,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #0dc1f7;
   padding: 0.3rem 0rem;
 }
@@ -413,14 +416,16 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0.2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .achievement .container .video-container {
-  width: 50%;
+  border: 2px solid coral;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,6 +443,8 @@ a:any-link {
 
 .achievement .container .video-container iframe {
   border: none;
+  width: 70%;
+  height: 40vh;
 }
 
 .sponsors {
@@ -463,7 +470,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #0dc1f7;
 }
 
@@ -526,7 +533,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-top: 1.5rem;
 }
 
@@ -558,7 +565,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8rem;
+  font-size: 1rem;
   border: 1px solid #0dc1f7;
   display: block;
   border-radius: 50ex;
@@ -587,8 +594,8 @@ a:any-link {
 .posts .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px auto;
-      grid-template-columns: 150px auto;
+  -ms-grid-columns: 15% auto;
+      grid-template-columns: 15% auto;
 }
 
 .posts .grid .nav {
@@ -755,9 +762,9 @@ a:any-link {
   width: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 47% 47%;
-      grid-template-columns: 47% 47%;
-  grid-gap: 6%;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+  grid-gap: 4%;
 }
 
 .contact .grid div {
@@ -789,7 +796,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #0dc1f7;
   border: none;
 }
@@ -806,7 +813,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact .grid div .form input:focus {
@@ -829,7 +836,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact .grid div .form button:hover {
@@ -845,7 +852,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #0dc1f7;
 }
 
@@ -854,7 +861,7 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact .grid div .icon-container a {
@@ -887,10 +894,10 @@ a:any-link {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  height: 10vh;
+  height: 50px;
   background-color: #161a22;
   -webkit-box-shadow: 0px -6px 6px #00000029;
           box-shadow: 0px -6px 6px #00000029;

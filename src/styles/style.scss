@@ -6,6 +6,9 @@ $secondary: rgba(255, 255, 255, 0.8);
 $primary: #0dc1f7;
 $bg: #161a22;
 $noopacity: rgba(0, 0, 0, 0);
+$fontlarge: 1.4rem;
+$fontmedium: 1.2rem;
+$fontsmall: 1rem;
 
 @mixin fullWidthHeight {
   width: 100%;
@@ -38,6 +41,9 @@ $noopacity: rgba(0, 0, 0, 0);
   &:focus {
     outline: none;
   }
+}
+@mixin border($color) {
+  border: 2px solid $color;
 }
 * {
   margin: 0;
@@ -78,7 +84,7 @@ a:any-link {
   .nav-items {
     @include displayFlex(space-evenly);
     a {
-      @include robotoStyle(15px);
+      @include robotoStyle($fontmedium);
       color: $primary;
       padding: 0px 1.5rem;
       transition: all 0.2s ease-in;
@@ -113,7 +119,7 @@ a:any-link {
     .header-items {
       @include displayFlex(space-evenly);
       a {
-        @include robotoStyle(15px);
+        @include robotoStyle($fontlarge);
         color: $primary;
         padding: 0px 1.5rem;
         transition: all 0.2s ease-in;
@@ -134,11 +140,11 @@ a:any-link {
       font-family: $montserrat;
       font-weight: 700;
       color: $secondary;
-      font-size: 2.4rem;
+      font-size: 3rem;
       letter-spacing: 2px;
     }
     button {
-      @include robotoStyle(1.2rem);
+      @include robotoStyle($fontlarge);
       @include buttonStyle();
       margin-top: 5vh;
     }
@@ -161,12 +167,12 @@ a:any-link {
       .text-container {
         width: 50%;
         h6 {
-          @include robotoStyle(1rem);
+          @include robotoStyle($fontmedium);
           color: $primary;
           padding: 1rem 0rem;
         }
         p {
-          @include robotoStyle(0.8rem);
+          @include robotoStyle($fontsmall);
         }
       }
       .video {
@@ -177,8 +183,10 @@ a:any-link {
     }
     .cards-container {
       width: 85%;
-      margin: 20px auto;
-      padding: 20px 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      // margin: 20px auto;
+      // padding: 20px 0px;
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 220px 220px 220px 220px;
@@ -195,7 +203,7 @@ a:any-link {
           width: auto;
         }
         p {
-          @include robotoStyle(0.8rem);
+          @include robotoStyle($fontsmall);
           padding-top: 1rem;
         }
       }
@@ -211,15 +219,18 @@ a:any-link {
     @include displayFlex(space-between);
     width: 90%;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
+    @include border(white);
     .badge-container {
+      @include border(green);
+
       width: 100%;
       margin: auto;
       flex-direction: column;
       .badge {
         @include displayFlex(space-between);
         flex-wrap: wrap;
-        width: 700px;
+        width: 100%;
         height: 180px;
         box-shadow: 20px 20px 6px #00000029;
         .logo {
@@ -232,14 +243,14 @@ a:any-link {
         .text-container {
           width: 80%;
           padding: 0.5rem;
-
+          word-wrap: break-word;
           h6 {
-            @include robotoStyle(1rem);
+            @include robotoStyle($fontmedium);
             color: $primary;
             padding: 0.3rem 0rem;
           }
           p {
-            @include robotoStyle(0.8rem);
+            @include robotoStyle($fontsmall);
             padding: 0.2rem;
             flex-wrap: wrap;
           }
@@ -247,11 +258,15 @@ a:any-link {
       }
     }
     .video-container {
-      width: 50%;
+      @include border(coral);
+      height: 100%;
+      width: 100%;
       @include displayFlex(space-evenly);
       flex-direction: column;
       iframe {
         border: none;
+        width: 70%;
+        height: 40vh;
       }
     }
   }
@@ -266,7 +281,7 @@ a:any-link {
     padding: 0.3rem 0rem;
     @include displayFlex(center);
     h3 {
-      @include robotoStyle(1.2rem);
+      @include robotoStyle($fontlarge);
       color: $primary;
     }
   }
@@ -297,7 +312,7 @@ a:any-link {
         box-shadow: 20px 20px 6px #00000029;
       }
       p {
-        @include robotoStyle(1rem);
+        @include robotoStyle($fontmedium);
         padding-top: 1.5rem;
       }
     }
@@ -312,7 +327,7 @@ a:any-link {
     flex-wrap: wrap;
     button {
       display: inline;
-      @include robotoStyle(0.8rem);
+      @include robotoStyle($fontsmall);
       @include buttonStyle();
     }
   }
@@ -324,7 +339,7 @@ a:any-link {
   @include fullWidthHeight();
   .grid {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 15% auto;
     .nav {
       @include displayFlex(center);
       flex-direction: column;
@@ -431,8 +446,8 @@ a:any-link {
     margin-top: 14vh;
     width: 90%;
     display: grid;
-    grid-template-columns: 47% 47%;
-    grid-gap: 6%;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
     div {
       padding: 10px;
       .form {
@@ -442,7 +457,7 @@ a:any-link {
         padding: 0.75rem 0rem;
         flex-direction: column;
         div.headliner {
-          @include robotoStyle(1.2rem);
+          @include robotoStyle($fontlarge);
           color: $primary;
           border: none;
         }
@@ -455,7 +470,7 @@ a:any-link {
           background-color: $noopacity !important;
           border: none;
           border-bottom: 1px solid $primary;
-          @include robotoStyle(1rem);
+          @include robotoStyle($fontmedium);
           &:focus {
             outline: none;
           }
@@ -463,15 +478,15 @@ a:any-link {
         button {
           margin-top: 1.5rem;
           @include buttonStyle();
-          @include robotoStyle(1rem);
+          @include robotoStyle($fontmedium);
         }
       }
       div.links {
         p {
-          @include robotoStyle(1rem);
+          @include robotoStyle($fontmedium);
           color: $primary;
           a {
-            @include robotoStyle(1rem);
+            @include robotoStyle($fontmedium);
           }
         }
       }
@@ -493,10 +508,10 @@ a:any-link {
   }
   footer {
     @include displayFlex(center);
-    @include robotoStyle(1rem);
+    @include robotoStyle($fontmedium);
     color: $secondary;
     width: 100%;
-    height: 10vh;
+    height: 50px;
     background-color: $bg;
     box-shadow: 0px -6px 6px #00000029;
 
