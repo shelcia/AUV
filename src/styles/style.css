@@ -504,7 +504,7 @@ a:any-link {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 150px;
-  width: 200px;
+  width: 20vw;
   color: #0dc1f7;
   background-color: #161a22;
   -webkit-box-shadow: 20px 20px 6px #00000029;
@@ -594,8 +594,8 @@ a:any-link {
 .posts .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% auto;
-      grid-template-columns: 15% auto;
+  -ms-grid-columns: 18% auto;
+      grid-template-columns: 18% auto;
 }
 
 .posts .grid .nav {
@@ -636,7 +636,7 @@ a:any-link {
 }
 
 .posts .grid .media-container {
-  margin-top: 18vh;
+  margin-top: 15vh;
 }
 
 .posts .grid .media-container .instgram {
@@ -659,6 +659,8 @@ a:any-link {
 
 .posts .grid .media-container .youtube iframe {
   border: none;
+  width: 300px;
+  height: 200px;
 }
 
 .posts .grid .media-container .gallery {

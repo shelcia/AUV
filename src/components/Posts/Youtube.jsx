@@ -29,8 +29,6 @@ const Youtube = ({ setView }) => {
               <iframe
                 key={link.id}
                 title="video"
-                width="300"
-                height="200"
                 src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
               ></iframe>
             ))}

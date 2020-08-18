@@ -293,7 +293,7 @@ a:any-link {
       margin-top: 10px;
       margin-bottom: 10px;
       height: 150px;
-      width: 200px;
+      width: 20vw;
       color: $primary;
       background-color: $bg;
       box-shadow: 20px 20px 6px #00000029;
@@ -337,7 +337,7 @@ a:any-link {
   @include fullWidthHeight();
   .grid {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 18% auto;
     .nav {
       @include displayFlex(center);
       flex-direction: column;
@@ -356,7 +356,7 @@ a:any-link {
       }
     }
     .media-container {
-      margin-top: 18vh;
+      margin-top: 15vh;
       .instgram {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -370,6 +370,8 @@ a:any-link {
         overflow-y: scroll;
         iframe {
           border: none;
+          width: 300px;
+          height: 200px;
         }
       }
       .gallery {
