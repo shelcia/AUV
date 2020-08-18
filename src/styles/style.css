@@ -291,13 +291,13 @@ a:any-link {
 
 .about .container .cards-container {
   width: 85%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  padding: 20px 0px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: 220px 220px 220px 220px;
-      grid-template-columns: 220px 220px 220px 220px;
+  grid-gap: 0.5%;
+  -ms-grid-columns: 24vw 24vw 24vw 24vw;
+      grid-template-columns: 24vw 24vw 24vw 24vw;
   -ms-grid-rows: 130px;
       grid-template-rows: 130px;
   overflow-x: scroll;

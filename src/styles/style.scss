@@ -183,13 +183,11 @@ a:any-link {
     }
     .cards-container {
       width: 85%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      // margin: 20px auto;
-      // padding: 20px 0px;
+      margin: 20px auto;
+      padding: 20px 0px;
       display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 220px 220px 220px 220px;
+      grid-gap: 0.5%;
+      grid-template-columns: 24vw 24vw 24vw 24vw;
       grid-template-rows: 130px;
       overflow-x: scroll;
       div.cards {
