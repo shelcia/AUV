@@ -9,7 +9,7 @@ const Sponsors = () => {
   return (
     <React.Fragment>
       <div className="sponsors" id="sponsors">
-        <ScrollAnimation animateIn="zoomInLeft">
+        <ScrollAnimation animateIn="fadeIn">
           <div
             style={{
               marginTop: "18vh",
@@ -46,7 +46,7 @@ const Sponsors = () => {
             </a>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="zoomInRight">
+        <ScrollAnimation animateIn="fadeIn">
           <div className="text-container">
             <h3>Interested in Us ???</h3>
           </div>

@@ -32,13 +32,11 @@ const Gallery = ({ setView }) => {
   const [img, setImg] = useState({});
   return (
     <React.Fragment>
-      <ScrollAnimation animateIn="fadeInLeft">
-        <div className="nav">
-          <p onClick={() => setView("instagram")}>instagram</p>
-          <p onClick={() => setView("youtube")}>Youtube</p>
-          <p className="active">Gallery</p>
-        </div>
-      </ScrollAnimation>
+      <div className="nav">
+        <p onClick={() => setView("instagram")}>instagram</p>
+        <p onClick={() => setView("youtube")}>Youtube</p>
+        <p className="active">Gallery</p>
+      </div>
       <ScrollAnimation animateIn="fadeInRight">
         <div className="media-container">
           <div className="gallery">

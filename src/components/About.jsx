@@ -11,11 +11,7 @@ const About = () => {
     <React.Fragment>
       <div className="about" id="about">
         <Navbar />
-        <ScrollAnimation
-          animateIn="fadeInLeftBig"
-          animateOut="fadeOutRightBig"
-          duration="300ms"
-        >
+        <ScrollAnimation animateIn="fadeInDown" duration="300ms">
           <div className="container">
             <div className="info-container">
               <div className="text-container">
