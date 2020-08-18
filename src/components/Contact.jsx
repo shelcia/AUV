@@ -48,10 +48,7 @@ const Contacts = () => {
             <div>
               <iframe
                 title="map"
-                width="450"
-                height="250"
                 frameBorder="0"
-                // style={{ border: "none", margin: "auto" }}
                 style={{ margin: "auto" }}
                 src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
                 allowFullScreen
