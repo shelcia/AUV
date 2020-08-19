@@ -1,16 +1,55 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import axios from "axios";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const url = `https://auv-society-iiitdmk.herokuapp.com/sendemail`;
+  const errorNotify = () =>
+    toast.dark("Oops !! error sending the form response .. try again later");
+  const succesNotify = () =>
+    toast.dark("We received your resposne. We will contact you soon :) ");
+
+  const sendForm = (event) => {
+    event.preventDefault();
+    const response = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+    const headers = {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    };
+
+    axios
+      .post(url, response, {
+        headers: headers,
+      })
+      .then((response) => {
+        console.log(response);
+        succesNotify();
+      })
+      .catch((error) => {
+        console.log(error);
+        errorNotify();
+      });
+  };
 
   return (
     <React.Fragment>
       <form className="form">
         <div className="headliner">Get in Touch!!</div>
+        <div style={{ zIndex: "100" }}>
+          <ToastContainer transition={Slide} />
+        </div>
         <input
           type="text"
           placeholder="Name"
@@ -31,7 +70,9 @@ const Form = () => {
           placeholder="Message"
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button type="button">Send</button>
+        <button type="button" onClick={(event) => sendForm(event)}>
+          Send
+        </button>
       </form>
     </React.Fragment>
   );

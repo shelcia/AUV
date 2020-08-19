@@ -106,6 +106,7 @@ a:any-link {
   background-size: cover;
   position: relative;
   z-index: 10;
+
   .header {
     @include displayFlex(space-between);
     min-height: 10vh;
@@ -136,6 +137,12 @@ a:any-link {
     background-color: #161a2285;
     z-index: 11;
     text-align: center;
+    .loader {
+      z-index: 13;
+      // @include fullWidthHeight();
+      background-color: $bg;
+      @include displayFlex(center);
+    }
     h2 {
       font-family: $montserrat;
       font-weight: 700;
@@ -467,6 +474,9 @@ a:any-link {
           color: $primary;
           border: none;
         }
+        // .Toastify__toast-container {
+        //   background-color: $primary;
+        // }
 
         input {
           width: 80%;

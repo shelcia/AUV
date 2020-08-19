@@ -187,6 +187,20 @@ a:any-link {
   text-align: center;
 }
 
+.landingpage .overlay .loader {
+  z-index: 13;
+  background-color: #161a22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .landingpage .overlay h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;

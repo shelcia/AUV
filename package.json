@@ -7,13 +7,16 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
     "react-dom": "^16.13.1",
     "react-instagram-embed": "^1.5.0",
-    "react-scripts": "3.4.1"
+    "react-loader-spinner": "^3.1.14",
+    "react-scripts": "3.4.1",
+    "react-toastify": "^6.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

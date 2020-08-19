@@ -48,6 +48,7 @@ const Gallery = ({ setView }) => {
                     setImg(Img1);
                   }}
                   src={Img1}
+                  loading="lazy"
                   alt=""
                 />
                 <img
@@ -56,6 +57,7 @@ const Gallery = ({ setView }) => {
                     setImg(Img2);
                   }}
                   src={Img2}
+                  loading="lazy"
                   alt=""
                 />
                 <img
@@ -64,6 +66,7 @@ const Gallery = ({ setView }) => {
                     setImg(Img3);
                   }}
                   src={Img3}
+                  loading="lazy"
                   alt=""
                 />
                 <img
@@ -73,6 +76,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img4}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -80,6 +84,7 @@ const Gallery = ({ setView }) => {
                     setImg(Img13);
                   }}
                   src={Img13}
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -91,6 +96,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img5}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -99,6 +105,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img6}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -107,6 +114,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img7}
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div className="column">
@@ -117,6 +125,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img8}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -125,6 +134,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img9}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -133,6 +143,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img10}
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div className="column">
@@ -143,6 +154,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img11}
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   onClick={() => {
@@ -151,6 +163,7 @@ const Gallery = ({ setView }) => {
                   }}
                   src={Img12}
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
