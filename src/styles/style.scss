@@ -1,5 +1,5 @@
 @import "./components/scrollbar";
-
+@import "./components/landingPage";
 $montserrat: "Montserrat", sans-serif;
 $roboto: "Roboto", sans-serif;
 $secondary: rgba(255, 255, 255, 0.8);
@@ -66,6 +66,24 @@ a:any-link {
   text-decoration: none;
 }
 
+h2.title {
+  @include robotoStyle(1.8rem);
+  text-transform: uppercase;
+  font-weight: bolder;
+  // display: inline-block;
+  position: relative;
+  font-family: $montserrat;
+  color: $primary;
+  &::after {
+    content: "";
+    height: 0.3px;
+    width: 100%;
+    background: $secondary;
+    position: absolute;
+    left: calc(0% - 10%);
+    bottom: 0rem;
+  }
+}
 // NAVBAR
 .nav-container {
   position: fixed;
@@ -95,68 +113,7 @@ a:any-link {
   }
 }
 
-//LANDING PAGE
 
-.landingpage {
-  @include fullWidthHeight();
-  background-image: url("bg.png");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 10;
-
-  .header {
-    @include displayFlex(space-between);
-    min-height: 10vh;
-    top: 0;
-    width: 100%;
-    .header-logo {
-      text-align: center;
-      margin-left: 30px;
-      cursor: pointer;
-    }
-    .header-items {
-      @include displayFlex(space-evenly);
-      a {
-        @include robotoStyle($fontlarge);
-        color: $primary;
-        padding: 0px 1.5rem;
-        transition: all 0.2s ease-in;
-        &:hover {
-          color: $secondary;
-        }
-      }
-    }
-  }
-  .overlay {
-    @include fullWidthHeight();
-    @include displayFlex(center);
-    flex-direction: column;
-    background-color: #161a2285;
-    z-index: 11;
-    text-align: center;
-    .loader {
-      z-index: 13;
-      // @include fullWidthHeight();
-      background-color: $bg;
-      @include displayFlex(center);
-    }
-    h2 {
-      font-family: $montserrat;
-      font-weight: 700;
-      color: $secondary;
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-    button {
-      @include robotoStyle($fontlarge);
-      @include buttonStyle();
-      margin-top: 5vh;
-    }
-  }
-}
 
 //ABOUT PAGE
 .about {

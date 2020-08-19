@@ -8,6 +8,10 @@ const Achievements = () => {
       <div className="achievement" id="achievement">
         <div className="container">
           <div className="badge-container">
+            <h2 className="title" style={{ backgroundColor: "#161a22" }}>
+              Achievements
+            </h2>
+
             <ScrollAnimation animateIn="slideInDown">
               <div className="badge">
                 <div className="logo">

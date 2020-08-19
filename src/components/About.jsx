@@ -15,6 +15,7 @@ const About = () => {
           <div className="container">
             <div className="info-container">
               <div className="text-container">
+                <h2 className="title">About Us</h2>
                 <h6>Who we are?</h6>
                 <p>
                   We are an intellectual interdisciplinary team of undergraduate
