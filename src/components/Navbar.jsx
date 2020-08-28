@@ -1,23 +1,53 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-
 import Logo from "../assets/new_logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="nav-container">
-      <div className="nav-logo">
-        <a href="!#">
-          <img src={Logo} height="40px" alt="logo"></img>
-        </a>
-      </div>
-      <div className="nav-items">
-        <AnchorLink href="#about">About</AnchorLink>
-        <AnchorLink href="#achievement">Achievements</AnchorLink>
-        <AnchorLink href="#sponsors">Sponsors</AnchorLink>
-        <AnchorLink href="#post">Post</AnchorLink>
-        <AnchorLink href="#team">Team</AnchorLink>
-        <AnchorLink href="#contact">Contact</AnchorLink>
+    <nav className="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <a className="navbar-brand ml-4" href="#home">
+        <img src={Logo} alt="logo" height="40px" />
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul className="navbar-nav mr-4">
+          <li className="nav-item">
+            <a href="#about" className="nav-link">
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#achievement" className="nav-link">
+              Achievements
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#sponsors" className="nav-link">
+              Sponsors
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#post" className="nav-link">
+              Post
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#team" className="nav-link">
+              Team
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#contact" className="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

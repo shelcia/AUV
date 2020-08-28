@@ -1,5 +1,4 @@
-@import "./components/scrollbar";
-@import "./components/landingPage";
+// @import "./components/scrollbar";
 $montserrat: "Montserrat", sans-serif;
 $roboto: "Roboto", sans-serif;
 $secondary: rgba(255, 255, 255, 0.8);
@@ -12,7 +11,7 @@ $fontsmall: 1rem;
 
 @mixin fullWidthHeight {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 @mixin displayFlex($justify) {
   display: flex;
@@ -46,8 +45,6 @@ $fontsmall: 1rem;
   border: 2px solid $color;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -58,6 +55,7 @@ code {
 }
 body {
   background-color: $bg;
+  color: $secondary;
 }
 
 a,
@@ -70,326 +68,46 @@ h2.title {
   @include robotoStyle(1.8rem);
   text-transform: uppercase;
   font-weight: bolder;
-  // display: inline-block;
   position: relative;
   font-family: $montserrat;
   color: $primary;
-  &::after {
-    content: "";
-    height: 0.3px;
-    width: 100%;
-    background: $secondary;
-    position: absolute;
-    left: calc(0% - 10%);
-    bottom: 0rem;
-  }
 }
-// NAVBAR
-.nav-container {
-  position: fixed;
-  z-index: 3;
-  background-color: $bg;
-  box-shadow: 0px 6px 6px #00000029;
-  @include displayFlex(space-between);
-  min-height: 10vh;
-  top: 0;
-  width: 100%;
-  .nav-logo {
-    text-align: center;
-    margin-left: 30px;
-    cursor: pointer;
-  }
-  .nav-items {
-    @include displayFlex(space-evenly);
-    a {
-      @include robotoStyle($fontmedium);
-      color: $primary;
-      padding: 0px 1.5rem;
-      transition: all 0.2s ease-in;
-      &:hover {
-        color: $secondary;
-      }
-    }
-  }
+hr.divider {
+  color: #007ba0;
+  // border-top: 1px solid #007ba0;
+}
+.sub-heading {
+  color: $primary !important;
+  font-size: 1.2rem;
+  font-weight: 600 !important;
 }
 
-
-
-//ABOUT PAGE
-.about {
+.landingpage {
   @include fullWidthHeight();
-  .container {
-    width: 100%;
-    margin-top: 20vh;
+  background-image: url("bg.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1031;
+
+  .header {
     @include displayFlex(space-between);
-    flex-direction: column;
-    .info-container {
-      @include displayFlex(space-between);
-      flex-direction: row;
-      width: 85%;
-      margin: auto;
-      .text-container {
-        width: 50%;
-        h6 {
-          @include robotoStyle($fontmedium);
-          color: $primary;
-          padding: 1rem 0rem;
-        }
-        p {
-          @include robotoStyle($fontsmall);
-        }
-      }
-      .video {
-        iframe {
-          border: none;
-          width: 40vw;
-          height: 230px;
-        }
-      }
-    }
-    .cards-container {
-      width: 85%;
-      margin: 6vh auto;
-      padding: 20px 0px;
-      display: grid;
-      grid-gap: 0.5%;
-      grid-template-columns: 21vw 21vw 21vw 21vw;
-      grid-template-rows: 130px;
-      overflow-x: scroll;
-      div.cards {
-        @include displayFlex(center);
-        flex-direction: column;
-        background-color: $bg;
-        box-shadow: 20px 20px 6px #00000029;
-        color: $secondary;
-        .icon {
-          height: 50px;
-          width: auto;
-        }
-        p {
-          @include robotoStyle($fontsmall);
-          padding-top: 1rem;
-        }
-      }
-    }
-  }
-}
-
-//ACHIEVEMENTS PAGE
-
-.achievement {
-  @include fullWidthHeight();
-  .container {
-    @include displayFlex(space-between);
-    width: 90%;
-    margin: auto;
-    margin-top: 15vh;
-    // @include border(white);
-    .badge-container {
-      // @include border(green);
-
-      width: 100%;
-      margin: auto;
-      flex-direction: column;
-      .badge {
-        @include displayFlex(space-between);
-        flex-wrap: wrap;
-        width: 100%;
-        height: 200px;
-        box-shadow: 20px 20px 6px #00000029;
-        .logo {
-          padding: 5px;
-          width: 20%;
-          img {
-            width: 100px;
-          }
-        }
-        .text-container {
-          width: 80%;
-          padding: 0.5rem;
-          word-wrap: break-word;
-          h6 {
-            @include robotoStyle($fontmedium);
-            color: $primary;
-            padding: 0.3rem 0rem;
-          }
-          p {
-            @include robotoStyle($fontsmall);
-            padding: 0.2rem;
-            flex-wrap: wrap;
-          }
-        }
-      }
-    }
-    .video-container {
-      // @include border(coral);
-      height: 100%;
-      width: 100%;
-      @include displayFlex(space-evenly);
-      flex-direction: column;
-      iframe {
-        border: none;
-        width: 70%;
-        height: 40vh;
-      }
-    }
-  }
-}
-
-//SPONSORS PAGE
-
-.sponsors {
-  @include fullWidthHeight();
-
-  .text-container {
-    padding: 0.3rem 0rem;
-    @include displayFlex(center);
-    h3 {
-      @include robotoStyle($fontlarge);
-      color: $primary;
-    }
-  }
-
-  .cards-container {
-    margin: 5vh auto;
-    @include displayFlex(space-evenly);
-    .card {
-      @include displayFlex(center);
-      flex-direction: column;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      height: 150px;
-      width: 20vw;
-      color: $primary;
-      background-color: $bg;
-      box-shadow: 20px 20px 6px #00000029;
+    min-height: 10vh;
+    top: 0;
+    width: 100%;
+    .header-logo {
+      text-align: center;
+      margin-left: 30px;
       cursor: pointer;
-      transition: all 0.2s ease-in;
-      &:hover {
-        color: $bg;
-        background-color: $primary;
-        box-shadow: 40px 40px 6px #00000029;
-      }
-      img {
-        height: 40px;
-        width: auto;
-        box-shadow: 20px 20px 6px #00000029;
-      }
-      p {
-        @include robotoStyle($fontmedium);
-        padding-top: 1.5rem;
-      }
     }
-  }
-  .button-container {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 10px;
-    @include displayFlex(space-evenly);
-    margin-top: 5vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-    button {
-      display: inline;
-      @include robotoStyle($fontsmall);
-      @include buttonStyle();
-    }
-  }
-}
-
-//POSTS
-
-.posts {
-  @include fullWidthHeight();
-  .grid {
-    display: grid;
-    grid-template-columns: 18% auto;
-    .nav {
-      @include displayFlex(center);
-      flex-direction: column;
-      height: 100vh;
-      p {
-        @include robotoStyle($fontmedium);
-        padding: 10px 0px;
-        transition: all 0.2s ease-in;
-        cursor: pointer;
-        &:hover {
-          color: $primary;
-        }
-      }
-      .active {
+    .header-items {
+      @include displayFlex(space-evenly);
+      a {
+        @include robotoStyle($fontlarge);
         color: $primary;
-      }
-    }
-    .media-container {
-      margin-top: 15vh;
-      .instgram {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 5px;
-      }
-      .youtube {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 5px;
-        height: 70vh;
-        overflow-y: scroll;
-        iframe {
-          border: none;
-          width: 25vw;
-          height: 200px;
-        }
-      }
-      .gallery {
-        position: relative;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 5px;
-        height: 70vh;
-        overflow-y: scroll;
-        .row {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 4px;
-        }
-        .column {
-          flex: 25%;
-          max-width: 25%;
-          padding: 0 4px;
-        }
-        .column img {
-          margin-top: 8px;
-          vertical-align: middle;
-          width: 100%;
-          transition: all 0.2 ease-in;
-          cursor: pointer;
-          &:hover {
-            border: 3px solid $primary;
-            box-shadow: 40px 40px 6px #000000;
-          }
-        }
-      }
-    }
-    .modal {
-      z-index: 100;
-      position: fixed;
-      top: 0vh;
-      width: 100%;
-      height: 100vh;
-      background-color: #161a22;
-      @include displayFlex(center);
-      flex-direction: column;
-      img {
-        width: 42%;
-        height: auto;
-        // max-height: 400px;
-      }
-      .closecursor {
-        color: $primary;
-        font-size: 2rem;
-        cursor: pointer;
-        padding-left: 50%;
-        transform: translateY(-50%);
+        padding: 0px 1.5rem;
         transition: all 0.2s ease-in;
         &:hover {
           color: $secondary;
@@ -397,115 +115,508 @@ h2.title {
       }
     }
   }
+  .overlay {
+    @include fullWidthHeight();
+    @include displayFlex(center);
+    flex-direction: column;
+    background-color: #161a2285;
+    z-index: 11;
+    text-align: center;
+    .loader {
+      z-index: 13;
+      // @include fullWidthHeight();
+      background-color: $bg;
+      @include displayFlex(center);
+    }
+    h2 {
+      font-family: $montserrat;
+      font-weight: 700;
+      color: $secondary;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    button {
+      @include robotoStyle($fontlarge);
+      @include buttonStyle();
+      margin-top: 5vh;
+    }
+  }
 }
 
-//TEAMS
-
-.teams {
-  @include fullWidthHeight();
-}
-
-.contact {
-  @include fullWidthHeight();
-  .grid {
-    margin: auto;
-    margin-top: 14vh;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-gap: 2%;
-    div {
-      padding: 10px;
-      iframe {
-        width: 42vw;
-        height: 300px;
+.about {
+  iframe {
+    border: none;
+  }
+  .navbar {
+    background-color: $bg !important;
+    box-shadow: 0px 6px 6px #00000029;
+    .navbar-nav {
+      margin-left: auto;
+      .nav-item {
+        .nav-link {
+          color: $primary !important;
+        }
       }
-      .form {
+    }
+  }
+}
+.container {
+  // height: 80vh;
+  margin-top: 16vh;
+  .card-deck .card {
+    background-color: $bg;
+    box-shadow: 20px 20px 6px #00000029;
+    @include displayFlex(center);
+    flex-direction: column;
+    border: none;
+    padding: 0.5rem;
+  }
+}
+.achievement {
+  @include fullWidthHeight();
+  .row {
+    .col-sm-8 {
+      .card {
         background-color: $bg;
         box-shadow: 20px 20px 6px #00000029;
-        @include displayFlex(center);
-        padding: 0.75rem 0rem;
-        flex-direction: column;
-        div.headliner {
-          @include robotoStyle($fontlarge);
-          color: $primary;
-          border: none;
-        }
-        // .Toastify__toast-container {
-        //   background-color: $primary;
-        // }
-
-        input {
-          width: 80%;
-          margin: auto;
-          margin-top: 2vh;
-          padding: 0.75rem 0rem;
-          background-color: $noopacity !important;
-          border: none;
-          border-bottom: 1px solid $primary;
-          @include robotoStyle($fontmedium);
-          &:focus {
-            outline: none;
-          }
-        }
-        button {
-          margin-top: 1.5rem;
-          @include buttonStyle();
-          @include robotoStyle($fontmedium);
-        }
-      }
-      div.links {
-        p {
-          @include robotoStyle($fontmedium);
-          color: $primary;
-          a {
-            @include robotoStyle($fontmedium);
-          }
-        }
-      }
-      .icon-container {
-        a {
-          cursor: pointer;
-          color: $primary;
-          font-size: 1.2rem;
-          i {
-            padding: 0rem 0.8rem;
-            transition: all 0.2 ease-in;
-            &:hover {
-              color: darken($color: $primary, $amount: 20);
-            }
+        .row {
+          .col-sm-2 {
+            @include displayFlex(center);
           }
         }
       }
     }
-  }
-  footer {
-    @include displayFlex(center);
-    @include robotoStyle($fontmedium);
-    color: $secondary;
-    width: 100%;
-    padding: 1rem 0rem;
-    position: absolute;
-    bottom: 0px;
-    background-color: $bg;
-    box-shadow: 0px -6px 6px #00000029;
-    // @include border(dodgerblue);
-
-    #heart {
-      color: #d1046b;
-      padding: 0.2rem 0.4rem;
+    .col-sm-4 {
+      transform: translateY(15%);
+      iframe {
+        border: none;
+      }
     }
   }
 }
-
-//ABOUT CONTAINER FOR MOBILE VIEW RESPONSIVE
-
-@media (max-width: 500px) {
-  .about .container .info-container {
-    flex-direction: column;
-  }
-  .about .container .info-container .text-container {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.sponsors {
+  @include fullWidthHeight();
 }
+// // NAVBAR
+// .nav-container {
+//   position: fixed;
+//   z-index: 3;
+//   background-color: $bg;
+//   box-shadow: 0px 6px 6px #00000029;
+//   @include displayFlex(space-between);
+//   min-height: 10vh;
+//   top: 0;
+//   width: 100%;
+//   .nav-logo {
+//     text-align: center;
+//     margin-left: 30px;
+//     cursor: pointer;
+//   }
+//   .nav-items {
+//     @include displayFlex(space-evenly);
+//     a {
+//       @include robotoStyle($fontmedium);
+//       color: $primary;
+//       padding: 0px 1.5rem;
+//       transition: all 0.2s ease-in;
+//       &:hover {
+//         color: $secondary;
+//       }
+//     }
+//   }
+// }
+
+// //ABOUT PAGE
+// .about {
+//   @include fullWidthHeight();
+//   .container {
+//     width: 100%;
+//     margin-top: 20vh;
+//     @include displayFlex(space-between);
+//     flex-direction: column;
+//     .info-container {
+//       @include displayFlex(space-between);
+//       flex-direction: row;
+//       width: 85%;
+//       margin: auto;
+//       .text-container {
+//         width: 50%;
+//         h6 {
+//           @include robotoStyle($fontmedium);
+//           color: $primary;
+//           padding: 1rem 0rem;
+//         }
+//         p {
+//           @include robotoStyle($fontsmall);
+//         }
+//       }
+//       .video {
+//         iframe {
+//           border: none;
+//           width: 40vw;
+//           height: 230px;
+//         }
+//       }
+//     }
+//     .cards-container {
+//       width: 85%;
+//       margin: 6vh auto;
+//       padding: 20px 0px;
+//       display: grid;
+//       grid-gap: 0.5%;
+//       grid-template-columns: 21vw 21vw 21vw 21vw;
+//       grid-template-rows: 130px;
+//       overflow-x: scroll;
+//       div.cards {
+//         @include displayFlex(center);
+//         flex-direction: column;
+//         background-color: $bg;
+//         box-shadow: 20px 20px 6px #00000029;
+//         color: $secondary;
+//         .icon {
+//           height: 50px;
+//           width: auto;
+//         }
+//         p {
+//           @include robotoStyle($fontsmall);
+//           padding-top: 1rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //ACHIEVEMENTS PAGE
+
+// .achievement {
+//   @include fullWidthHeight();
+//   .container {
+//     @include displayFlex(space-between);
+//     width: 90%;
+//     margin: auto;
+//     margin-top: 15vh;
+//     // @include border(white);
+//     .badge-container {
+//       // @include border(green);
+
+//       width: 100%;
+//       margin: auto;
+//       flex-direction: column;
+//       .badge {
+//         @include displayFlex(space-between);
+//         flex-wrap: wrap;
+//         width: 100%;
+//         height: 200px;
+//         box-shadow: 20px 20px 6px #00000029;
+//         .logo {
+//           padding: 5px;
+//           width: 20%;
+//           img {
+//             width: 100px;
+//           }
+//         }
+//         .text-container {
+//           width: 80%;
+//           padding: 0.5rem;
+//           word-wrap: break-word;
+//           h6 {
+//             @include robotoStyle($fontmedium);
+//             color: $primary;
+//             padding: 0.3rem 0rem;
+//           }
+//           p {
+//             @include robotoStyle($fontsmall);
+//             padding: 0.2rem;
+//             flex-wrap: wrap;
+//           }
+//         }
+//       }
+//     }
+//     .video-container {
+//       // @include border(coral);
+//       height: 100%;
+//       width: 100%;
+//       @include displayFlex(space-evenly);
+//       flex-direction: column;
+//       iframe {
+//         border: none;
+//         width: 70%;
+//         height: 40vh;
+//       }
+//     }
+//   }
+// }
+
+// //SPONSORS PAGE
+
+// .sponsors {
+//   @include fullWidthHeight();
+
+//   .text-container {
+//     padding: 0.3rem 0rem;
+//     @include displayFlex(center);
+//     h3 {
+//       @include robotoStyle($fontlarge);
+//       color: $primary;
+//     }
+//   }
+
+//   .cards-container {
+//     margin: 5vh auto;
+//     @include displayFlex(space-evenly);
+//     .card {
+//       @include displayFlex(center);
+//       flex-direction: column;
+//       margin-top: 10px;
+//       margin-bottom: 10px;
+//       height: 150px;
+//       width: 20vw;
+//       color: $primary;
+//       background-color: $bg;
+//       box-shadow: 20px 20px 6px #00000029;
+//       cursor: pointer;
+//       transition: all 0.2s ease-in;
+//       &:hover {
+//         color: $bg;
+//         background-color: $primary;
+//         box-shadow: 40px 40px 6px #00000029;
+//       }
+//       img {
+//         height: 40px;
+//         width: auto;
+//         box-shadow: 20px 20px 6px #00000029;
+//       }
+//       p {
+//         @include robotoStyle($fontmedium);
+//         padding-top: 1.5rem;
+//       }
+//     }
+//   }
+//   .button-container {
+//     width: 80%;
+//     margin: auto;
+//     padding-bottom: 10px;
+//     @include displayFlex(space-evenly);
+//     margin-top: 5vh;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     button {
+//       display: inline;
+//       @include robotoStyle($fontsmall);
+//       @include buttonStyle();
+//     }
+//   }
+// }
+
+// //POSTS
+
+// .posts {
+//   @include fullWidthHeight();
+//   .grid {
+//     display: grid;
+//     grid-template-columns: 18% auto;
+//     .nav {
+//       @include displayFlex(center);
+//       flex-direction: column;
+//       height: 100vh;
+//       p {
+//         @include robotoStyle($fontmedium);
+//         padding: 10px 0px;
+//         transition: all 0.2s ease-in;
+//         cursor: pointer;
+//         &:hover {
+//           color: $primary;
+//         }
+//       }
+//       .active {
+//         color: $primary;
+//       }
+//     }
+//     .media-container {
+//       margin-top: 15vh;
+//       .instgram {
+//         display: grid;
+//         grid-template-columns: auto auto auto;
+//         grid-gap: 5px;
+//       }
+//       .youtube {
+//         display: grid;
+//         grid-template-columns: auto auto auto;
+//         grid-gap: 5px;
+//         height: 70vh;
+//         overflow-y: scroll;
+//         iframe {
+//           border: none;
+//           width: 25vw;
+//           height: 200px;
+//         }
+//       }
+//       .gallery {
+//         position: relative;
+//         display: grid;
+//         grid-template-columns: auto auto auto;
+//         grid-gap: 5px;
+//         height: 70vh;
+//         overflow-y: scroll;
+//         .row {
+//           display: flex;
+//           flex-wrap: wrap;
+//           padding: 0 4px;
+//         }
+//         .column {
+//           flex: 25%;
+//           max-width: 25%;
+//           padding: 0 4px;
+//         }
+//         .column img {
+//           margin-top: 8px;
+//           vertical-align: middle;
+//           width: 100%;
+//           transition: all 0.2 ease-in;
+//           cursor: pointer;
+//           &:hover {
+//             border: 3px solid $primary;
+//             box-shadow: 40px 40px 6px #000000;
+//           }
+//         }
+//       }
+//     }
+//     .modal {
+//       z-index: 100;
+//       position: fixed;
+//       top: 0vh;
+//       width: 100%;
+//       height: 100vh;
+//       background-color: #161a22;
+//       @include displayFlex(center);
+//       flex-direction: column;
+//       img {
+//         width: 42%;
+//         height: auto;
+//         // max-height: 400px;
+//       }
+//       .closecursor {
+//         color: $primary;
+//         font-size: 2rem;
+//         cursor: pointer;
+//         padding-left: 50%;
+//         transform: translateY(-50%);
+//         transition: all 0.2s ease-in;
+//         &:hover {
+//           color: $secondary;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //TEAMS
+
+// .teams {
+//   @include fullWidthHeight();
+// }
+
+// .contact {
+//   @include fullWidthHeight();
+//   .grid {
+//     margin: auto;
+//     margin-top: 14vh;
+//     width: 90%;
+//     display: grid;
+//     grid-template-columns: 48% 48%;
+//     grid-gap: 2%;
+//     div {
+//       padding: 10px;
+//       iframe {
+//         width: 42vw;
+//         height: 300px;
+//       }
+//       .form {
+//         background-color: $bg;
+//         box-shadow: 20px 20px 6px #00000029;
+//         @include displayFlex(center);
+//         padding: 0.75rem 0rem;
+//         flex-direction: column;
+//         div.headliner {
+//           @include robotoStyle($fontlarge);
+//           color: $primary;
+//           border: none;
+//         }
+//         // .Toastify__toast-container {
+//         //   background-color: $primary;
+//         // }
+
+//         input {
+//           width: 80%;
+//           margin: auto;
+//           margin-top: 2vh;
+//           padding: 0.75rem 0rem;
+//           background-color: $noopacity !important;
+//           border: none;
+//           border-bottom: 1px solid $primary;
+//           @include robotoStyle($fontmedium);
+//           &:focus {
+//             outline: none;
+//           }
+//         }
+//         button {
+//           margin-top: 1.5rem;
+//           @include buttonStyle();
+//           @include robotoStyle($fontmedium);
+//         }
+//       }
+//       div.links {
+//         p {
+//           @include robotoStyle($fontmedium);
+//           color: $primary;
+//           a {
+//             @include robotoStyle($fontmedium);
+//           }
+//         }
+//       }
+//       .icon-container {
+//         a {
+//           cursor: pointer;
+//           color: $primary;
+//           font-size: 1.2rem;
+//           i {
+//             padding: 0rem 0.8rem;
+//             transition: all 0.2 ease-in;
+//             &:hover {
+//               color: darken($color: $primary, $amount: 20);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   footer {
+//     @include displayFlex(center);
+//     @include robotoStyle($fontmedium);
+//     color: $secondary;
+//     width: 100%;
+//     padding: 1rem 0rem;
+//     position: absolute;
+//     bottom: 0px;
+//     background-color: $bg;
+//     box-shadow: 0px -6px 6px #00000029;
+//     // @include border(dodgerblue);
+
+//     #heart {
+//       color: #d1046b;
+//       padding: 0.2rem 0.4rem;
+//     }
+//   }
+// }
+
+// //ABOUT CONTAINER FOR MOBILE VIEW RESPONSIVE
+
+// @media (max-width: 500px) {
+//   .about .container .info-container {
+//     flex-direction: column;
+//   }
+//   .about .container .info-container .text-container {
+//     width: 100%;
+//     margin-bottom: 10px;
+//   }
+// }

@@ -14,6 +14,7 @@ const App = () => {
     <React.Fragment>
       <LandingPage />
       <AboutPage />
+      <hr className="divider"></hr>
       <AchievementsPage />
       <Sponsors />
       <Posts />

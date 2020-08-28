@@ -11,12 +11,13 @@ const About = () => {
     <React.Fragment>
       <div className="about" id="about">
         <Navbar />
-        <ScrollAnimation animateIn="fadeInDown" duration="300ms">
+        <ScrollAnimation animateIn="fadeInDown">
           <div className="container">
-            <div className="info-container">
-              <div className="text-container">
-                <h2 className="title">About Us</h2>
-                <h6>Who we are?</h6>
+            <h2 className="title">About Us</h2>
+            <hr></hr>
+            <div className="row">
+              <div className="col-sm-8">
+                <h6 className="sub-heading">Who we are?</h6>
                 <p>
                   We are an intellectual interdisciplinary team of undergraduate
                   engineers working to build an autonomous underwater vehicle
@@ -26,27 +27,27 @@ const About = () => {
                   explore the vast seas.
                 </p>
               </div>
-              <div className="video">
+              <div className="col-sm-4 text-center">
                 <iframe
                   title="video"
                   src="https://www.youtube.com/embed/NsHS6F2bjII?playlist=NsHS6F2bjII&loop=1"
                 ></iframe>
               </div>
             </div>
-            <div className="cards-container">
-              <div className="cards">
+            <div className="card-deck mt-4 pb-3">
+              <div className="card">
                 <img className="icon" src={Trophy} alt="" />
                 <p>2 Vehicles</p>
               </div>
-              <div className="cards">
+              <div className="card">
                 <img className="icon" src={Faces} alt="" />
                 <p>30 Happy Members</p>
               </div>
-              <div className="cards">
+              <div className="card">
                 <img className="icon" src={Github} alt="" />
                 <p>9000+ lines of code</p>
               </div>
-              <div className="cards">
+              <div className="card">
                 <img className="icon" src={Medal} alt="" />
                 <p>17th place in SAUVC</p>
               </div>

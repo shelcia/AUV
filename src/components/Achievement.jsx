@@ -7,59 +7,72 @@ const Achievements = () => {
     <React.Fragment>
       <div className="achievement" id="achievement">
         <div className="container">
-          <div className="badge-container">
-            <h2 className="title" style={{ backgroundColor: "#161a22" }}>
-              Achievements
-            </h2>
-
-            <ScrollAnimation animateIn="slideInDown">
-              <div className="badge">
-                <div className="logo">
-                  <img src={SAUVC} alt=""></img>
-                </div>
-                <div className="text-container">
-                  <h6>17th Place in SAUVC 2019</h6>
-                  <p>
-                    The SAUVC competition challenges participant teams to build
-                    an AUV which can perform given tasks. These tasks are
-                    simulations of tasks operational AUVs would have to be able
-                    to perform. The tasks involve four widely faced challenges
-                    underwater such as AUV navigation, visual identification,
-                    acoustic localization and robotic manipulation.
-                  </p>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="slideInDown">
-              <div style={{ marginTop: "20px" }} className="badge">
-                <div className="logo">
-                  <img src={SAUVC} alt=""></img>
-                </div>
-                <div className="text-container">
-                  <h6>Qualified in SAUVC 2020</h6>
-                  <p>
-                    The SAUVC competition challenges participant teams to build
-                    an AUV which can perform given tasks. These tasks are
-                    simulations of tasks operational AUVs would have to be able
-                    to perform. The tasks involve four widely faced challenges
-                    underwater such as AUV navigation, visual identification,
-                    acoustic localization and robotic manipulation.
-                  </p>
+          <h2 className="title" style={{ backgroundColor: "#161a22" }}>
+            Achievements
+          </h2>
+          <hr></hr>
+          <ScrollAnimation animateIn="slideInDown">
+            <div className="row">
+              <div className="col-sm-8">
+                <div className="card">
+                  <div className="row">
+                    <div class="col-sm-2">
+                      <img src={SAUVC} alt="sauvc" width="90px"></img>
+                    </div>
+                    <div class="col-sm-10">
+                      <div class="card-body">
+                        <h6 class="sub-heading">17th Place in SAUVC 2019</h6>
+                        <p>
+                          The SAUVC competition challenges participant teams to
+                          build an AUV which can perform given tasks. The tasks
+                          involve four widely faced challenges underwater such
+                          as AUV navigation, visual identification, acoustic
+                          localization and robotic manipulation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </ScrollAnimation>
-          </div>
-          <div className="video-container">
-            <iframe
-              title="video"
-              src="https://www.youtube.com/embed/c58AMctLp04?playlist=c58AMctLp04&loop=1"
-            ></iframe>
-            <iframe
-              style={{ marginTop: "20px" }}
-              title="video"
-              src="https://www.youtube.com/embed/Wj7A49-mySk?playlist=NsHS6F2bjII&loop=1"
-            ></iframe>
-          </div>
+              <div className="col-sm-4 text-center">
+                <iframe
+                  title="video"
+                  src="https://www.youtube.com/embed/c58AMctLp04?playlist=c58AMctLp04&loop=1"
+                ></iframe>
+              </div>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="slideInDown">
+            <div className="row">
+              <div className="col-sm-8">
+                <div className="card">
+                  <div className="row">
+                    <div class="col-sm-2">
+                      <img src={SAUVC} alt="sauvc" width="90px"></img>
+                    </div>
+                    <div class="col-sm-10">
+                      <div class="card-body">
+                        <h6 class="sub-heading">Qualified in SAUVC 2020</h6>
+                        <p>
+                          The SAUVC competition challenges participant teams to
+                          build an AUV which can perform given tasks. The tasks
+                          involve four widely faced challenges underwater such
+                          as AUV navigation, visual identification, acoustic
+                          localization and robotic manipulation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4 text-center">
+                <iframe
+                  title="video"
+                  src="https://www.youtube.com/embed/Wj7A49-mySk?playlist=NsHS6F2bjII&loop=1"
+                ></iframe>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </div>
     </React.Fragment>

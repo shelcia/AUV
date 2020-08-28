@@ -10,7 +10,38 @@ const Sponsors = () => {
     <React.Fragment>
       <div className="sponsors" id="sponsors">
         <ScrollAnimation animateIn="fadeIn">
-          <div
+          <div className="container border">
+            <h2 className="title" style={{ backgroundColor: "#161a22" }}>
+              Our Sponsors
+            </h2>
+            <hr></hr>
+            <div className="card-deck">
+              <div className="card text-center p-4">
+                <a href="https://bluerobotics.com/" target="blank">
+                  <img
+                    src={BlueRobotics}
+                    alt="Bluerobotics logo"
+                    height="50px"
+                  />
+                  <p className="m-3">Blue Robotics</p>
+                </a>
+              </div>
+              <div className="card text-center p-4">
+                <a href="https://www.simscale.com/" target="blank">
+                  <img src={SimScale} alt="Simscale logo" height="50px" />
+                  <p className="m-3">Simscale</p>
+                </a>
+              </div>
+              <div className="card text-center p-4">
+                <a href="https://www.iiitdm.ac.in/" target="blank">
+                  <img src={IIITDM} alt="IIITDM logo" height="50px" />
+                  <p className="m-3">IIITDM</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* <div
             style={{
               marginTop: "18vh",
               marginBottom: "5vh",
@@ -60,7 +91,7 @@ const Sponsors = () => {
             </a>
 
             <button type="button">Complete Documentation</button>
-          </div>
+          </div> */}
         </ScrollAnimation>
       </div>
     </React.Fragment>
