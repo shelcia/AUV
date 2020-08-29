@@ -32,144 +32,164 @@ const Gallery = ({ setView }) => {
   const [img, setImg] = useState({});
   return (
     <React.Fragment>
-      <div className="nav">
-        <p onClick={() => setView("instagram")}>instagram</p>
-        <p onClick={() => setView("youtube")}>Youtube</p>
-        <p className="active">Gallery</p>
+      <div className="col-sm-3">
+        <ScrollAnimation animateIn="fadeInLeft">
+          <ul className="list-group">
+            <li
+              className="list-group-item"
+              onClick={() => setView("instagram")}
+            >
+              Instagram
+            </li>
+            <li className="list-group-item" onClick={() => setView("youtube")}>
+              Youtube
+            </li>
+            <li className="list-group-item active">Gallery</li>
+          </ul>
+        </ScrollAnimation>
       </div>
-      <ScrollAnimation animateIn="fadeInRight">
-        <div className="media-container">
-          <div className="gallery">
-            <div className="row">
-              <div className="column">
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img1);
-                  }}
-                  src={Img1}
-                  loading="lazy"
-                  alt=""
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img2);
-                  }}
-                  src={Img2}
-                  loading="lazy"
-                  alt=""
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img3);
-                  }}
-                  src={Img3}
-                  loading="lazy"
-                  alt=""
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img4);
-                  }}
-                  src={Img4}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img13);
-                  }}
-                  src={Img13}
-                  loading="lazy"
-                  alt=""
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img5);
-                  }}
-                  src={Img5}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img6);
-                  }}
-                  src={Img6}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img7);
-                  }}
-                  src={Img7}
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img8);
-                  }}
-                  src={Img8}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img9);
-                  }}
-                  src={Img9}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img10);
-                  }}
-                  src={Img10}
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img11);
-                  }}
-                  src={Img11}
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img12);
-                  }}
-                  src={Img12}
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
+      <div className="col-sm-9 flow-control">
+        <ScrollAnimation animateIn="fadeInRight">
+          <div className="row">
+            <div className="col-sm-4">
+              <img
+                src={Img1}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img1);
+                }}
+              />
+              <img
+                src={Img2}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img2);
+                }}
+              />
+              <img
+                src={Img3}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img3);
+                }}
+              />
+              <img
+                src={Img10}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img10);
+                }}
+              />
+              <img
+                src={Img13}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img13);
+                }}
+              />
+            </div>
+            <div className="col-sm-4">
+              <img
+                src={Img4}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img4);
+                }}
+              />
+              <img
+                src={Img5}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img5);
+                }}
+              />
+              <img
+                src={Img6}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img6);
+                }}
+              />
+              <img
+                src={Img11}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img11);
+                }}
+              />
+            </div>
+            <div className="col-sm-4">
+              <img
+                src={Img7}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img7);
+                }}
+              />
+              <img
+                src={Img8}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img8);
+                }}
+              />
+              <img
+                src={Img9}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img9);
+                }}
+              />
+              <img
+                src={Img12}
+                alt=""
+                width="100%"
+                className="mb-3"
+                onClick={() => {
+                  setModalView("true");
+                  setImg(Img11);
+                }}
+              />
             </div>
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
       {modalView === "true" && <Modal img={img} setModalView={setModalView} />}
     </React.Fragment>
   );

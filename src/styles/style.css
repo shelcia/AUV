@@ -369,6 +369,20 @@ hr.divider {
   height: 75vh !important;
 }
 
+.posts .container .row .flow-control .row .col-sm-4 img {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.posts .container .row .flow-control .row .col-sm-4 img:hover {
+  -webkit-box-shadow: 20px 20px 20px #00000029;
+          box-shadow: 20px 20px 20px #00000029;
+  border: 4px solid #0dc1f7;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 .posts .container .row .col-sm-3 .list-group {
   background-color: #161a22;
 }
@@ -389,12 +403,6 @@ hr.divider {
 @media (max-width: 717px) {
   .posts .container .row .flow-control {
     height: 60vh !important;
-  }
-  .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
-    width: 70%;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 

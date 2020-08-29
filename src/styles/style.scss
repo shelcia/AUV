@@ -274,6 +274,19 @@ hr.divider {
     .row {
       .flow-control {
         height: 75vh !important;
+        .row {
+          .col-sm-4 {
+            img {
+              cursor: pointer;
+              transition: all 0.2s ease-in;
+              &:hover {
+                box-shadow: 20px 20px 20px #00000029;
+                border: 4px solid $primary;
+                transform: scale(1.1, 1.1);
+              }
+            }
+          }
+        }
       }
       .col-sm-3 {
         .list-group {
@@ -303,25 +316,8 @@ hr.divider {
   .posts .container .row .flow-control {
     height: 60vh !important;
   }
-  .posts {
-    .container {
-      .row {
-        .col-sm-9 {
-          .row {
-            .col-sm-6 {
-              // height: 50vh;
-              iframe {
-                width: 70%;
-                margin-left: 50%;
-                transform: translateX(-50%);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
+
 .teams {
   @include fullWidthHeight();
   .container {
@@ -409,6 +405,7 @@ hr.divider {
     bottom: -130px;
   }
 }
+
 // // NAVBAR
 // .nav-container {
 //   position: fixed;
