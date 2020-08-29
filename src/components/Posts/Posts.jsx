@@ -9,7 +9,7 @@ const Posts = () => {
   return (
     <React.Fragment>
       <div className="posts" id="post">
-        <div className="container flow-control border">
+        <div className="container border">
           <h2 className="title">Posts</h2>
           <hr></hr>
           <div className="row">

@@ -62,6 +62,11 @@ a,
 a:visited,
 a:any-link {
   text-decoration: none;
+  color: $secondary;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: $primary;
+  }
 }
 
 h2.title {
@@ -147,18 +152,18 @@ hr.divider {
   iframe {
     border: none;
   }
-  // .navbar {
-  //   background-color: $bg !important;
-  //   box-shadow: 0px 6px 6px #00000029;
-  //   .navbar-nav {
-  //     margin-left: auto;
-  //     .nav-item {
-  //       .nav-link {
-  //         color: $primary !important;
-  //       }
-  //     }
-  //   }
-  // }
+  .navbar {
+    background-color: $bg !important;
+    box-shadow: 0px 6px 6px #00000029;
+    .navbar-nav {
+      margin-left: auto;
+      .nav-item {
+        .nav-link {
+          color: $primary !important;
+        }
+      }
+    }
+  }
 }
 .container {
   // height: 80vh;
@@ -216,16 +221,26 @@ hr.divider {
 }
 .posts {
   @include fullWidthHeight();
-  .flow-control {
-    height: 80vh !important;
-  }
+
   .container {
     .row {
+      .flow-control {
+        height: 75vh !important;
+      }
       .col-sm-3 {
         .list-group {
           background-color: $bg;
           .list-group-item {
             background-color: $bg !important;
+          }
+        }
+      }
+      .col-sm-9 {
+        .row {
+          .col-sm-6 {
+            iframe {
+              border: none;
+            }
           }
         }
       }
@@ -239,6 +254,38 @@ hr.divider {
   @include fullWidthHeight();
   .toast {
     margin-top: 12vh;
+  }
+  .row {
+    .form {
+      background-color: $bg;
+      box-shadow: 20px 20px 6px #00000029;
+      @include displayFlex(center);
+      padding: 0.75rem 0rem;
+      flex-direction: column;
+      div.headliner {
+        @include robotoStyle($fontlarge);
+        color: $primary;
+        border: none;
+      }
+      input {
+        width: 80%;
+        margin: auto;
+        margin-top: 2vh;
+        padding: 0.75rem 0rem;
+        background-color: $noopacity !important;
+        border: none;
+        border-bottom: 1px solid $primary;
+        @include robotoStyle($fontmedium);
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        margin-top: 1.5rem;
+        @include buttonStyle();
+        @include robotoStyle($fontmedium);
+      }
+    }
   }
 }
 // // NAVBAR

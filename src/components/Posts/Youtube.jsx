@@ -31,15 +31,16 @@ const Youtube = ({ setView }) => {
           </ul>
         </ScrollAnimation>
       </div>
-      <div className="col-sm-9">
+      <div className="col-sm-9 flow-control ">
         <ScrollAnimation animateIn="fadeInRight">
-          <div className="youtube">
+          <div className="row">
             {links.map((link) => (
-              <iframe
-                key={link.id}
-                title="video"
-                src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
-              ></iframe>
+              <div className="col-sm-6" key={link.id}>
+                <iframe
+                  title="video"
+                  src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
+                ></iframe>
+              </div>
             ))}
           </div>
         </ScrollAnimation>
