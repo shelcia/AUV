@@ -117,7 +117,7 @@ hr.divider {
   width: 100%;
   min-height: 100vh;
   background-image: url("bg.png");
-  background-color: #cccccc;
+  background-color: #161a22;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -491,34 +491,88 @@ hr.divider {
 }
 
 .teams .container .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 150px 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-gap: 10px;
   width: 100%;
   overflow-x: scroll;
 }
 
 .teams .container .card-container .cards {
-  width: 250px;
+  width: 150px;
+  height: 120px;
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.teams .container .card-deck .card .modal .modal-header,
-.teams .container .card-deck .card .modal .modal-body,
-.teams .container .card-deck .card .modal .modal-footer {
-  background-color: #161a22;
-  border-top: 1px solid #161a22;
-  border: none;
-}
-
-.teams .container .card-deck .card .card-button {
+.teams .container .card-container .cards .card-button {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.8);
 }
 
-.teams .container .card-deck .card .card-button:hover {
+.teams .container .card-container .cards .card-button img {
+  height: 30px;
+}
+
+.teams .container .card-container .cards .card-button:hover {
   color: #0dc1f7;
 }
 
-.teams .container .card-deck .card .card-button:focus {
+.teams .container .card-container .cards .card-button:focus {
   outline: none;
+}
+
+.teams .container .card-container .cards .modal .modal-header,
+.teams .container .card-container .cards .modal .modal-body,
+.teams .container .card-container .cards .modal .modal-footer {
+  background-color: #161a22 !important;
+  border-top: 1px solid #161a22;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.teams .container .card-container .cards .modal .modal-header button.close {
+  text-shadow: none;
+  color: #0dc1f7;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.teams .container .card-container .cards .modal .modal-header button.close:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.teams .container .card-container .cards .modal .modal-body img {
+  border-radius: 50em;
+  height: 50px;
+}
+
+.teams .container .card-container .cards .modal .modal-content {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 1100px) {
+  .teams .container .card-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact {

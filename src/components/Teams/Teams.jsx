@@ -20,77 +20,89 @@ const Teams = () => {
             Teams
           </h2>
           <hr></hr>
-          <div className="card-deck">
-            <div className="card text-center p-4">
+          <div className="card-container pb-3 border mb-3">
+            <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
                 data-target="#coreteam"
               >
-                <img src={CoreTeam} alt="Core team logo" height="50px" />
+                <img src={CoreTeam} alt="Core team logo" />
                 <p className="m-3">Core Team</p>
               </button>
               <Coremodal />
             </div>
-            <div className="card text-center p-4">
+            <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
                 data-target="#computers"
               >
-                <img src={Computers} alt="Computers logo" height="50px" />
+                <img src={Computers} alt="Computers logo" />
                 <p className="m-3">Computers</p>
               </button>
               <ComputerModal />
             </div>
-            <div className="card text-center p-4">
+            <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
                 data-target="#electronics"
               >
-                <img src={Electronics} alt="Electronic logo" height="50px" />
+                <img src={Electronics} alt="Electronic logo" />
                 <p className="m-3">Electronics</p>
               </button>
               <ElectronicsModal />
             </div>
-            <div className="card text-center p-4">
+            <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
                 data-target="#mechanical"
               >
-                <img src={Mechanical} alt="Mechanical logo" height="50px" />
+                <img src={Mechanical} alt="Mechanical logo" />
                 <p className="m-3">Mechanical</p>
               </button>
               <MechanicalModal />
             </div>
-
-            <div className="card text-center p-4">
+            <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
                 data-target="#brilliant"
               >
-                <img
-                  src={BriiliantMind}
-                  alt="Brilliant Mind logo"
-                  height="50px"
-                />
+                <img src={BriiliantMind} alt="Brilliant Mind logo" />
                 <p className="m-3">Brilliant Minds</p>
               </button>
               <BrilliantMindModal />
             </div>
           </div>
-          <div className="mt-3 mentor text-center">
-            <h6 className="sub-heading">Past Years</h6>
-            <div className="card-deck m-3">
-              <div className="card text-center p-4">
-                <a href="https://bluerobotics.com/" target="blank">
-                  <img src={Pastyear} alt="Bluerobotics logo" height="50px" />
-                  <p className="m-3">2019-2020</p>
-                </a>
-              </div>
+          <div className="text-center mb-3">
+            <h6 className="sub-heading mx-auto">Past Years</h6>
+          </div>
+
+          <div className="card-container pb-3 border text-center mb-3">
+            <div className="cards">
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#coreteam"
+              >
+                <img src={Pastyear} alt="2019-2020" />
+                <p className="m-3">2019-2020</p>
+              </button>
+              <Coremodal />
+            </div>
+            <div className="cards">
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#computers"
+              >
+                <img src={Pastyear} alt="2018-2019" />
+                <p className="m-3">2018-2019</p>
+              </button>
+              <ComputerModal />
             </div>
           </div>
         </div>

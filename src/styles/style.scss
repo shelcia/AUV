@@ -111,7 +111,7 @@ hr.divider {
 .landingpage {
   @include fullWidthHeight();
   background-image: url("bg.png");
-  background-color: #cccccc;
+  background-color: $bg;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,27 +375,25 @@ hr.divider {
   @include fullWidthHeight();
   .container {
     .card-container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-gap: 10px;
       width: 100%;
+      // justify-content: center;
       overflow-x: scroll;
       .cards {
-        width: 250px;
-      }
-    }
-    .card-deck {
-      .card {
-        .modal {
-          .modal-header,
-          .modal-body,
-          .modal-footer {
-            background-color: $bg;
-            border-top: 1px solid $bg;
-            border: none;
-          }
-        }
+        width: 150px;
+        height: 120px;
+        box-shadow: 20px 20px 6px #00000029;
+        @include displayFlex(center);
         .card-button {
+          transform: translateY(15px);
           border: none;
           background-color: $noopacity;
           color: $secondary;
+          img {
+            height: 30px;
+          }
           &:hover {
             color: $primary;
           }
@@ -403,8 +401,42 @@ hr.divider {
             outline: none;
           }
         }
+        .modal {
+          .modal-header,
+          .modal-body,
+          .modal-footer {
+            background-color: $bg !important;
+            border-top: 1px solid $bg;
+            border: none;
+            box-shadow: none;
+          }
+          .modal-header {
+            button.close {
+              text-shadow: none;
+              color: $primary;
+              transition: all 0.2s ease-in;
+              &:hover {
+                transform: scale(1.2, 1.2);
+              }
+            }
+          }
+          .modal-body {
+            img {
+              border-radius: 50em;
+              height: 50px;
+            }
+          }
+          .modal-content {
+            background-color: $noopacity;
+          }
+        }
       }
     }
+  }
+}
+@media (min-width: 1100px) {
+  .teams .container .card-container {
+    justify-content: center;
   }
 }
 .contact {
