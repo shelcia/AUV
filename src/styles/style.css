@@ -95,6 +95,24 @@ hr.divider {
   font-weight: 600 !important;
 }
 
+.loading {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .landingpage {
   width: 100%;
   min-height: 100vh;
@@ -228,6 +246,7 @@ hr.divider {
 
 .about iframe {
   border: none;
+  width: 100%;
 }
 
 .about .navbar {
@@ -245,6 +264,10 @@ hr.divider {
 }
 
 @media (max-width: 500px) {
+  .about iframe {
+    border: none;
+    width: 70%;
+  }
   .about .card-deck {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -331,6 +354,13 @@ hr.divider {
 
 .achievement .row .col-sm-4 iframe {
   border: none;
+  width: 100%;
+}
+
+@media (max-width: 717px) {
+  .achievement .row .col-sm-4 iframe {
+    width: 70%;
+  }
 }
 
 .sponsors {

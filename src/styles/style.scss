@@ -102,6 +102,12 @@ hr.divider {
   font-weight: 600 !important;
 }
 
+.loading {
+  @include fullWidthHeight();
+  @include displayFlex(center);
+  flex-direction: column;
+}
+
 .landingpage {
   @include fullWidthHeight();
   background-image: url("bg.png");
@@ -166,6 +172,7 @@ hr.divider {
 .about {
   iframe {
     border: none;
+    width: 100%;
   }
   .navbar {
     background-color: $bg !important;
@@ -182,6 +189,10 @@ hr.divider {
 }
 @media (max-width: 500px) {
   .about {
+    iframe {
+      border: none;
+      width: 70%;
+    }
     .card-deck {
       display: flex;
       flex-flow: row wrap;
@@ -234,6 +245,18 @@ hr.divider {
       transform: translateY(15%);
       iframe {
         border: none;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 717px) {
+  .achievement {
+    .row {
+      .col-sm-4 {
+        iframe {
+          width: 70%;
+        }
       }
     }
   }
