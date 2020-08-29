@@ -1,4 +1,7 @@
 import React from "react";
+import Samrat from "../../assets/auv_photos_team/brilliantminds/Samrat Nachiyappan/0.jpeg";
+import Shelcia from "../../assets/auv_photos_team/brilliantminds/Shelcia/0 (1).jpeg";
+import Praveen from "../../assets/auv_photos_team/brilliantminds/v s praveen/0.jpeg";
 
 const BrilliantMindmodal = () => {
   return (
@@ -12,7 +15,11 @@ const BrilliantMindmodal = () => {
                 &times;
               </button>
             </div>
-            <div className="modal-body">Modal body..</div>
+            <div className="modal-body">
+              <img src={Samrat} alt="Sharath" className="profile" />
+              <img src={Shelcia} alt="Shelcia" className="profile" />
+              <img src={Praveen} alt="Praveen" className="profile" />
+            </div>
             <div className="modal-footer">
               <button
                 type="button"

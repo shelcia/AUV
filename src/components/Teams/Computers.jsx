@@ -1,4 +1,5 @@
 import React from "react";
+import Vyshnav from "../../assets/auv_photos_team/sopho_comp/Vyshnav K/0.jpeg";
 
 const Computermodel = () => {
   return (
@@ -12,7 +13,9 @@ const Computermodel = () => {
                 &times;
               </button>
             </div>
-            <div className="modal-body">Modal body..</div>
+            <div className="modal-body">
+              <img src={Vyshnav} alt="Vyshnav" className="profile" />
+            </div>
             <div className="modal-footer">
               <button
                 type="button"

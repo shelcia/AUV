@@ -1,4 +1,5 @@
 import React from "react";
+import Thilak from "../../assets/auv_photos_team/sopho_ele/Thilak/ThilakDP.jpg";
 
 const Electronicmodal = () => {
   return (
@@ -12,7 +13,9 @@ const Electronicmodal = () => {
                 &times;
               </button>
             </div>
-            <div className="modal-body">Modal body..</div>
+            <div className="modal-body">
+              <img src={Thilak} alt="Sharath" className="profile" />
+            </div>
             <div className="modal-footer">
               <button
                 type="button"
