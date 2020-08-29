@@ -15,12 +15,12 @@ const Teams = () => {
   return (
     <React.Fragment>
       <div className="teams" id="team">
-        <div className="container border">
+        <div className="container">
           <h2 className="title" style={{ backgroundColor: "#161a22" }}>
             Teams
           </h2>
           <hr></hr>
-          <div className="card-container pb-3 border mb-3">
+          <div className="card-container pb-3 mb-3">
             <div className="cards">
               <button
                 className="card-button"
@@ -81,7 +81,7 @@ const Teams = () => {
             <h6 className="sub-heading mx-auto">Past Years</h6>
           </div>
 
-          <div className="card-container pb-3 border text-center mb-3">
+          <div className="card-container pb-3 text-center mb-3">
             <div className="cards">
               <button
                 className="card-button"

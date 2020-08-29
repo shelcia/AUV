@@ -10,7 +10,7 @@ const Sponsors = () => {
     <React.Fragment>
       <div className="sponsors" id="sponsors">
         <ScrollAnimation animateIn="fadeIn">
-          <div className="container border">
+          <div className="container">
             <h2 className="title" style={{ backgroundColor: "#161a22" }}>
               Our Sponsors
             </h2>
