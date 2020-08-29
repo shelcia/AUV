@@ -15,7 +15,7 @@ const Sponsors = () => {
               Our Sponsors
             </h2>
             <hr></hr>
-            <div className="card-deck">
+            <div className="card-deck text-center">
               <div className="card text-center p-4">
                 <a href="https://bluerobotics.com/" target="blank">
                   <img

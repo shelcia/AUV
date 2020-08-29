@@ -138,6 +138,14 @@ const Contacts = () => {
                       <i className="fa">&#xf09a;</i>
                     </a>
                   </button>
+                  <button type="button" className="btn btn-primary">
+                    <a
+                      href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                      target="blank"
+                    >
+                      <i className="fa">&#xf0e1;</i>
+                    </a>
+                  </button>
                 </div>
                 {/* <div className="icon-container">
                     <a
@@ -171,7 +179,8 @@ const Contacts = () => {
               <div className="col-sm-6">
                 <Form />
               </div>
-              <ul className="nav justify-content-center">
+
+              {/* <ul className="nav justify-content-center">
                 <li className="nav-item">
                   <a className="nav-link" href="#home">
                     Made with love
@@ -181,7 +190,7 @@ const Contacts = () => {
                     Copyrights 2020. All rights Reserved
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             {/* <div className="grid">
             <div>
@@ -245,6 +254,16 @@ const Contacts = () => {
             </footer> */}
           </div>
         </ScrollAnimation>
+        <div className="footer">
+          <p className="p-3">
+            Made with love {"        "}
+            <i id="heart" className="fa">
+              &#xf004;
+            </i>
+            {"         "}
+            Copyrights 2020. All rights Reserved
+          </p>
+        </div>
       </div>
     </React.Fragment>
   );

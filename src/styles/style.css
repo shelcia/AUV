@@ -14,6 +14,19 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.btn-group {
+  border: none !important;
+}
+
+.btn-group .btn a i.fa {
+  font-size: 20px;
+}
+
+.btn-primary {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
 a,
 a:visited,
 a:-webkit-any-link {
@@ -231,6 +244,32 @@ hr.divider {
   color: #0dc1f7 !important;
 }
 
+@media (max-width: 500px) {
+  .about .card-deck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .card-deck .card {
+    width: 150px;
+    margin-right: 10px;
+  }
+  .about .card-deck .card p {
+    margin-top: 10px;
+    font-size: 0.7rem;
+  }
+}
+
 .container {
   margin-top: 16vh;
 }
@@ -254,6 +293,12 @@ hr.divider {
           flex-direction: column;
   border: none;
   padding: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 610px;
+  }
 }
 
 .achievement {
@@ -293,11 +338,6 @@ hr.divider {
   min-height: 100vh;
 }
 
-.sponsors .container .card-deck {
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-}
-
 .sponsors .container .card-deck .card {
   width: 250px;
 }
@@ -310,6 +350,14 @@ hr.divider {
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   width: 250px;
+}
+
+@media (max-width: 717px) {
+  .sponsors .container .card-deck {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .posts {
@@ -329,8 +377,25 @@ hr.divider {
   background-color: #161a22 !important;
 }
 
+.posts .container .row .col-sm-3 .list-group .list-group-item .active {
+  border-color: #0dc1f7;
+}
+
 .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
   border: none;
+  width: 100%;
+}
+
+@media (max-width: 717px) {
+  .posts .container .row .flow-control {
+    height: 60vh !important;
+  }
+  .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
+    width: 70%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .teams {
@@ -338,9 +403,31 @@ hr.divider {
   min-height: 100vh;
 }
 
+.teams .container .card-deck .card .modal .modal-header,
+.teams .container .card-deck .card .modal .modal-body,
+.teams .container .card-deck .card .modal .modal-footer {
+  background-color: #161a22;
+  border-top: 1px solid #161a22;
+}
+
+.teams .container .card-deck .card .card-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.teams .container .card-deck .card .card-button:hover {
+  color: #0dc1f7;
+}
+
+.teams .container .card-deck .card .card-button:focus {
+  outline: none;
+}
+
 .contact {
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 .contact .toast {
@@ -421,5 +508,29 @@ hr.divider {
 
 .contact .row .form button:focus {
   outline: none;
+}
+
+.contact .footer {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  background-color: #161a22;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  -webkit-box-shadow: -20px -20px 20px #00000029;
+          box-shadow: -20px -20px 20px #00000029;
+}
+
+.contact .footer #heart {
+  color: #d1046b;
+  margin-top: 5px;
+  padding: 0.2rem 0.4rem;
+}
+
+@media (max-width: 717px) {
+  .contact .footer {
+    bottom: -130px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

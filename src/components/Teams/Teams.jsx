@@ -3,6 +3,8 @@ import Computers from "../../assets/icons/face.svg";
 import Electronics from "../../assets/icons/face.svg";
 import Mechanical from "../../assets/icons/face.svg";
 import Pastyear from "../../assets/icons/face.svg";
+import ComputerModal from "./Computers";
+import ElectronicsModal from "./Electronics";
 
 const Teams = () => {
   return (
@@ -15,16 +17,26 @@ const Teams = () => {
           <hr></hr>
           <div className="card-deck">
             <div className="card text-center p-4">
-              <a href="https://bluerobotics.com/" target="blank">
-                <img src={Computers} alt="Bluerobotics logo" height="50px" />
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#computers"
+              >
+                <img src={Computers} alt="Computers logo" height="50px" />
                 <p className="m-3">Computers</p>
-              </a>
+              </button>
+              <ComputerModal />
             </div>
             <div className="card text-center p-4">
-              <a href="https://www.simscale.com/" target="blank">
-                <img src={Electronics} alt="Simscale logo" height="50px" />
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#electronics"
+              >
+                <img src={Electronics} alt="Electronic logo" height="50px" />
                 <p className="m-3">Electronics</p>
-              </a>
+              </button>
+              <ElectronicsModal />
             </div>
             <div className="card text-center p-4">
               <a href="https://www.iiitdm.ac.in/" target="blank">
