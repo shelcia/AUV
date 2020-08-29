@@ -271,9 +271,37 @@ hr.divider {
 .posts {
   @include fullWidthHeight();
   .container {
+    .img-modal {
+      z-index: 1500;
+      position: fixed;
+      top: 10vh;
+      width: 85%;
+      height: 80vh;
+      background-color: #161a22;
+      box-shadow: 20px 20px 20px #00000029;
+      @include displayFlex(center);
+      flex-direction: column;
+      img {
+        width: 42%;
+        height: auto;
+      }
+      .closecursor {
+        color: $primary;
+        font-size: 2rem;
+        cursor: pointer;
+        padding-left: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
     .row {
       .flow-control {
         height: 75vh !important;
+        position: relative;
+
         .row {
           .col-sm-4 {
             img {
@@ -311,6 +339,9 @@ hr.divider {
       }
     }
   }
+}
+.posts .container .row .col-sm-3 .list-group .list-group-item {
+  cursor: pointer;
 }
 @media (max-width: 717px) {
   .posts .container .row .flow-control {

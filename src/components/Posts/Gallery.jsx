@@ -16,9 +16,10 @@ import Img13 from "../../assets/img/13.JPG";
 
 const Modal = ({ img, setModalView }) => {
   console.log(img);
+  console.log(img.clientWidth);
   return (
     <React.Fragment>
-      <div className="modal">
+      <div className="img-modal">
         <span className="closecursor" onClick={() => setModalView("false")}>
           &times;
         </span>
@@ -38,6 +39,7 @@ const Gallery = ({ setView }) => {
             <li
               className="list-group-item"
               onClick={() => setView("instagram")}
+              style={{ cursor: "pointer !important" }}
             >
               Instagram
             </li>

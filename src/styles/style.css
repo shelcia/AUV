@@ -365,8 +365,53 @@ hr.divider {
   min-height: 100vh;
 }
 
+.posts .container .img-modal {
+  z-index: 1500;
+  position: fixed;
+  top: 10vh;
+  width: 85%;
+  height: 80vh;
+  background-color: #161a22;
+  -webkit-box-shadow: 20px 20px 20px #00000029;
+          box-shadow: 20px 20px 20px #00000029;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.posts .container .img-modal img {
+  width: 42%;
+  height: auto;
+}
+
+.posts .container .img-modal .closecursor {
+  color: #0dc1f7;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.posts .container .img-modal .closecursor:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .posts .container .row .flow-control {
   height: 75vh !important;
+  position: relative;
 }
 
 .posts .container .row .flow-control .row .col-sm-4 img {
@@ -398,6 +443,10 @@ hr.divider {
 .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
   border: none;
   width: 100%;
+}
+
+.posts .container .row .col-sm-3 .list-group .list-group-item {
+  cursor: pointer;
 }
 
 @media (max-width: 717px) {
