@@ -1,10 +1,15 @@
 import React from "react";
-import Computers from "../../assets/icons/face.svg";
-import Electronics from "../../assets/icons/face.svg";
-import Mechanical from "../../assets/icons/face.svg";
-import Pastyear from "../../assets/icons/face.svg";
+import CoreTeam from "../../assets/icons/core.png";
+import Computers from "../../assets/icons/code.png";
+import Electronics from "../../assets/icons/Electronics.png";
+import Mechanical from "../../assets/icons/mechanical.png";
+import BriiliantMind from "../../assets/icons/idea.png";
+import Pastyear from "../../assets/icons/people.png";
 import ComputerModal from "./Computers";
 import ElectronicsModal from "./Electronics";
+import MechanicalModal from "./Mechanical";
+import BrilliantMindModal from "./BrilliantMinds";
+import Coremodal from "./Core";
 
 const Teams = () => {
   return (
@@ -16,6 +21,17 @@ const Teams = () => {
           </h2>
           <hr></hr>
           <div className="card-deck">
+            <div className="card text-center p-4">
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#coreteam"
+              >
+                <img src={CoreTeam} alt="Core team logo" height="50px" />
+                <p className="m-3">Core Team</p>
+              </button>
+              <Coremodal />
+            </div>
             <div className="card text-center p-4">
               <button
                 className="card-button"
@@ -39,10 +55,31 @@ const Teams = () => {
               <ElectronicsModal />
             </div>
             <div className="card text-center p-4">
-              <a href="https://www.iiitdm.ac.in/" target="blank">
-                <img src={Mechanical} alt="IIITDM logo" height="50px" />
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#mechanical"
+              >
+                <img src={Mechanical} alt="Mechanical logo" height="50px" />
                 <p className="m-3">Mechanical</p>
-              </a>
+              </button>
+              <MechanicalModal />
+            </div>
+
+            <div className="card text-center p-4">
+              <button
+                className="card-button"
+                data-toggle="modal"
+                data-target="#brilliant"
+              >
+                <img
+                  src={BriiliantMind}
+                  alt="Brilliant Mind logo"
+                  height="50px"
+                />
+                <p className="m-3">Brilliant Minds</p>
+              </button>
+              <BrilliantMindModal />
             </div>
           </div>
           <div className="mt-3 mentor text-center">
