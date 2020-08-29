@@ -16,12 +16,14 @@ const Achievements = () => {
               <div className="col-sm-8">
                 <div className="card">
                   <div className="row">
-                    <div class="col-sm-2">
+                    <div className="col-sm-2">
                       <img src={SAUVC} alt="sauvc" width="90px"></img>
                     </div>
-                    <div class="col-sm-10">
-                      <div class="card-body">
-                        <h6 class="sub-heading">17th Place in SAUVC 2019</h6>
+                    <div className="col-sm-10">
+                      <div className="card-body">
+                        <h6 className="sub-heading">
+                          17th Place in SAUVC 2019
+                        </h6>
                         <p>
                           The SAUVC competition challenges participant teams to
                           build an AUV which can perform given tasks. The tasks
@@ -47,12 +49,12 @@ const Achievements = () => {
               <div className="col-sm-8">
                 <div className="card">
                   <div className="row">
-                    <div class="col-sm-2">
+                    <div className="col-sm-2">
                       <img src={SAUVC} alt="sauvc" width="90px"></img>
                     </div>
-                    <div class="col-sm-10">
-                      <div class="card-body">
-                        <h6 class="sub-heading">Qualified in SAUVC 2020</h6>
+                    <div className="col-sm-10">
+                      <div className="card-body">
+                        <h6 className="sub-heading">Qualified in SAUVC 2020</h6>
                         <p>
                           The SAUVC competition challenges participant teams to
                           build an AUV which can perform given tasks. The tasks

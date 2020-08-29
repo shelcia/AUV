@@ -9,10 +9,14 @@ const Posts = () => {
   return (
     <React.Fragment>
       <div className="posts" id="post">
-        <div className="grid">
-          {view === "instagram" && <Instagram setView={setView} />}
-          {view === "youtube" && <Youtube setView={setView} />}
-          {view === "gallery" && <Gallery setView={setView} />}
+        <div className="container flow-control border">
+          <h2 className="title">Posts</h2>
+          <hr></hr>
+          <div className="row">
+            {view === "instagram" && <Instagram setView={setView} />}
+            {view === "youtube" && <Youtube setView={setView} />}
+            {view === "gallery" && <Gallery setView={setView} />}
+          </div>
         </div>
       </div>
     </React.Fragment>

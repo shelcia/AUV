@@ -12,14 +12,15 @@ import "animate.css/animate.min.css";
 const App = () => {
   return (
     <React.Fragment>
-      <LandingPage />
-      <AboutPage />
-      <hr className="divider"></hr>
-      <AchievementsPage />
-      <Sponsors />
-      <Posts />
-      <Teams />
-      <Contact />
+      <div data-spy="scroll" data-target=".navbar" data-offset="50">
+        <LandingPage />
+        <AboutPage />
+        <AchievementsPage />
+        <Sponsors />
+        <Posts />
+        <Teams />
+        <Contact />
+      </div>
     </React.Fragment>
   );
 };

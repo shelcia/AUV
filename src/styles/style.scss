@@ -147,18 +147,18 @@ hr.divider {
   iframe {
     border: none;
   }
-  .navbar {
-    background-color: $bg !important;
-    box-shadow: 0px 6px 6px #00000029;
-    .navbar-nav {
-      margin-left: auto;
-      .nav-item {
-        .nav-link {
-          color: $primary !important;
-        }
-      }
-    }
-  }
+  // .navbar {
+  //   background-color: $bg !important;
+  //   box-shadow: 0px 6px 6px #00000029;
+  //   .navbar-nav {
+  //     margin-left: auto;
+  //     .nav-item {
+  //       .nav-link {
+  //         color: $primary !important;
+  //       }
+  //     }
+  //   }
+  // }
 }
 .container {
   // height: 80vh;
@@ -196,6 +196,50 @@ hr.divider {
 }
 .sponsors {
   @include fullWidthHeight();
+  .container {
+    .card-deck {
+      flex-flow: wrap;
+      .card {
+        width: 250px;
+      }
+    }
+    .mentor {
+      .card {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: $bg;
+        box-shadow: 20px 20px 6px #00000029;
+        width: 250px;
+      }
+    }
+  }
+}
+.posts {
+  @include fullWidthHeight();
+  .flow-control {
+    height: 80vh !important;
+  }
+  .container {
+    .row {
+      .col-sm-3 {
+        .list-group {
+          background-color: $bg;
+          .list-group-item {
+            background-color: $bg !important;
+          }
+        }
+      }
+    }
+  }
+}
+.teams {
+  @include fullWidthHeight();
+}
+.contact {
+  @include fullWidthHeight();
+  .toast {
+    margin-top: 12vh;
+  }
 }
 // // NAVBAR
 // .nav-container {

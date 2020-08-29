@@ -39,6 +39,15 @@ const Sponsors = () => {
                 </a>
               </div>
             </div>
+            <div className="mt-3 mentor text-center">
+              <h6 className="sub-heading">Mentored by</h6>
+              <div className="card text-center p-4">
+                <a href="https://www.drdo.gov.in/home" target="blank">
+                  <img src={DRDO} alt="DRDO logo" height="50px" />
+                  <p className="m-3">DRDO</p>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* <div

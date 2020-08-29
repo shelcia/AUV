@@ -45,11 +45,11 @@ const Form = () => {
 
   return (
     <React.Fragment>
+      <ToastContainer transition={Slide} />
+
       <form className="form">
         <div className="headliner">Get in Touch!!</div>
-        <div style={{ zIndex: "100" }}>
-          <ToastContainer transition={Slide} />
-        </div>
+
         <input
           type="text"
           placeholder="Name"
@@ -85,7 +85,79 @@ const Contacts = () => {
     <React.Fragment>
       <div className="contact" id="contact">
         <ScrollAnimation animateIn="slideInUp">
-          <div className="grid">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6">
+                <div>
+                  <iframe
+                    title="map"
+                    frameBorder="0"
+                    style={{ margin: "auto" }}
+                    src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
+                    allowFullScreen
+                    width="100%"
+                    height="200px"
+                  ></iframe>
+                  <div className="links">
+                    <p>
+                      Mail to{"      "}
+                      <a href="mailto:auv.society@iiitdm.ac.in">
+                        auv.society@iiitdm.ac.in
+                      </a>
+                    </p>
+                  </div>
+                  <div className="links">
+                    <p>
+                      Contact us{"      "}
+                      <a href="!#">9999999999</a>
+                    </p>
+                  </div>
+                  <div className="icon-container">
+                    <a
+                      href="https://www.instagram.com/auv.iiitdm/?hl=en"
+                      target="blank"
+                    >
+                      <i style={{ paddingLeft: "0px" }} className="fa">
+                        &#xf16d;
+                      </i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCFBFlcfjEGOUsuFfPC-62bg"
+                      target="blank"
+                    >
+                      <i className="fa">&#xf16a;</i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/auv.iiitdm/"
+                      target="blank"
+                    >
+                      <i className="fa">&#xf09a;</i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                      target="blank"
+                    >
+                      <i className="fa">&#xf0e1;</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <Form />
+              </div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">
+                    Made with love
+                    <i id="heart" className="fa">
+                      &#xf004;
+                    </i>
+                    Copyrights 2020. All rights Reserved
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <div className="grid">
             <div>
               <iframe
                 title="map"
@@ -137,16 +209,16 @@ const Contacts = () => {
             <div>
               <Form />
             </div>
+          </div> */}
+            {/* <footer>
+              Made with love
+              <i id="heart" className="fa">
+                &#xf004;
+              </i>
+              Copyrights 2020. All rights Reserved
+            </footer> */}
           </div>
         </ScrollAnimation>
-
-        <footer>
-          Made with love
-          <i id="heart" className="fa">
-            &#xf004;
-          </i>
-          Copyrights 2020. All rights Reserved
-        </footer>
       </div>
     </React.Fragment>
   );

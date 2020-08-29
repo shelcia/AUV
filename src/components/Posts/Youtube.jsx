@@ -15,15 +15,24 @@ const Youtube = ({ setView }) => {
   ]);
   return (
     <React.Fragment>
-      <ScrollAnimation animateIn="fadeInLeft">
-        <div className="nav">
-          <p onClick={() => setView("instagram")}>instagram</p>
-          <p className="active">Youtube</p>
-          <p onClick={() => setView("gallery")}>Gallery</p>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInRight">
-        <div className="media-container">
+      <div className="col-sm-3">
+        <ScrollAnimation animateIn="fadeInLeft">
+          <ul className="list-group">
+            <li
+              className="list-group-item"
+              onClick={() => setView("instagram")}
+            >
+              Instagram
+            </li>
+            <li className="list-group-item active">Youtube</li>
+            <li className="list-group-item" onClick={() => setView("gallery")}>
+              Gallery
+            </li>
+          </ul>
+        </ScrollAnimation>
+      </div>
+      <div className="col-sm-9">
+        <ScrollAnimation animateIn="fadeInRight">
           <div className="youtube">
             {links.map((link) => (
               <iframe
@@ -33,8 +42,8 @@ const Youtube = ({ setView }) => {
               ></iframe>
             ))}
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </React.Fragment>
   );
 };
