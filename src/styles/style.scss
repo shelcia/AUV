@@ -324,7 +324,6 @@ hr.divider {
       .flow-control {
         height: 75vh !important;
         position: relative;
-
         .row {
           .col-sm-4 {
             img {
@@ -375,6 +374,13 @@ hr.divider {
 .teams {
   @include fullWidthHeight();
   .container {
+    .card-container {
+      width: 100%;
+      overflow-x: scroll;
+      .cards {
+        width: 250px;
+      }
+    }
     .card-deck {
       .card {
         .modal {
@@ -383,6 +389,7 @@ hr.divider {
           .modal-footer {
             background-color: $bg;
             border-top: 1px solid $bg;
+            border: none;
           }
         }
         .card-button {

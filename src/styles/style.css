@@ -490,11 +490,21 @@ hr.divider {
   min-height: 100vh;
 }
 
+.teams .container .card-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.teams .container .card-container .cards {
+  width: 250px;
+}
+
 .teams .container .card-deck .card .modal .modal-header,
 .teams .container .card-deck .card .modal .modal-body,
 .teams .container .card-deck .card .modal .modal-footer {
   background-color: #161a22;
   border-top: 1px solid #161a22;
+  border: none;
 }
 
 .teams .container .card-deck .card .card-button {
