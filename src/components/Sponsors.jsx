@@ -15,27 +15,39 @@ const Sponsors = () => {
               Our Sponsors
             </h2>
             <hr></hr>
-            <div className="card-deck text-center">
-              <div className="card text-center p-4">
-                <a href="https://bluerobotics.com/" target="blank">
+            <div className="card-container p-2">
+              <div className="cards border">
+                <a
+                  href="https://bluerobotics.com/"
+                  target="blank"
+                  className="border"
+                >
                   <img
                     src={BlueRobotics}
                     alt="Bluerobotics logo"
-                    height="50px"
+                    className="border"
                   />
-                  <p className="m-3">Blue Robotics</p>
+                  <p>Blue Robotics</p>
                 </a>
               </div>
-              <div className="card text-center p-4">
-                <a href="https://www.simscale.com/" target="blank">
-                  <img src={SimScale} alt="Simscale logo" height="50px" />
-                  <p className="m-3">Simscale</p>
+              <div className="cards border">
+                <a
+                  href="https://www.simscale.com/"
+                  target="blank"
+                  className="border"
+                >
+                  <img src={SimScale} alt="Simscale logo" className="border" />
+                  <p>Simscale</p>
                 </a>
               </div>
-              <div className="card text-center p-4">
-                <a href="https://www.iiitdm.ac.in/" target="blank">
-                  <img src={IIITDM} alt="IIITDM logo" height="50px" />
-                  <p className="m-3">IIITDM</p>
+              <div className="cards border">
+                <a
+                  href="https://www.iiitdm.ac.in/"
+                  target="blank"
+                  className="border"
+                >
+                  <img src={IIITDM} alt="IIITDM logo" className="border" />
+                  <p>IIITDM</p>
                 </a>
               </div>
             </div>

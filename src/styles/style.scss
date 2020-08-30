@@ -264,9 +264,23 @@ hr.divider {
 .sponsors {
   @include fullWidthHeight();
   .container {
-    .card-deck {
-      .card {
-        width: 250px;
+    .card-container {
+      @include displayFlex(space-between);
+      .cards {
+        width: 220px;
+        height: 120px;
+        box-shadow: 20px 20px 6px #00000029;
+        @include displayFlex(center);
+        a {
+          @include displayFlex(center);
+          flex-direction: column;
+          img {
+            height: 50px;
+          }
+          p {
+            margin-top: 5px;
+          }
+        }
       }
     }
     .mentor {
@@ -284,9 +298,13 @@ hr.divider {
 @media (max-width: 717px) {
   .sponsors {
     .container {
-      .card-deck {
+      .card-container {
+        flex-direction: column;
         margin-left: 50%;
         transform: translateX(-50%);
+        .cards {
+          margin-top: 15px;
+        }
       }
     }
   }
