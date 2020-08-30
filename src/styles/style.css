@@ -439,6 +439,8 @@ hr.divider {
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    margin-bottom: 50px;
+    padding-bottom: 100px;
   }
   .sponsors .container .card-container .cards {
     margin-top: 15px;

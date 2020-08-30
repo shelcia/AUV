@@ -15,38 +15,22 @@ const Sponsors = () => {
               Our Sponsors
             </h2>
             <hr></hr>
-            <div className="card-container p-2">
-              <div className="cards border">
-                <a
-                  href="https://bluerobotics.com/"
-                  target="blank"
-                  className="border"
-                >
-                  <img
-                    src={BlueRobotics}
-                    alt="Bluerobotics logo"
-                    className="border"
-                  />
+            <div className="card-container p-2 pr-4">
+              <div className="cards">
+                <a href="https://bluerobotics.com/" target="blank">
+                  <img src={BlueRobotics} alt="Bluerobotics logo" />
                   <p>Blue Robotics</p>
                 </a>
               </div>
-              <div className="cards border">
-                <a
-                  href="https://www.simscale.com/"
-                  target="blank"
-                  className="border"
-                >
-                  <img src={SimScale} alt="Simscale logo" className="border" />
+              <div className="cards">
+                <a href="https://www.simscale.com/" target="blank">
+                  <img src={SimScale} alt="Simscale logo" />
                   <p>Simscale</p>
                 </a>
               </div>
-              <div className="cards border">
-                <a
-                  href="https://www.iiitdm.ac.in/"
-                  target="blank"
-                  className="border"
-                >
-                  <img src={IIITDM} alt="IIITDM logo" className="border" />
+              <div className="cards">
+                <a href="https://www.iiitdm.ac.in/" target="blank">
+                  <img src={IIITDM} alt="IIITDM logo" />
                   <p>IIITDM</p>
                 </a>
               </div>
