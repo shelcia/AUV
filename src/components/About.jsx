@@ -26,6 +26,21 @@ const About = () => {
                   our theoretical knowledge into a vehicle that can go and
                   explore the vast seas.
                 </p>
+                <div style={{ display: "flex", justifyContent: "left" }}>
+                  <a
+                    href="/src/assets/AUV_v1.0_report.pdf"
+                    target="blank"
+                    className="mr-2"
+                  >
+                    <u>Documentaion</u>
+                  </a>
+                  <a
+                    href="https://www.ketto.org/fundraiser/fund-the-auv-society-for-team-orca"
+                    target="blank"
+                  >
+                    <u>Sponsor Us</u>
+                  </a>
+                </div>
               </div>
               <div className="col-sm-4 text-center">
                 <iframe

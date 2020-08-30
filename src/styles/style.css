@@ -244,9 +244,42 @@ hr.divider {
   outline: none;
 }
 
+.about {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  border: 1px solid #0dc1f7;
+  display: block;
+  border-radius: 50ex;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 5vh;
+}
+
+.about button:hover {
+  background-color: #0dc1f7;
+}
+
+.about button:focus {
+  outline: none;
+}
+
 .about iframe {
   border: none;
   width: 100%;
+  height: 200px;
 }
 
 .about .navbar {
@@ -381,8 +414,8 @@ hr.divider {
 }
 
 .sponsors .container .card-container .cards {
-  width: 220px;
-  height: 120px;
+  width: 250px;
+  height: 180px;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   display: -webkit-box;
@@ -414,10 +447,11 @@ hr.divider {
 
 .sponsors .container .card-container .cards a img {
   height: 50px;
+  max-width: 100%;
 }
 
 .sponsors .container .card-container .cards a p {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .sponsors .container .mentor .card {
@@ -428,6 +462,7 @@ hr.divider {
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   width: 250px;
+  height: 180px;
 }
 
 @media (max-width: 717px) {
@@ -550,16 +585,18 @@ hr.divider {
 .teams .container .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 180px 180px 180px 180px 180px;
-      grid-template-columns: 180px 180px 180px 180px 180px;
+  -ms-grid-columns: 250px 250px 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px 250px 250px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 10px;
   width: 100%;
   overflow-x: scroll;
 }
 
 .teams .container .card-container .cards {
-  width: 180px;
-  height: 120px;
+  width: 250px;
+  height: 180px;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   display: -webkit-box;
@@ -582,7 +619,7 @@ hr.divider {
 }
 
 .teams .container .card-container .cards .card-button img {
-  height: 30px;
+  height: 50px;
 }
 
 .teams .container .card-container .cards .card-button:hover {
@@ -660,14 +697,6 @@ hr.divider {
 
 .teams .container .card-container .cards .modal .modal-content {
   background-color: rgba(0, 0, 0, 0);
-}
-
-@media (min-width: 1100px) {
-  .teams .container .card-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .contact {
