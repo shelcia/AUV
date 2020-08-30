@@ -430,8 +430,10 @@ hr.divider {
                   border-radius: 70em;
                   height: 70px;
                 }
-                p {
+                a {
                   margin-top: 4px;
+                }
+                p {
                   font-size: 0.7rem;
                 }
               }
@@ -499,8 +501,8 @@ hr.divider {
     box-shadow: -20px -20px 20px #00000029;
     #heart {
       color: #d1046b;
-      margin-top: 5px;
       padding: 0.2rem 0.4rem;
+      padding-bottom: 0rem;
     }
   }
 }

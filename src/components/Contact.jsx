@@ -99,7 +99,8 @@ const Contacts = () => {
                 ></iframe>
                 <div className="links">
                   <p>
-                    Mail to{"      "}
+                    <b style={{ color: "#0dc1f7" }}>Mail to:</b>
+                    {"      "}:
                     <a href="mailto:auv.society@iiitdm.ac.in">
                       auv.society@iiitdm.ac.in
                     </a>
@@ -107,7 +108,8 @@ const Contacts = () => {
                 </div>
                 <div className="links">
                   <p>
-                    Contact us{"      "}
+                    <b style={{ color: "#0dc1f7" }}>Contact us:</b>
+                    {"      "}
                     <a href="!#">9999999999</a>
                   </p>
                 </div>

@@ -20,18 +20,42 @@ const Mechanicalmodel = () => {
               <div className="img-flex">
                 <div className="profile-modal">
                   <img src={Advaith} alt="advaith" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Advaith Kandiraju</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Ruthwik} alt="ruthwik" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Ruthwik Dasyam</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Saksham} alt="saksham" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Saksham Mishra</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Sukesh} alt="saksham" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Sukesh</p>
                 </div>
                 <div className="profile-modal"></div>

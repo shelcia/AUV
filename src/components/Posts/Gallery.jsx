@@ -185,7 +185,7 @@ const Gallery = ({ setView }) => {
                 className="mb-3"
                 onClick={() => {
                   setModalView("true");
-                  setImg(Img11);
+                  setImg(Img12);
                 }}
               />
             </div>

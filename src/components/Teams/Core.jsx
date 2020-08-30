@@ -21,22 +21,52 @@ const Coremodal = () => {
               <div className="img-flex">
                 <div className="profile-modal">
                   <img src={Sharath} alt="Sharath" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Sharath Chander</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Mayank} alt="Mayank" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Mayank Mehta</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Ravi} alt="Ravi" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Ravi Kumar</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Vishva} alt="Vishva" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Vishva Bhate</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Subash} alt="Subash" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Subash</p>
                 </div>
               </div>

@@ -17,6 +17,12 @@ const Electronicmodal = () => {
               <div className="img-flex">
                 <div className="profile-modal">
                   <img src={Thilak} alt="Thilak" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Thilak</p>
                 </div>
               </div>

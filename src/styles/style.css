@@ -593,8 +593,11 @@ hr.divider {
   height: 70px;
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal p {
+.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal a {
   margin-top: 4px;
+}
+
+.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal p {
   font-size: 0.7rem;
 }
 
@@ -710,8 +713,8 @@ hr.divider {
 
 .contact .footer #heart {
   color: #d1046b;
-  margin-top: 5px;
   padding: 0.2rem 0.4rem;
+  padding-bottom: 0rem;
 }
 
 @media (max-width: 717px) {

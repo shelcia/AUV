@@ -19,14 +19,32 @@ const BrilliantMindmodal = () => {
               <div className="img-flex">
                 <div className="profile-modal">
                   <img src={Samrat} alt="Samrat" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Samrat</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Shelcia} alt="Shelcia" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Shelcia</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Praveen} alt="Praveen" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Praveen</p>
                 </div>
               </div>

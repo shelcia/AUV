@@ -17,6 +17,12 @@ const Computermodel = () => {
               <div className="img-flex">
                 <div className="profile-modal">
                   <img src={Vyshnav} alt="Vyshnav" className="profile" />
+                  <a
+                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
+                  </a>
                   <p>Vyshnav K</p>
                 </div>
               </div>
