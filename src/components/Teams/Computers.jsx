@@ -14,7 +14,12 @@ const Computermodel = () => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={Vyshnav} alt="Vyshnav" className="profile" />
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Vyshnav} alt="Vyshnav" className="profile" />
+                  <p>Vyshnav K</p>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button

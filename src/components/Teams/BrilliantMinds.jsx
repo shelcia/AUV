@@ -16,9 +16,20 @@ const BrilliantMindmodal = () => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={Samrat} alt="Sharath" className="profile" />
-              <img src={Shelcia} alt="Shelcia" className="profile" />
-              <img src={Praveen} alt="Praveen" className="profile" />
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Samrat} alt="Samrat" className="profile" />
+                  <p>Samrat</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Shelcia} alt="Shelcia" className="profile" />
+                  <p>Shelcia</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Praveen} alt="Praveen" className="profile" />
+                  <p>Praveen</p>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button

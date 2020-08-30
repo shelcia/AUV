@@ -17,10 +17,26 @@ const Mechanicalmodel = () => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={Advaith} alt="advaith" className="profile" />
-              <img src={Ruthwik} alt="ruthwik" className="profile" />
-              <img src={Saksham} alt="saksham" className="profile" />
-              <img src={Sukesh} alt="sukesh" className="profile" />
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Advaith} alt="advaith" className="profile" />
+                  <p>Advaith Kandiraju</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Ruthwik} alt="ruthwik" className="profile" />
+                  <p>Ruthwik Dasyam</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Saksham} alt="saksham" className="profile" />
+                  <p>Saksham Mishra</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Sukesh} alt="saksham" className="profile" />
+                  <p>Sukesh</p>
+                </div>
+                <div className="profile-modal"></div>
+                <div className="profile-modal"></div>
+              </div>
             </div>
             <div className="modal-footer">
               <button

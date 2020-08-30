@@ -14,7 +14,12 @@ const Electronicmodal = () => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={Thilak} alt="Sharath" className="profile" />
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Thilak} alt="Thilak" className="profile" />
+                  <p>Thilak</p>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button

@@ -376,13 +376,12 @@ hr.divider {
   .container {
     .card-container {
       display: grid;
-      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-columns: 180px 180px 180px 180px 180px;
       grid-gap: 10px;
       width: 100%;
-      // justify-content: center;
       overflow-x: scroll;
       .cards {
-        width: 150px;
+        width: 180px;
         height: 120px;
         box-shadow: 20px 20px 6px #00000029;
         @include displayFlex(center);
@@ -421,9 +420,21 @@ hr.divider {
             }
           }
           .modal-body {
-            img {
-              border-radius: 50em;
-              height: 50px;
+            .img-flex {
+              @include displayFlex(space-between);
+              flex-wrap: wrap;
+              .profile-modal {
+                @include displayFlex(center);
+                flex-direction: column;
+                img.profile {
+                  border-radius: 70em;
+                  height: 70px;
+                }
+                p {
+                  margin-top: 4px;
+                  font-size: 0.7rem;
+                }
+              }
             }
           }
           .modal-content {

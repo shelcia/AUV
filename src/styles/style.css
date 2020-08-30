@@ -493,15 +493,15 @@ hr.divider {
 .teams .container .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 150px 150px 150px 150px;
-      grid-template-columns: 150px 150px 150px 150px 150px;
+  -ms-grid-columns: 180px 180px 180px 180px 180px;
+      grid-template-columns: 180px 180px 180px 180px 180px;
   grid-gap: 10px;
   width: 100%;
   overflow-x: scroll;
 }
 
 .teams .container .card-container .cards {
-  width: 150px;
+  width: 180px;
   height: 120px;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
@@ -558,9 +558,44 @@ hr.divider {
           transform: scale(1.2, 1.2);
 }
 
-.teams .container .card-container .cards .modal .modal-body img {
-  border-radius: 50em;
-  height: 50px;
+.teams .container .card-container .cards .modal .modal-body .img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal img.profile {
+  border-radius: 70em;
+  height: 70px;
+}
+
+.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal p {
+  margin-top: 4px;
+  font-size: 0.7rem;
 }
 
 .teams .container .card-container .cards .modal .modal-content {

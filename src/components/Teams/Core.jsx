@@ -18,11 +18,28 @@ const Coremodal = () => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={Sharath} alt="Sharath" className="profile" />
-              <img src={Mayank} alt="Mayank" className="profile" />
-              <img src={Ravi} alt="Ravi Kumar" className="profile" />
-              <img src={Vishva} alt="Vishva Bhate" className="profile" />
-              <img src={Subash} alt="Subash" className="profile" />
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Sharath} alt="Sharath" className="profile" />
+                  <p>Sharath Chander</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Mayank} alt="Mayank" className="profile" />
+                  <p>Mayank Mehta</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Ravi} alt="Ravi" className="profile" />
+                  <p>Ravi Kumar</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Vishva} alt="Vishva" className="profile" />
+                  <p>Vishva Bhate</p>
+                </div>
+                <div className="profile-modal">
+                  <img src={Subash} alt="Subash" className="profile" />
+                  <p>Subash</p>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button
