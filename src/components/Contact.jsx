@@ -95,7 +95,7 @@ const Contacts = () => {
                   src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
                   allowFullScreen
                   width="100%"
-                  height="300px"
+                  height="220px"
                 ></iframe>
                 <div className="links">
                   <p>

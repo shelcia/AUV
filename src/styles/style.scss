@@ -171,6 +171,23 @@ hr.divider {
 
 .about {
   @include fullWidthHeight();
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .card {
+      @include displayFlex(center);
+      flex-direction: column;
+      height: 180px;
+      img {
+        height: 50px;
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
   iframe {
     border: none;
     width: 100%;
@@ -189,7 +206,7 @@ hr.divider {
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about {
     iframe {
       border: none;
@@ -201,7 +218,7 @@ hr.divider {
       justify-content: center;
       align-items: center;
       .card {
-        width: 150px;
+        width: 200px;
         margin-right: 10px;
         p {
           margin-top: 10px;
@@ -417,7 +434,7 @@ hr.divider {
           background-color: $noopacity;
           color: $secondary;
           img {
-            height: 50px;
+            height: 70px;
           }
           &:hover {
             color: $primary;

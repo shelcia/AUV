@@ -14,7 +14,7 @@ import Logo from "./assets/new_logo.png";
 
 const Loading = () => (
   <div className="loading">
-    <img src={Logo} alt="logo" width="150px" />
+    <img src={Logo} alt="logo" width="200px" />
     <Loader type="MutatingDots" color="#0dc1f7" height={100} width={100} />
   </div>
 );

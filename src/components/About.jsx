@@ -49,7 +49,7 @@ const About = () => {
                 ></iframe>
               </div>
             </div>
-            <div className="card-deck mt-4 pb-3 text-center">
+            <div className="card-deck mt-5 pb-3 text-center">
               <div className="card">
                 <img className="icon" src={Trophy} alt="" />
                 <p>2 Vehicles</p>

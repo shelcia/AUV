@@ -249,6 +249,47 @@ hr.divider {
   min-height: 100vh;
 }
 
+.about .card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .card-deck .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 180px;
+}
+
+.about .card-deck .card img {
+  height: 50px;
+}
+
+.about .card-deck .card p {
+  margin-top: 15px;
+}
+
 .about iframe {
   border: none;
   width: 100%;
@@ -269,7 +310,7 @@ hr.divider {
   color: #0dc1f7 !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about iframe {
     border: none;
     width: 70%;
@@ -290,7 +331,7 @@ hr.divider {
             align-items: center;
   }
   .about .card-deck .card {
-    width: 150px;
+    width: 200px;
     margin-right: 10px;
   }
   .about .card-deck .card p {
@@ -596,7 +637,7 @@ hr.divider {
 }
 
 .teams .container .card-container .cards .card-button img {
-  height: 50px;
+  height: 70px;
 }
 
 .teams .container .card-container .cards .card-button:hover {
