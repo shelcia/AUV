@@ -249,33 +249,6 @@ hr.divider {
   min-height: 100vh;
 }
 
-.about button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2rem;
-  border: 1px solid #0dc1f7;
-  display: block;
-  border-radius: 50ex;
-  padding: 0.6rem 2rem;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-box-shadow: 20px 20px 6px #00000029;
-          box-shadow: 20px 20px 6px #00000029;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  margin-top: 5vh;
-}
-
-.about button:hover {
-  background-color: #0dc1f7;
-}
-
-.about button:focus {
-  outline: none;
-}
-
 .about iframe {
   border: none;
   width: 100%;
@@ -390,9 +363,13 @@ hr.divider {
   width: 100%;
 }
 
-@media (max-width: 717px) {
+@media (max-width: 900px) {
+  .achievement .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .achievement .row .col-sm-4 iframe {
-    width: 70%;
+    width: 85%;
   }
 }
 

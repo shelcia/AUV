@@ -170,11 +170,6 @@ hr.divider {
 }
 
 .about {
-  button {
-    @include robotoStyle($fontmedium);
-    @include buttonStyle();
-    margin-top: 5vh;
-  }
   @include fullWidthHeight();
   iframe {
     border: none;
@@ -257,12 +252,13 @@ hr.divider {
     }
   }
 }
-@media (max-width: 717px) {
+@media (max-width: 900px) {
   .achievement {
     .row {
+      flex-wrap: wrap;
       .col-sm-4 {
         iframe {
-          width: 70%;
+          width: 85%;
         }
       }
     }
