@@ -32,7 +32,7 @@ const About = () => {
                     target="blank"
                     className="mr-2"
                   >
-                    <u>Documentaion</u>
+                    <u>Documentation</u>
                   </a>
                   <a
                     href="https://www.ketto.org/fundraiser/fund-the-auv-society-for-team-orca"
