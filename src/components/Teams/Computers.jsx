@@ -18,7 +18,7 @@ const Computermodel = () => {
                 <div className="profile-modal">
                   <img src={Vyshnav} alt="Vyshnav" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/vyshnav-k-68b446191/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>

@@ -21,7 +21,7 @@ const Mechanicalmodel = () => {
                 <div className="profile-modal">
                   <img src={Advaith} alt="advaith" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/advaith-kandiraju-14320517a/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -31,7 +31,7 @@ const Mechanicalmodel = () => {
                 <div className="profile-modal">
                   <img src={Ruthwik} alt="ruthwik" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/ruthwikdasyam/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -41,7 +41,7 @@ const Mechanicalmodel = () => {
                 <div className="profile-modal">
                   <img src={Saksham} alt="saksham" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/saksham-mishra-a00153177/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -51,7 +51,7 @@ const Mechanicalmodel = () => {
                 <div className="profile-modal">
                   <img src={Sukesh} alt="saksham" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/sukesh-j-r-8809b4191/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>

@@ -410,16 +410,6 @@ hr.divider {
               #instagram-embed-1 {
                 min-width: 100% !important;
               }
-              // iframe {
-              //   // min-width: 100%;
-
-              // }
-              // .instagram-media {
-              //   min-width: 100%;
-              // }
-              // .instagram-media-rendered {
-              //   min-width: 100%;
-              // }
             }
           }
         }
@@ -434,20 +424,11 @@ hr.divider {
             img {
               max-width: 100%;
               transition: transform 0.3s ease-in-out;
+              cursor: pointer;
             }
             .image-wrapper:hover img {
               transform: scale(1.2);
             }
-            // img {
-            //   cursor: pointer;
-            //   transition: all 0.2s ease-in;
-            //   max-width: 100%;
-            //   &:hover {
-            //     box-shadow: 20px 20px 20px #00000029;
-            //     // border: 4px solid $primary;
-            //     transform: scale(1.2);
-            //   }
-            // }
           }
         }
       }
@@ -538,10 +519,7 @@ hr.divider {
               @include displayFlex(center);
               flex-wrap: wrap;
               .profile-modal {
-                // @include displayFlex(center);
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
+                @include displayFlex(flex-start);
                 flex-direction: column;
                 height: 150px;
                 width: 100px;

@@ -22,7 +22,7 @@ const Coremodal = () => {
                 <div className="profile-modal">
                   <img src={Sharath} alt="Sharath" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/sharath-chandar-bb145b14"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -32,7 +32,7 @@ const Coremodal = () => {
                 <div className="profile-modal">
                   <img src={Mayank} alt="Mayank" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/mayank-n-mehta-468a47187"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -42,7 +42,7 @@ const Coremodal = () => {
                 <div className="profile-modal">
                   <img src={Ravi} alt="Ravi" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/ravikumar87/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
@@ -52,22 +52,30 @@ const Coremodal = () => {
                 <div className="profile-modal">
                   <img src={Vishva} alt="Vishva" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/vishva-bhate-a72847175/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
                   </a>
-                  <p>Vishva Bhate</p>
+                  <p>
+                    Vishva Bhate
+                    <br />
+                    (Co-Leader)
+                  </p>
                 </div>
                 <div className="profile-modal">
                   <img src={Subash} alt="Subash" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/subash-m-1bba75130/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>
                   </a>
-                  <p>Subash</p>
+                  <p>
+                    Subash Mylraj
+                    <br />
+                    (Co-Leader)
+                  </p>
                 </div>
               </div>
             </div>

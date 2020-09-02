@@ -18,7 +18,7 @@ const Electronicmodal = () => {
                 <div className="profile-modal">
                   <img src={Thilak} alt="Thilak" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.instagram.com/thilak_karanam/"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>

@@ -631,6 +631,7 @@ hr.divider {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .posts .container .row .flow-control .row .col-sm-4 .image-wrapper:hover img {
