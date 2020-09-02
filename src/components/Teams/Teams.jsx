@@ -87,7 +87,7 @@ const Teams = () => {
               <button
                 className="card-button"
                 data-toggle="modal"
-                data-target="#coreteam"
+                data-target="#past1920team"
               >
                 <img src={Pastyear} alt="2019-2020" />
                 <p className="m-3">2019-2020</p>

@@ -528,11 +528,16 @@ hr.divider {
           }
           .modal-body {
             .img-flex {
-              @include displayFlex(space-between);
+              @include displayFlex(center);
               flex-wrap: wrap;
               .profile-modal {
-                @include displayFlex(center);
+                // @include displayFlex(center);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 flex-direction: column;
+                align-content: flex-start;
+                width: 100px;
                 img.profile {
                   border-radius: 70em;
                   height: 70px;

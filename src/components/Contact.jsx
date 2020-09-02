@@ -12,6 +12,7 @@ const Form = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+
   const url = `https://auv-society-iiitdmk.herokuapp.com/sendemail`;
   const errorNotify = () =>
     toast.dark("Oops !! error sending the form response .. try again later");
@@ -96,7 +97,6 @@ const Form = () => {
             type="button"
             onClick={(event) => {
               sendForm(event);
-              
             }}
           >
             Send
@@ -131,7 +131,7 @@ const Contacts = () => {
                     <b style={{ color: "#0dc1f7" }}>Mail to :</b>
                     {"      "}
                     <a href="mailto:auv.society@iiitdm.ac.in">
-                    {"      "} auv.society@iiitdm.ac.in
+                      {"      "} auv.society@iiitdm.ac.in
                     </a>
                   </p>
                 </div>
