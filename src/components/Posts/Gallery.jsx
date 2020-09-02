@@ -54,16 +54,19 @@ const Gallery = ({ setView }) => {
         <ScrollAnimation animateIn="fadeInRight">
           <div className="row">
             <div className="col-sm-4">
-              <img
-                src={Img1}
-                alt=""
-                width="100%"
-                className="mb-3"
-                onClick={() => {
-                  setModalView("true");
-                  setImg(Img1);
-                }}
-              />
+              <div className="img-wrapper">
+                <img
+                  src={Img1}
+                  alt=""
+                  width="100%"
+                  className="mb-3"
+                  onClick={() => {
+                    setModalView("true");
+                    setImg(Img1);
+                  }}
+                />
+              </div>
+
               <img
                 src={Img2}
                 alt=""

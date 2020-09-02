@@ -7,6 +7,7 @@ import Sponsors from "./components/Sponsors";
 import Posts from "./components/Posts/Posts";
 import Teams from "./components/Teams/Teams";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Loader from "react-loader-spinner";
 import "animate.css/animate.min.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
@@ -38,6 +39,7 @@ const App = () => {
           <Posts />
           <Teams />
           <Contact />
+          <Footer />
         </React.Fragment>
       )}
     </React.Fragment>

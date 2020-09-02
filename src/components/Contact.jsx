@@ -3,12 +3,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 import axios from "axios";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const url = `https://auv-society-iiitdmk.herokuapp.com/sendemail`;
   const errorNotify = () =>
     toast.dark("Oops !! error sending the form response .. try again later");
@@ -35,45 +38,64 @@ const Form = () => {
       })
       .then((response) => {
         console.log(response);
+        setLoading(false);
         succesNotify();
       })
       .catch((error) => {
         console.log(error);
+        setLoading(false);
         errorNotify();
       });
   };
 
   return (
     <React.Fragment>
-      <ToastContainer transition={Slide} />
+      {loading && (
+        <div className="loading">
+          <h2>Thanks for sharing you response !!</h2>
+          <Loader
+            type="MutatingDots"
+            color="#0dc1f7"
+            height={100}
+            width={100}
+          />
+        </div>
+      )}
+      {!loading && (
+        <form className="form">
+          <div className="headliner">Get in Touch!!</div>
 
-      <form className="form">
-        <div className="headliner">Get in Touch!!</div>
-
-        <input
-          type="text"
-          placeholder="Name"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Subject"
-          onChange={(e) => setSubject(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Message"
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button type="button" onClick={(event) => sendForm(event)}>
-          Send
-        </button>
-      </form>
+          <input
+            type="text"
+            placeholder="Name"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            onChange={(e) => setSubject(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Message"
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          <button
+            type="button"
+            onClick={(event) => {
+              sendForm(event);
+              setLoading(true);
+            }}
+          >
+            Send
+          </button>
+        </form>
+      )}
     </React.Fragment>
   );
 };
@@ -97,7 +119,7 @@ const Contacts = () => {
                   width="100%"
                   height="220px"
                 ></iframe>
-                <div className="links">
+                <div className="links pt-5">
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Mail to:</b>
                     {"      "}:
@@ -151,21 +173,12 @@ const Contacts = () => {
                 </div>
               </div>
               <div className="col-sm-6">
+                <ToastContainer transition={Slide} className="mt-5" />
                 <Form />
               </div>
             </div>
           </div>
         </ScrollAnimation>
-        <div className="footer">
-          <p className="p-3">
-            Made with love {"        "}
-            <i id="heart" className="fa">
-              &#xf004;
-            </i>
-            {"         "}
-            Copyrights 2020. All rights Reserved
-          </p>
-        </div>
       </div>
     </React.Fragment>
   );

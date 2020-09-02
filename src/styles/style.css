@@ -325,7 +325,21 @@ hr.divider {
 }
 
 .about .navbar .navbar-nav .nav-item .nav-link {
-  color: #0dc1f7 !important;
+  color: #0dc1f7;
+}
+
+.about .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #0dc1f7;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.about .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -572,18 +586,24 @@ hr.divider {
   position: relative;
 }
 
-.posts .container .row .flow-control .row .col-sm-4 img {
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+.posts .container .row .flow-control .row .col-sm-4 .image-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
 }
 
-.posts .container .row .flow-control .row .col-sm-4 img:hover {
-  -webkit-box-shadow: 20px 20px 20px #00000029;
-          box-shadow: 20px 20px 20px #00000029;
-  border: 4px solid #0dc1f7;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+.posts .container .row .flow-control .row .col-sm-4 img {
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.posts .container .row .flow-control .row .col-sm-4 .image-wrapper:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .posts .container .row .col-sm-3 .list-group {
@@ -821,10 +841,9 @@ hr.divider {
   outline: none;
 }
 
-.contact .footer {
+.footer {
   position: absolute;
   left: 0;
-  bottom: -50px;
   width: 100%;
   background-color: #161a22;
   color: rgba(255, 255, 255, 0.8);
@@ -833,15 +852,9 @@ hr.divider {
           box-shadow: -20px -20px 20px #00000029;
 }
 
-.contact .footer #heart {
+.footer #heart {
   color: #d1046b;
   padding: 0.2rem 0.4rem;
   padding-bottom: 0rem;
-}
-
-@media (max-width: 717px) {
-  .contact .footer {
-    bottom: -130px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
