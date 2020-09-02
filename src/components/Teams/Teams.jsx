@@ -10,6 +10,7 @@ import ElectronicsModal from "./Electronics";
 import MechanicalModal from "./Mechanical";
 import BrilliantMindModal from "./BrilliantMinds";
 import PastYear1920Modal from "./PastYear1920";
+import PastYear1819Modal from "./PastYear1819";
 import Coremodal from "./Core";
 
 const Teams = () => {
@@ -76,6 +77,8 @@ const Teams = () => {
                 <p className="m-3">Brilliant Minds</p>
               </button>
               <BrilliantMindModal />
+              <PastYear1920Modal />
+              <PastYear1819Modal />
             </div>
           </div>
           <div className="text-center mb-3">
@@ -92,18 +95,16 @@ const Teams = () => {
                 <img src={Pastyear} alt="2019-2020" />
                 <p className="m-3">2019-2020</p>
               </button>
-              <PastYear1920Modal />
             </div>
             <div className="cards">
               <button
                 className="card-button"
                 data-toggle="modal"
-                data-target="#computers"
+                data-target="#past1819team"
               >
                 <img src={Pastyear} alt="2018-2019" />
                 <p className="m-3">2018-2019</p>
               </button>
-              <ComputerModal />
             </div>
           </div>
         </div>

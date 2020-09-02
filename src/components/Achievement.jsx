@@ -45,7 +45,7 @@ const Achievements = () => {
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="slideInDown">
-            <div className="row">
+            <div className="row mt-5">
               <div className="col-sm-8">
                 <div className="card">
                   <div className="row">

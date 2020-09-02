@@ -98,6 +98,7 @@ const Form = () => {
             onClick={(event) => {
               sendForm(event);
             }}
+            className="mb-4"
           >
             Send
           </button>

@@ -427,8 +427,7 @@ hr.divider {
 }
 
 .achievement .row .col-sm-4 {
-  -webkit-transform: translateY(15%);
-          transform: translateY(15%);
+  padding-top: 25px;
 }
 
 .achievement .row .col-sm-4 iframe {
@@ -531,7 +530,7 @@ hr.divider {
   margin-top: 10px;
 }
 
-@media (max-width: 717px) {
+@media (max-width: 997px) {
   .sponsors .container .card-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -654,6 +653,7 @@ hr.divider {
 .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
   border: none;
   width: 100%;
+  margin-top: 10px;
 }
 
 .posts .container .row .col-sm-3 .list-group .list-group-item {
@@ -680,7 +680,7 @@ hr.divider {
       grid-template-rows: auto;
   grid-gap: 10px;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .teams .container .card-container .cards {
@@ -811,6 +811,14 @@ hr.divider {
   background-color: rgba(0, 0, 0, 0);
 }
 
+@media (min-width: 1000px) {
+  .teams .container .center-cards {
+    margin-left: 50%;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+}
+
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -822,7 +830,7 @@ hr.divider {
 }
 
 .contact .row .col-sm-6 .btn-group .btn a i.fa {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .contact .row .form {
