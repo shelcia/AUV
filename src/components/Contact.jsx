@@ -16,43 +16,50 @@ const Form = () => {
   const errorNotify = () =>
     toast.dark("Oops !! error sending the form response .. try again later");
   const succesNotify = () =>
-    toast.dark("We received your resposne. We will contact you soon :) ");
-
+    toast.dark("We received your response. We will contact you soon :) ");
+  const incompleteFormNotify = () =>
+    toast.dark("Oops !! you cannot submit incomplete Form");
   const sendForm = (event) => {
     event.preventDefault();
-    const response = {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    };
-    const headers = {
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    };
+    setLoading(true);
+    if (name && email && subject && message) {
+      const response = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      };
+      const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      };
 
-    axios
-      .post(url, response, {
-        headers: headers,
-      })
-      .then((response) => {
-        console.log(response);
-        setLoading(false);
-        succesNotify();
-      })
-      .catch((error) => {
-        console.log(error);
-        setLoading(false);
-        errorNotify();
-      });
+      axios
+        .post(url, response, {
+          headers: headers,
+        })
+        .then((response) => {
+          console.log(response);
+          setLoading(false);
+          succesNotify();
+        })
+        .catch((error) => {
+          console.log(error);
+          setLoading(false);
+          errorNotify();
+        });
+    } else {
+      setLoading(false);
+      incompleteFormNotify();
+    }
   };
 
   return (
     <React.Fragment>
       {loading && (
         <div className="loading">
-          <h2>Thanks for sharing you response !!</h2>
+          <h2>We are processing your response</h2>
           <Loader
             type="MutatingDots"
             color="#0dc1f7"
@@ -62,7 +69,7 @@ const Form = () => {
         </div>
       )}
       {!loading && (
-        <form className="form">
+        <form className="form mb-3">
           <div className="headliner">Get in Touch!!</div>
 
           <input
@@ -89,7 +96,7 @@ const Form = () => {
             type="button"
             onClick={(event) => {
               sendForm(event);
-              setLoading(true);
+              
             }}
           >
             Send
@@ -121,18 +128,18 @@ const Contacts = () => {
                 ></iframe>
                 <div className="links pt-5">
                   <p>
-                    <b style={{ color: "#0dc1f7" }}>Mail to:</b>
-                    {"      "}:
+                    <b style={{ color: "#0dc1f7" }}>Mail to :</b>
+                    {"      "}
                     <a href="mailto:auv.society@iiitdm.ac.in">
-                      auv.society@iiitdm.ac.in
+                    {"      "} auv.society@iiitdm.ac.in
                     </a>
                   </p>
                 </div>
                 <div className="links">
                   <p>
-                    <b style={{ color: "#0dc1f7" }}>Contact us:</b>
+                    <b style={{ color: "#0dc1f7" }}>Contact us :</b>
                     {"      "}
-                    <a href="!#">9999999999</a>
+                    <a href="!#">{"      "}9999999999</a>
                   </p>
                 </div>
                 <div className="btn-group">

@@ -47,6 +47,7 @@ const BrilliantMindmodal = () => {
                   </a>
                   <p>Praveen</p>
                 </div>
+                <div className="profile-modal"></div>
               </div>
             </div>
             <div className="modal-footer">

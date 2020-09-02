@@ -586,6 +586,22 @@ hr.divider {
   position: relative;
 }
 
+.posts .container .row .flow-control .instagram-feed .row .col-sm-6 .instagram-media {
+  min-width: 100% !important;
+}
+
+.posts .container .row .flow-control .instagram-feed .row .col-sm-6 .instagram-media-rendered {
+  min-width: 100% !important;
+}
+
+.posts .container .row .flow-control .instagram-feed .row .col-sm-6 #instagram-embed-0 {
+  min-width: 100% !important;
+}
+
+.posts .container .row .flow-control .instagram-feed .row .col-sm-6 #instagram-embed-1 {
+  min-width: 100% !important;
+}
+
 .posts .container .row .flow-control .row .col-sm-4 .image-wrapper {
   margin: 0 auto;
   width: 100%;
@@ -751,6 +767,27 @@ hr.divider {
   font-size: 0.7rem;
 }
 
+.teams .container .card-container .cards .modal .modal-footer button {
+  border: 1px solid #0dc1f7;
+  display: block;
+  border-radius: 50ex;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 20px 20px 6px #00000029;
+          box-shadow: 20px 20px 6px #00000029;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.teams .container .card-container .cards .modal .modal-footer button:hover {
+  background-color: #0dc1f7;
+}
+
+.teams .container .card-container .cards .modal .modal-footer button:focus {
+  outline: none;
+}
+
 .teams .container .card-container .cards .modal .modal-content {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -763,6 +800,10 @@ hr.divider {
 
 .contact .toast {
   margin-top: 12vh;
+}
+
+.contact .row .col-sm-6 .btn-group .btn a i.fa {
+  font-size: 30px;
 }
 
 .contact .row .form {
@@ -839,6 +880,12 @@ hr.divider {
 
 .contact .row .form button:focus {
   outline: none;
+}
+
+@media (max-width: 717px) {
+  .contact .row .col-sm-6 .form {
+    margin-top: 5vh;
+  }
 }
 
 .footer {

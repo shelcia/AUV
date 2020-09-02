@@ -3,7 +3,7 @@ import React from "react";
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <div className="landingpage">
+      <div className="landingpage" id="home">
         <div className="overlay">
           <h2>Team AUV</h2>
           <br />

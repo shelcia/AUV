@@ -9,6 +9,7 @@ import ComputerModal from "./Computers";
 import ElectronicsModal from "./Electronics";
 import MechanicalModal from "./Mechanical";
 import BrilliantMindModal from "./BrilliantMinds";
+import PastYear1920Modal from "./PastYear1920";
 import Coremodal from "./Core";
 
 const Teams = () => {
@@ -81,7 +82,7 @@ const Teams = () => {
             <h6 className="sub-heading mx-auto">Past Years</h6>
           </div>
 
-          <div className="card-container pb-3 text-center mb-3">
+          <div className="card-container pb-3 text-center mb-3 center-cards">
             <div className="cards">
               <button
                 className="card-button"
@@ -91,7 +92,7 @@ const Teams = () => {
                 <img src={Pastyear} alt="2019-2020" />
                 <p className="m-3">2019-2020</p>
               </button>
-              <Coremodal />
+              <PastYear1920Modal />
             </div>
             <div className="cards">
               <button
