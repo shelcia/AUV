@@ -18,6 +18,14 @@ const Teams = () => {
     <React.Fragment>
       <div className="teams" id="team">
         <div className="container">
+          <Coremodal />
+          <ComputerModal />
+          <ElectronicsModal />
+          <MechanicalModal />
+          <BrilliantMindModal />
+          <PastYear1920Modal />
+          <PastYear1819Modal />
+
           <h2 className="title" style={{ backgroundColor: "#161a22" }}>
             Teams
           </h2>
@@ -32,7 +40,6 @@ const Teams = () => {
                 <img src={CoreTeam} alt="Core team logo" />
                 <p className="m-3">Core Team</p>
               </button>
-              <Coremodal />
             </div>
             <div className="cards">
               <button
@@ -43,7 +50,6 @@ const Teams = () => {
                 <img src={Computers} alt="Computers logo" />
                 <p className="m-3">Computers</p>
               </button>
-              <ComputerModal />
             </div>
             <div className="cards">
               <button
@@ -54,7 +60,6 @@ const Teams = () => {
                 <img src={Electronics} alt="Electronic logo" />
                 <p className="m-3">Electronics</p>
               </button>
-              <ElectronicsModal />
             </div>
             <div className="cards">
               <button
@@ -65,7 +70,6 @@ const Teams = () => {
                 <img src={Mechanical} alt="Mechanical logo" />
                 <p className="m-3">Mechanical</p>
               </button>
-              <MechanicalModal />
             </div>
             <div className="cards">
               <button
@@ -76,9 +80,6 @@ const Teams = () => {
                 <img src={BriiliantMind} alt="Brilliant Mind logo" />
                 <p className="m-3">Brilliant Minds</p>
               </button>
-              <BrilliantMindModal />
-              <PastYear1920Modal />
-              <PastYear1819Modal />
             </div>
           </div>
           <div className="text-center mb-3">

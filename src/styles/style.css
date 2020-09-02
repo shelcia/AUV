@@ -719,29 +719,30 @@ hr.divider {
   outline: none;
 }
 
-.teams .container .card-container .cards .modal .modal-header,
-.teams .container .card-container .cards .modal .modal-body,
-.teams .container .card-container .cards .modal .modal-footer {
+.teams .container .modal .modal-header,
+.teams .container .modal .modal-body,
+.teams .container .modal .modal-footer {
   background-color: #161a22 !important;
   border-top: 1px solid #161a22;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  text-align: center;
 }
 
-.teams .container .card-container .cards .modal .modal-header button.close {
+.teams .container .modal .modal-header button.close {
   text-shadow: none;
   color: #0dc1f7;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.teams .container .card-container .cards .modal .modal-header button.close:hover {
+.teams .container .modal .modal-header button.close:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex {
+.teams .container .modal .modal-body .img-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,7 +756,7 @@ hr.divider {
       flex-wrap: wrap;
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal {
+.teams .container .modal .modal-body .img-flex .profile-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,20 +774,20 @@ hr.divider {
   width: 100px;
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal img.profile {
+.teams .container .modal .modal-body .img-flex .profile-modal img.profile {
   border-radius: 70em;
   height: 70px;
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal a {
+.teams .container .modal .modal-body .img-flex .profile-modal a {
   margin-top: 4px;
 }
 
-.teams .container .card-container .cards .modal .modal-body .img-flex .profile-modal p {
+.teams .container .modal .modal-body .img-flex .profile-modal p {
   font-size: 0.7rem;
 }
 
-.teams .container .card-container .cards .modal .modal-footer button {
+.teams .container .modal .modal-footer button {
   border: 1px solid #0dc1f7;
   display: block;
   border-radius: 50ex;
@@ -799,15 +800,15 @@ hr.divider {
   transition: all 0.2s ease-in;
 }
 
-.teams .container .card-container .cards .modal .modal-footer button:hover {
+.teams .container .modal .modal-footer button:hover {
   background-color: #0dc1f7;
 }
 
-.teams .container .card-container .cards .modal .modal-footer button:focus {
+.teams .container .modal .modal-footer button:focus {
   outline: none;
 }
 
-.teams .container .card-container .cards .modal .modal-content {
+.teams .container .modal .modal-content {
   background-color: rgba(0, 0, 0, 0);
 }
 

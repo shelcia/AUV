@@ -218,16 +218,6 @@ hr.divider {
   }
 }
 
-// .about .navbar .navbar-nav .nav-item .activelink {
-//   color: red !important;
-// }
-// .about .navbar .navbar-nav .nav-item .nav-link:hover {
-//   color: $secondary;
-// }
-// .about .navbar .navbar-nav .nav-item .nav-link:active {
-//   color: red;
-// }
-
 @media (max-width: 800px) {
   .about {
     iframe {
@@ -497,56 +487,57 @@ hr.divider {
             outline: none;
           }
         }
-        .modal {
-          .modal-header,
-          .modal-body,
-          .modal-footer {
-            background-color: $bg !important;
-            border-top: 1px solid $bg;
-            border: none;
-            box-shadow: none;
-          }
-          .modal-header {
-            button.close {
-              text-shadow: none;
-              color: $primary;
-              transition: all 0.2s ease-in;
-              &:hover {
-                transform: scale(1.2, 1.2);
-              }
-            }
-          }
-          .modal-body {
-            .img-flex {
-              @include displayFlex(center);
-              flex-wrap: wrap;
-              .profile-modal {
-                @include displayFlex(flex-start);
-                flex-direction: column;
-                height: 150px;
-                width: 100px;
-                img.profile {
-                  border-radius: 70em;
-                  height: 70px;
-                }
-                a {
-                  margin-top: 4px;
-                }
-                p {
-                  font-size: 0.7rem;
-                }
-              }
-            }
-          }
-          .modal-footer {
-            button {
-              @include buttonStyle();
-            }
-          }
-          .modal-content {
-            background-color: $noopacity;
+      }
+    }
+    .modal {
+      .modal-header,
+      .modal-body,
+      .modal-footer {
+        background-color: $bg !important;
+        border-top: 1px solid $bg;
+        border: none;
+        box-shadow: none;
+        text-align: center;
+      }
+      .modal-header {
+        button.close {
+          text-shadow: none;
+          color: $primary;
+          transition: all 0.2s ease-in;
+          &:hover {
+            transform: scale(1.2, 1.2);
           }
         }
+      }
+      .modal-body {
+        .img-flex {
+          @include displayFlex(center);
+          flex-wrap: wrap;
+          .profile-modal {
+            @include displayFlex(flex-start);
+            flex-direction: column;
+            height: 150px;
+            width: 100px;
+            img.profile {
+              border-radius: 70em;
+              height: 70px;
+            }
+            a {
+              margin-top: 4px;
+            }
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+      .modal-footer {
+        button {
+          @include buttonStyle();
+        }
+      }
+      .modal-content {
+        background-color: $noopacity;
       }
     }
   }
