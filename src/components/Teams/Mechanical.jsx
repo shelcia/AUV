@@ -58,8 +58,6 @@ const Mechanicalmodel = () => {
                   </a>
                   <p>Sukesh</p>
                 </div>
-                <div className="profile-modal"></div>
-                <div className="profile-modal"></div>
               </div>
             </div>
             <div className="modal-footer">

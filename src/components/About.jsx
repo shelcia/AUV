@@ -32,13 +32,13 @@ const About = () => {
                     target="blank"
                     className="mr-2"
                   >
-                    <u>Documentation</u>
+                    <u style={{ color: "#0dc1f7" }}>Documentation</u>
                   </a>
                   <a
                     href="https://www.ketto.org/fundraiser/fund-the-auv-society-for-team-orca"
                     target="blank"
                   >
-                    <u>Sponsor Us</u>
+                    <u style={{ color: "#0dc1f7" }}>Sponsor Us</u>
                   </a>
                 </div>
               </div>

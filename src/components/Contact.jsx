@@ -60,7 +60,7 @@ const Form = () => {
     <React.Fragment>
       {loading && (
         <div className="loading">
-          <h2>We are processing your response</h2>
+          <h4>We are processing your response</h4>
           <Loader
             type="MutatingDots"
             color="#0dc1f7"
@@ -180,7 +180,10 @@ const Contacts = () => {
                 </div>
               </div>
               <div className="col-sm-6">
-                <ToastContainer transition={Slide} className="mt-5" />
+                <ToastContainer
+                  transition={Slide}
+                  style={{ marginTop: "7rem" }}
+                />
                 <Form />
               </div>
             </div>

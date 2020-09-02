@@ -15,7 +15,7 @@ const Sponsors = () => {
               Our Sponsors
             </h2>
             <hr></hr>
-            <div className="card-container p-2 pr-4">
+            <div className="card-container p-4 ">
               <div className="cards">
                 <a href="https://bluerobotics.com/" target="blank">
                   <img src={BlueRobotics} alt="Bluerobotics logo" />
@@ -36,11 +36,11 @@ const Sponsors = () => {
               </div>
             </div>
             <div className="mt-3 mentor text-center">
-              <h6 className="sub-heading">Mentored by</h6>
+              <h6 className="sub-heading mb-3">Mentored by</h6>
               <div className="card text-center p-4">
                 <a href="https://www.drdo.gov.in/home" target="blank">
                   <img src={DRDO} alt="DRDO logo" height="50px" />
-                  <p className="m-3">DRDO</p>
+                  <p>DRDO</p>
                 </a>
               </div>
             </div>

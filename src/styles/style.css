@@ -466,6 +466,7 @@ hr.divider {
 .sponsors .container .card-container .cards {
   width: 250px;
   height: 180px;
+  border: 1px solid black;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   display: -webkit-box;
@@ -505,6 +506,16 @@ hr.divider {
 }
 
 .sponsors .container .mentor .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -513,6 +524,11 @@ hr.divider {
           box-shadow: 20px 20px 6px #00000029;
   width: 250px;
   height: 180px;
+  margin-bottom: 15px;
+}
+
+.sponsors .container .mentor .card p {
+  margin-top: 10px;
 }
 
 @media (max-width: 717px) {
@@ -745,15 +761,14 @@ hr.divider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  height: 150px;
   width: 100px;
 }
 

@@ -311,6 +311,7 @@ hr.divider {
       .cards {
         width: 250px;
         height: 180px;
+        border: 1px solid black;
         box-shadow: 20px 20px 6px #00000029;
         @include displayFlex(center);
         a {
@@ -328,12 +329,18 @@ hr.divider {
     }
     .mentor {
       .card {
+        @include displayFlex(center);
+        border: 1px solid black;
         margin-left: 50%;
         transform: translateX(-50%);
         background-color: $bg;
         box-shadow: 20px 20px 6px #00000029;
         width: 250px;
         height: 180px;
+        margin-bottom: 15px;
+        p {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -534,9 +541,9 @@ hr.divider {
                 // @include displayFlex(center);
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 flex-direction: column;
-                align-content: flex-start;
+                height: 150px;
                 width: 100px;
                 img.profile {
                   border-radius: 70em;
@@ -565,8 +572,12 @@ hr.divider {
   }
 }
 // @media (min-width: 1100px) {
-//   .teams .container .card-container {
-//     justify-content: center;
+//   .teams .container .card-container .cards .modal {
+//     .modal-header,
+//     .modal-body,
+//     .modal-footer {
+//       width: 900px;
+//     }
 //   }
 // }
 .contact {
