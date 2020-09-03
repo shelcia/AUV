@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/style.css";
 import LandingPage from "./components/LandingPage";
+import Navbar from "./components/Navbar";
 import AboutPage from "./components/About";
 import AchievementsPage from "./components/Achievement";
 import Sponsors from "./components/Sponsors";
@@ -33,12 +34,15 @@ const App = () => {
       {!loading && (
         <React.Fragment>
           <LandingPage />
-          <AboutPage />
-          <AchievementsPage />
-          <Sponsors />
-          <Posts />
-          <Teams />
-          <Contact />
+          <div data-spy="scroll" data-target="#navbar" data-offset="50">
+            <Navbar />
+            <AboutPage />
+            <AchievementsPage />
+            <Sponsors />
+            <Posts />
+            <Teams />
+            <Contact />
+          </div>
           <Footer />
         </React.Fragment>
       )}

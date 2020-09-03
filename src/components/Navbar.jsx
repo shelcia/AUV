@@ -3,7 +3,10 @@ import Logo from "../assets/new_logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <nav
+      className="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+      id="navbar"
+    >
       <a className="navbar-brand ml-4" href="#home">
         <img src={Logo} alt="logo" height="40px" />
       </a>
@@ -18,7 +21,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav mr-4">
           <li className="nav-item">
-            <a href="#about" className="nav-link activelink">
+            <a href="#about" className="nav-link">
               About
             </a>
           </li>

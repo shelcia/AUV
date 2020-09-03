@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Faces from "../assets/icons/face.svg";
 import Github from "../assets/icons/github.svg";
 import Medal from "../assets/icons/medal.svg";
@@ -9,8 +8,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const About = () => {
   return (
     <React.Fragment>
-      <div className="about" id="about">
-        <Navbar />
+      <div className="about mt-5" id="about">
         <ScrollAnimation animateIn="fadeInDown">
           <div className="container">
             <h2 className="title">About Us</h2>
