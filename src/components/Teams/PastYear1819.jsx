@@ -12,17 +12,16 @@ import Vishva from "../../assets/auv_photos_team/2019-2020/vishva.jpg";
 const PastYear1920modal = () => {
   return (
     <React.Fragment>
-      <div className="modal" id="past1819team">
-        <div className="modal-dialog">
+      <div className="modal fade" id="past1819team">
+        <div className="modal-dialog pastteam">
           <div className="modal-content">
             <div className="modal-header">
-              <h4 className="modal-title">2019-2020</h4>
+              <h4 className="modal-title">2018-2019</h4>
               <button type="button" className="close" data-dismiss="modal">
                 &times;
               </button>
             </div>
             <div className="modal-body">
-              {/* <h2>Mechanical Team</h2> */}
               <div className="img-flex">
                 <div className="profile-modal">
                   <img

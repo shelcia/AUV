@@ -8,8 +8,8 @@ import Subash from "../../assets/auv_photos_team/core/subash/1.jpeg";
 const Coremodal = () => {
   return (
     <React.Fragment>
-      <div className="modal" id="coreteam">
-        <div className="modal-dialog">
+      <div className="modal fade" id="coreteam">
+        <div className="modal-dialog" style={{ maxWidth: "600px" }}>
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">Core Team</h4>

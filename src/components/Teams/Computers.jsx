@@ -4,7 +4,7 @@ import Vyshnav from "../../assets/auv_photos_team/sopho_comp/Vyshnav K/0.jpeg";
 const Computermodel = () => {
   return (
     <React.Fragment>
-      <div className="modal" id="computers">
+      <div className="modal fade" id="computers">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">

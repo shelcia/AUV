@@ -4,7 +4,7 @@ import Thilak from "../../assets/auv_photos_team/sopho_ele/Thilak/ThilakDP.jpg";
 const Electronicmodal = () => {
   return (
     <React.Fragment>
-      <div className="modal" id="electronics">
+      <div className="modal fade" id="electronics">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">

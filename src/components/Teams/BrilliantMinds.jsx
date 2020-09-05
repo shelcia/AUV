@@ -6,7 +6,7 @@ import Praveen from "../../assets/auv_photos_team/brilliantminds/v s praveen/0.j
 const BrilliantMindmodal = () => {
   return (
     <React.Fragment>
-      <div className="modal" id="brilliant">
+      <div className="modal fade" id="brilliant">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">

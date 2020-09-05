@@ -262,6 +262,12 @@ hr.divider {
   outline: none;
 }
 
+@media (max-width: 600px) {
+  .landingpage .overlay h2 {
+    font-size: 2.7rem;
+  }
+}
+
 .navbar {
   background-color: #161a22 !important;
   -webkit-box-shadow: 0px 6px 6px #00000029;
@@ -270,6 +276,14 @@ hr.divider {
 
 .navbar .navbar-nav {
   margin-left: auto;
+}
+
+.navbar .navbar-nav button.navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-nav button.navbar-toggler:focus {
+  outline: none;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -299,16 +313,16 @@ hr.divider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .about .card-deck .card {
@@ -361,19 +375,20 @@ hr.divider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .about .card-deck .card {
     width: 150px;
+    height: 150px;
     margin-right: 10px;
   }
   .about .card-deck .card p {
@@ -663,6 +678,10 @@ hr.divider {
   border-color: #0dc1f7;
 }
 
+.posts .container .row .col-sm-9 .row .col-sm-6 .youtube {
+  height: 170px;
+}
+
 .posts .container .row .col-sm-9 .row .col-sm-6 iframe {
   border: none;
   width: 100%;
@@ -671,6 +690,14 @@ hr.divider {
 
 .posts .container .row .col-sm-3 .list-group .list-group-item {
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.posts .container .row .col-sm-3 .list-group .list-group-item:hover {
+  color: white;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 @media (max-width: 717px) {
@@ -743,6 +770,10 @@ hr.divider {
   text-align: center;
 }
 
+.teams .container .modal .modal-header {
+  border-bottom: 0.5px solid #0dc1f7;
+}
+
 .teams .container .modal .modal-header button.close {
   text-shadow: none;
   color: #0dc1f7;
@@ -783,21 +814,25 @@ hr.divider {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150px;
-  width: 100px;
+  height: 190px;
+  width: 120px;
 }
 
 .teams .container .modal .modal-body .img-flex .profile-modal img.profile {
-  border-radius: 70em;
-  height: 70px;
+  border-radius: 80em;
+  height: 80px;
 }
 
 .teams .container .modal .modal-body .img-flex .profile-modal a {
-  margin-top: 4px;
+  margin-top: 6px;
+}
+
+.teams .container .modal .modal-body .img-flex .profile-modal a i.fa {
+  font-size: 1rem;
 }
 
 .teams .container .modal .modal-body .img-flex .profile-modal p {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .teams .container .modal .modal-footer button {
@@ -823,6 +858,19 @@ hr.divider {
 
 .teams .container .modal .modal-content {
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 576px) {
+  .pastteam {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 6rem auto;
+  }
 }
 
 @media (min-width: 1000px) {
