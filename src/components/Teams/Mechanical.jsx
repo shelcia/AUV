@@ -2,7 +2,7 @@ import React from "react";
 import Advaith from "../../assets/auv_photos_team/sopho_mech/Advaith Kandiraju/0.jpeg";
 import Ruthwik from "../../assets/auv_photos_team/sopho_mech/Ruthwik Dasyam/Image.jpg";
 import Saksham from "../../assets/auv_photos_team/sopho_mech/Saksham Mishra/0 (1).jpeg";
-import Sukesh from "../../assets/auv_photos_team/sopho_mech/Sukesh/WhatsApp Image 2020-04-07 at 8.49.27 AM.jpeg";
+import Sukesh from "../../assets/auv_photos_team/sopho_mech/Sukesh/sukesh.jpeg";
 
 const Mechanicalmodel = () => {
   return (

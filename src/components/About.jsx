@@ -4,6 +4,7 @@ import Github from "../assets/icons/github.svg";
 import Medal from "../assets/icons/medal.svg";
 import Trophy from "../assets/icons/trophy.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import Documentation from "../assets/AUV_v1.0_report.pdf";
 
 const About = () => {
   return (
@@ -25,11 +26,7 @@ const About = () => {
                   explore the vast seas.
                 </p>
                 <div style={{ display: "flex", justifyContent: "left" }}>
-                  <a
-                    href="/src/assets/AUV_v1.0_report.pdf"
-                    target="blank"
-                    className="mr-2"
-                  >
+                  <a href={Documentation} target="blank" className="mr-2">
                     <u style={{ color: "#0dc1f7" }}>Documentation</u>
                   </a>
                   <a

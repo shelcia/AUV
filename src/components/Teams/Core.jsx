@@ -3,7 +3,7 @@ import Sharath from "../../assets/auv_photos_team/core/Sharath Chander/0.jpeg";
 import Mayank from "../../assets/auv_photos_team/core/Mayank Mehta/0.jpeg";
 import Ravi from "../../assets/auv_photos_team/core/ravi kumar/0 (1).jpeg";
 import Vishva from "../../assets/auv_photos_team/core/Vishva Bhate/0 (1).jpeg";
-import Subash from "../../assets/auv_photos_team/core/subash/1.jpeg";
+import Subash from "../../assets/auv_photos_team/core/subash/subash-min.jpg";
 
 const Coremodal = () => {
   return (

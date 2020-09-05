@@ -199,7 +199,7 @@ const PastYear1920modal = () => {
                   >
                     <i className="fa">&#xf0e1;</i>
                   </a>
-                  <p>Subhash Mylraj</p>
+                  <p>Subash Mylraj</p>
                 </div>
                 <div className="profile-modal">
                   <img src={Anu} alt="Anupriya Gopal" className="profile" />
