@@ -10,7 +10,7 @@ const Footer = () => {
             &#xf004;
           </i>
           {"         "}
-          Copyrights 2020. All rights Reserved
+          by AUV IIITDM . Copyright © 2020. All Rights Reserved.
         </p>
       </div>
     </React.Fragment>

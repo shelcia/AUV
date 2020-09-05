@@ -176,14 +176,20 @@ hr.divider {
 .navbar {
   background-color: $bg !important;
   box-shadow: 0px 6px 6px #00000029;
+  .navbar-toggler-icon {
+    background-image: url("navbar.png");
+    width: 40px;
+    height: 25px;
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
   .navbar-nav {
     margin-left: auto;
-    button.navbar-toggler {
-      border: none;
-      &:focus {
-        outline: none;
-      }
-    }
+
     .nav-item {
       .nav-link {
         color: $primary;
@@ -315,7 +321,7 @@ hr.divider {
       .cards {
         width: 250px;
         height: 180px;
-        border: 1px solid black;
+        border: 1px solid rgb(21, 21, 21);
         box-shadow: 20px 20px 6px #00000029;
         @include displayFlex(center);
         a {
@@ -334,7 +340,7 @@ hr.divider {
     .mentor {
       .card {
         @include displayFlex(center);
-        border: 1px solid black;
+        border: 1px solid rgb(21, 21, 21);
         margin-left: 50%;
         transform: translateX(-50%);
         background-color: $bg;
@@ -443,7 +449,7 @@ hr.divider {
           .list-group-item {
             background-color: $bg !important;
           }
-          .list-group-item .active {
+          .list-group-item.active {
             border-color: $primary;
           }
         }
@@ -476,6 +482,11 @@ hr.divider {
 @media (max-width: 717px) {
   .posts .container .row .flow-control {
     height: 60vh !important;
+  }
+}
+@media (max-width: 550px) {
+  .posts .container .row .col-sm-3 {
+    margin-bottom: 20px;
   }
 }
 

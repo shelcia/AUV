@@ -274,16 +274,22 @@ hr.divider {
           box-shadow: 0px 6px 6px #00000029;
 }
 
-.navbar .navbar-nav {
-  margin-left: auto;
+.navbar .navbar-toggler-icon {
+  background-image: url("navbar.png");
+  width: 40px;
+  height: 25px;
 }
 
-.navbar .navbar-nav button.navbar-toggler {
+.navbar .navbar-toggler {
   border: none;
 }
 
-.navbar .navbar-nav button.navbar-toggler:focus {
+.navbar .navbar-toggler:focus {
   outline: none;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -492,7 +498,7 @@ hr.divider {
 .sponsors .container .card-container .cards {
   width: 250px;
   height: 180px;
-  border: 1px solid black;
+  border: 1px solid #151515;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
   display: -webkit-box;
@@ -541,7 +547,7 @@ hr.divider {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #151515;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -674,7 +680,7 @@ hr.divider {
   background-color: #161a22 !important;
 }
 
-.posts .container .row .col-sm-3 .list-group .list-group-item .active {
+.posts .container .row .col-sm-3 .list-group .list-group-item.active {
   border-color: #0dc1f7;
 }
 
@@ -703,6 +709,12 @@ hr.divider {
 @media (max-width: 717px) {
   .posts .container .row .flow-control {
     height: 60vh !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .posts .container .row .col-sm-3 {
+    margin-bottom: 20px;
   }
 }
 
