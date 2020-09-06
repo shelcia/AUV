@@ -16,7 +16,7 @@ import Logo from "./assets/new_logo.png";
 
 const Loading = () => (
   <div className="loading">
-    <img src={Logo} alt="logo" width="200px" />
+    <img src={Logo} alt="logo" />
     <Loader type="MutatingDots" color="#0dc1f7" height={100} width={100} />
   </div>
 );
@@ -34,7 +34,8 @@ const App = () => {
       {!loading && (
         <React.Fragment>
           <LandingPage />
-          <div data-spy="scroll" data-target="#navbar" data-offset="50">
+          {/* <div data-spy="scroll" data-target="#navbar" data-offset="50"> */}
+          <div id="fullPage">
             <Navbar />
             <AboutPage />
             <AchievementsPage />
