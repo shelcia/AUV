@@ -9,7 +9,10 @@ const Coremodal = () => {
   return (
     <React.Fragment>
       <div className="modal fade" id="coreteam">
-        <div className="modal-dialog" style={{ maxWidth: "600px" }}>
+        <div
+          className="modal-dialog modal-dialog-centered"
+          style={{ maxWidth: "600px" }}
+        >
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">Core Team</h4>

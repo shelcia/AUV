@@ -8,7 +8,7 @@ const Mechanicalmodel = () => {
   return (
     <React.Fragment>
       <div className="modal fade" id="mechanical">
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">Mechanical</h4>

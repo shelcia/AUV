@@ -5,7 +5,7 @@ const Electronicmodal = () => {
   return (
     <React.Fragment>
       <div className="modal fade" id="electronics">
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">Electronics</h4>
