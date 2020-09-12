@@ -371,8 +371,7 @@ h2.title {
 
 .container .card-deck .card {
   background-color: #161a22;
-  -webkit-box-shadow: 20px 20px 6px #00000029;
-          box-shadow: 20px 20px 6px #00000029;
+  border: 1px solid #0dc1f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,6 +420,7 @@ h2.title {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  padding-top: 1rem;
 }
 
 .about .card-deck .card {
@@ -438,6 +438,7 @@ h2.title {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 180px;
+  border: 1.5px solid #121212;
 }
 
 .about .card-deck .card img {
@@ -525,6 +526,7 @@ h2.title {
 }
 
 .achievement .row .col-sm-8 .card {
+  padding: 5px;
   background-color: #161a22;
   -webkit-box-shadow: 20px 20px 6px #00000029;
           box-shadow: 20px 20px 6px #00000029;
@@ -601,9 +603,7 @@ h2.title {
 .sponsors .container .card-container .cards {
   width: 250px;
   height: 180px;
-  border: 1px solid #151515;
-  -webkit-box-shadow: 20px 20px 6px #00000029;
-          box-shadow: 20px 20px 6px #00000029;
+  border: 1.5px solid #121212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,13 +650,11 @@ h2.title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #151515;
+  border: 1.5px solid #121212;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #161a22;
-  -webkit-box-shadow: 20px 20px 6px #00000029;
-          box-shadow: 20px 20px 6px #00000029;
   width: 250px;
   height: 180px;
   margin-bottom: 15px;
@@ -904,8 +902,7 @@ h2.title {
 .teams .container .card-container .cards {
   width: 250px;
   height: 180px;
-  -webkit-box-shadow: 20px 20px 6px #00000029;
-          box-shadow: 20px 20px 6px #00000029;
+  border: 1.5px solid #121212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -11,7 +11,7 @@ const Achievements = () => {
             Achievements
           </h2>
           <hr></hr>
-          <ScrollAnimation animateIn="slideInDown">
+          <ScrollAnimation animateIn="fadeIn">
             <div className="row">
               <div className="col-sm-8">
                 <div className="card">
@@ -44,7 +44,7 @@ const Achievements = () => {
               </div>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="slideInDown">
+          <ScrollAnimation animateIn="fadeIn">
             <div className="row mt-5">
               <div className="col-sm-8">
                 <div className="card">

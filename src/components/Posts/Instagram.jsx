@@ -35,7 +35,7 @@ const Instagram = ({ setView }) => {
   return (
     <React.Fragment>
       <div className="col-sm-3">
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
             <li className="list-group-item  active">Instagram</li>
             <li className="list-group-item" onClick={() => setView("youtube")}>

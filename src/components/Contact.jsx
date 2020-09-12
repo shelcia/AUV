@@ -131,7 +131,7 @@ const Contacts = () => {
                   width="100%"
                   // height="220px"
                 ></iframe>
-                <div className="links pt-5">
+                <div className="links pt-1">
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Mail to :</b>
                     {"      "}

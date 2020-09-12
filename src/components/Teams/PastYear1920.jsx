@@ -116,7 +116,7 @@ const PastYear1920modal = () => {
                 <div className="profile-modal">
                   <img src={Charan} alt="Charan" className="profile" />
                   <a
-                    href="https://www.linkedin.com/company/auv-iiitdm-kancheepuram/?originalSubdomain=in"
+                    href="https://www.linkedin.com/in/charan-preetam-08021017a"
                     target="blank"
                   >
                     <i className="fa">&#xf0e1;</i>

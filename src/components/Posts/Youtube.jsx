@@ -16,7 +16,7 @@ const Youtube = ({ setView }) => {
   return (
     <React.Fragment>
       <div className="col-sm-3">
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
             <li
               className="list-group-item"
@@ -32,7 +32,7 @@ const Youtube = ({ setView }) => {
         </ScrollAnimation>
       </div>
       <div className="col-sm-9 flow-control ">
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="fadeIn">
           <div className="row">
             {links.map((link) => (
               <div className="col-sm-6" key={link.id}>

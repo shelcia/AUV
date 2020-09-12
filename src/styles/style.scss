@@ -259,7 +259,8 @@ h2.title {
   margin-top: 16vh;
   .card-deck .card {
     background-color: $bg;
-    box-shadow: 20px 20px 6px #00000029;
+    border: 1px solid $primary;
+    // box-shadow: 0 0 0.1px 0.1px rgb(0, 229, 255), 0 0 0.2px 0.2px $primary;
     @include displayFlex(center);
     flex-direction: column;
     border: none;
@@ -285,10 +286,13 @@ h2.title {
   .card-deck {
     @include displayFlex(center);
     flex-flow: row wrap;
+    padding-top: 1rem;
     .card {
       @include displayFlex(center);
       flex-direction: column;
       height: 180px;
+      // border: 1px solid $primary;
+      border: 1.5px solid #121212;
       img {
         height: 50px;
       }
@@ -362,6 +366,7 @@ h2.title {
   .row {
     .col-sm-8 {
       .card {
+        padding: 5px;
         background-color: $bg;
         box-shadow: 20px 20px 6px #00000029;
         .row {
@@ -423,8 +428,11 @@ h2.title {
       .cards {
         width: 250px;
         height: 180px;
-        border: 1px solid rgb(21, 21, 21);
-        box-shadow: 20px 20px 6px #00000029;
+        // border: 1px solid rgb(21, 21, 21);
+        // border: 1px solid $primary;
+        border: 1.5px solid #121212;
+        // box-shadow: 20px 20px 6px #00000029;
+        // box-shadow: 0 0 0.1px 0.1px rgb(0, 229, 255), 0 0 0.2px 0.2px $primary;
         @include displayFlex(center);
         a {
           @include displayFlex(center);
@@ -442,11 +450,13 @@ h2.title {
     .mentor {
       .card {
         @include displayFlex(center);
-        border: 1px solid rgb(21, 21, 21);
+        // border: 1px solid rgb(21, 21, 21);
+        // border: 1px solid $primary;
+        border: 1.5px solid #121212;
         margin-left: 50%;
         transform: translateX(-50%);
         background-color: $bg;
-        box-shadow: 20px 20px 6px #00000029;
+        // box-shadow: 20px 20px 6px #00000029;
         width: 250px;
         height: 180px;
         margin-bottom: 15px;
@@ -683,7 +693,9 @@ h2.title {
       .cards {
         width: 250px;
         height: 180px;
-        box-shadow: 20px 20px 6px #00000029;
+        // box-shadow: 20px 20px 6px #00000029;
+        // border: 1px solid $primary;
+        border: 1.5px solid #121212;
         @include displayFlex(center);
         .card-button {
           transform: translateY(15px);
@@ -708,6 +720,7 @@ h2.title {
       .modal-footer {
         background-color: $bg !important;
         border-top: 1px solid $bg;
+        // border: 1px solid $primary;
         border: none;
         box-shadow: none;
         text-align: center;
@@ -812,6 +825,7 @@ h2.title {
     .form {
       background-color: $bg;
       box-shadow: 20px 20px 6px #00000029;
+      // border: 1px solid $primary;
       @include displayFlex(center);
       padding: 0.75rem 0rem;
       flex-direction: column;

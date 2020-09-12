@@ -93,10 +93,7 @@ const PastYear1920modal = () => {
                 </div>
                 <div className="profile-modal">
                   <img src={Govind} alt="Govind K.P." className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/govind-kp/?originalSubdomain=in"
-                    target="blank"
-                  >
+                  <a href="https://in.linkedin.com/in/govind-kp" target="blank">
                     <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Govind K.P.</p>

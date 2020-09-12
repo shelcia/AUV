@@ -35,15 +35,15 @@ const App = () => {
         <React.Fragment>
           <LandingPage />
           {/* <div data-spy="scroll" data-target="#navbar" data-offset="50"> */}
-          <div id="fullPage">
-            <Navbar />
-            <AboutPage />
-            <AchievementsPage />
-            <Sponsors />
-            <Posts />
-            <Teams />
-            <Contact />
-          </div>
+          {/* <div id="fullPage"> */}
+          <Navbar />
+          <AboutPage />
+          <AchievementsPage />
+          <Sponsors />
+          <Posts />
+          <Teams />
+          <Contact />
+          {/* </div> */}
           <Footer />
         </React.Fragment>
       )}

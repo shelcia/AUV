@@ -57,7 +57,7 @@ const Gallery = ({ setView }) => {
   return (
     <React.Fragment>
       <div className="col-sm-3">
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
             <li
               className="list-group-item"
@@ -74,7 +74,7 @@ const Gallery = ({ setView }) => {
         </ScrollAnimation>
       </div>
       <div className="col-sm-9 flow-control">
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="fadeIn">
           <div className="row">
             <div className="col-sm-4">
               {firstColumn.map((image) => (
