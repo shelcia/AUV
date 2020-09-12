@@ -19,18 +19,41 @@ const Modal = ({ img, setModalView }) => {
   console.log(img.clientWidth);
   return (
     <React.Fragment>
-      <div className="img-modal">
-        <span className="closecursor" onClick={() => setModalView("false")}>
-          &times;
-        </span>
-        <img src={img} alt="" />
+      <div
+        className="modal fade"
+        id="imageModal"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog .modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <img src={img} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
 };
 const Gallery = ({ setView }) => {
-  const [modalView, setModalView] = useState("false");
   const [img, setImg] = useState({});
+  const [firstColumn] = useState([Img1, Img2, Img3, Img10, Img13]);
+  const [secondColumn] = useState([Img4, Img5, Img6, Img11]);
+  const [thirdColumn] = useState([Img7, Img8, Img9, Img12]);
+
   return (
     <React.Fragment>
       <div className="col-sm-3">
@@ -54,171 +77,54 @@ const Gallery = ({ setView }) => {
         <ScrollAnimation animateIn="fadeInRight">
           <div className="row">
             <div className="col-sm-4">
-              <div className="image-wrapper">
-                <img
-                  src={Img1}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img1);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img2}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img2);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img3}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img3);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img10}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img10);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img13}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img13);
-                  }}
-                />
-              </div>
+              {firstColumn.map((image) => (
+                <div className="image-wrapper" key={image}>
+                  <img
+                    src={image}
+                    alt=""
+                    width="100%"
+                    className="mb-3"
+                    data-toggle="modal"
+                    onClick={() => setImg(image)}
+                    data-target="#imageModal"
+                  />
+                </div>
+              ))}
             </div>
             <div className="col-sm-4">
-              <div className="image-wrapper">
-                <img
-                  src={Img4}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img4);
-                  }}
-                />
-              </div>{" "}
-              <div className="image-wrapper">
-                <img
-                  src={Img5}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img5);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img6}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img6);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img11}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img11);
-                  }}
-                />
-              </div>
+              {secondColumn.map((image) => (
+                <div className="image-wrapper" key={image}>
+                  <img
+                    src={image}
+                    alt=""
+                    width="100%"
+                    className="mb-3"
+                    data-toggle="modal"
+                    onClick={() => setImg(image)}
+                    data-target="#imageModal"
+                  />
+                </div>
+              ))}
             </div>
             <div className="col-sm-4">
-              <div className="image-wrapper">
-                <img
-                  src={Img7}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img7);
-                  }}
-                />
-              </div>{" "}
-              <div className="image-wrapper">
-                <img
-                  src={Img8}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img8);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img9}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img9);
-                  }}
-                />
-              </div>
-              <div className="image-wrapper">
-                <img
-                  src={Img12}
-                  alt=""
-                  width="100%"
-                  className="mb-3"
-                  onClick={() => {
-                    setModalView("true");
-                    setImg(Img12);
-                  }}
-                />
-              </div>
+              {thirdColumn.map((image) => (
+                <div className="image-wrapper" key={image}>
+                  <img
+                    src={image}
+                    alt=""
+                    width="100%"
+                    className="mb-3"
+                    data-toggle="modal"
+                    onClick={() => setImg(image)}
+                    data-target="#imageModal"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </ScrollAnimation>
       </div>
-      {modalView === "true" && <Modal img={img} setModalView={setModalView} />}
+      <Modal img={img} />
     </React.Fragment>
   );
 };

@@ -522,51 +522,31 @@ h2.title {
 .posts {
   @include fullWidthHeight();
   .container {
-    .img-modal {
-      z-index: 1500;
-      position: fixed;
-      top: 10vh;
-      width: 85%;
-      height: 80vh;
-      background-color: #161a22;
-      box-shadow: 20px 20px 20px #00000029;
-      @include displayFlex(center);
-      flex-direction: column;
-      img {
-        width: 42%;
-        height: auto;
-      }
-      .closecursor {
-        color: $primary;
-        font-size: 2rem;
-        cursor: pointer;
-        padding-left: 50%;
-        transform: translateY(-50%);
-        transition: all 0.2s ease-in;
-        &:hover {
-          color: $secondary;
+    .row {
+      .modal .modal-dialog .modal-content {
+        background-color: $bg;
+        .modal-header {
+          border-bottom: 0.5px solid $primary;
+          button.close {
+            text-shadow: none;
+            color: $primary;
+            transition: all 0.2s ease-in;
+            &:hover {
+              transform: scale(1.2, 1.2);
+            }
+          }
         }
       }
-    }
-    .row {
+
       .flow-control {
         height: 75vh !important;
         position: relative;
         .instagram-feed {
           .row {
             .col-sm-6 {
-              // .instagram-media {
-              //   min-width: 100% !important;
-              // }
               .instagram-media-rendered {
                 min-width: 100% !important;
               }
-              // #instagram-embed-0 {
-              //   min-width: 100% !important;
-              // }
-              // #instagram-embed-1 {
-              //   min-width: 100% !important;
-              // }
             }
           }
         }
@@ -625,6 +605,59 @@ h2.title {
     transform: translateX(5px);
   }
 }
+@media (max-width: 500px) {
+  .posts .container .row .modal .modal-dialog {
+    max-width: 300px;
+    max-height: 85vh;
+    .modal-content {
+      max-height: 85vh;
+      .modal-body {
+        max-height: 85vh;
+        @include displayFlex(center);
+        img {
+          max-height: 200px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .posts .container .row .modal .modal-dialog {
+    max-width: 900px;
+    max-height: 85vh;
+    .modal-content {
+      max-height: 85vh;
+      .modal-body {
+        max-height: 85vh;
+        @include displayFlex(center);
+        img {
+          max-height: 500px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1800px) {
+  .posts .container .row .col-sm-3 ul li {
+    font-size: $fontmedium;
+  }
+  .posts .container .row .modal .modal-dialog {
+    max-width: 1300px;
+  }
+  .posts .container .row .modal .modal-dialog .modal-content {
+    .modal-header button.close {
+      font-size: 3rem;
+    }
+    .modal-body {
+      img {
+        max-height: 800px;
+        width: auto;
+      }
+    }
+  }
+}
 @media (max-width: 717px) {
   .posts .container .row .flow-control {
     height: 60vh !important;
@@ -636,6 +669,7 @@ h2.title {
   }
 }
 
+//TEAMS PAGE STYLES
 .teams {
   @include fullWidthHeight();
   .container {
@@ -725,6 +759,26 @@ h2.title {
     }
   }
 }
+@media (min-width: 1800px) {
+  .teams .container .modal .modal-dialog {
+    max-width: 1000px;
+  }
+  .teams .container .card-container {
+    grid-template-columns: 450px 450px 450px 450px 450px;
+    .cards {
+      width: 450px;
+      height: 300px;
+      .card-button {
+        img {
+          height: 140px;
+        }
+        p {
+          font-size: $fontlarge;
+        }
+      }
+    }
+  }
+}
 @media (min-width: 576px) {
   .pastteam {
     max-width: 800px;
@@ -799,11 +853,39 @@ h2.title {
     }
   }
 }
+@media (min-width: 1800px) {
+  .contact .row .col-sm-6 {
+    .btn-group .btn a i.fa {
+      font-size: 40px;
+    }
+    p {
+      font-size: $fontlarge;
+    }
+    iframe {
+      height: 500px;
+    }
+    .form {
+      padding: 5rem 0rem;
+      input {
+        padding: 1.5rem 0rem;
+      }
+      button {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 1800px) {
+  .contact .row .col-sm-6 {
+    iframe {
+      height: 300px;
+    }
+  }
+}
 
 .footer {
   position: absolute;
   left: 0;
-  // bottom: -50px;
   width: 100%;
   background-color: $bg;
   color: $secondary;
@@ -813,5 +895,10 @@ h2.title {
     color: #d1046b;
     padding: 0.2rem 0.4rem;
     padding-bottom: 0rem;
+  }
+}
+@media (min-width: 1800px) {
+  .footer p {
+    font-size: $fontlarge;
   }
 }

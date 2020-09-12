@@ -116,6 +116,10 @@ const Contacts = () => {
       <div className="contact" id="contact">
         <ScrollAnimation animateIn="slideInUp">
           <div className="container">
+            <h2 className="title" style={{ backgroundColor: "#161a22" }}>
+              Contact
+            </h2>
+            <hr></hr>
             <div className="row">
               <div className="col-sm-6">
                 <iframe
@@ -125,7 +129,7 @@ const Contacts = () => {
                   src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
                   allowFullScreen
                   width="100%"
-                  height="220px"
+                  // height="220px"
                 ></iframe>
                 <div className="links pt-5">
                   <p>
