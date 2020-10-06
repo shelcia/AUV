@@ -609,6 +609,16 @@ h2.title {
   border-color: #0dc1f7;
 }
 
+.vehicles .container .col-sm-5 {
+  height: 65vh;
+  overflow-y: hidden;
+}
+
+.vehicles .container .col-sm-5 img {
+  height: 65vh;
+  width: auto;
+}
+
 .vehicles .container .col-sm-4 {
   height: 65vh;
 }

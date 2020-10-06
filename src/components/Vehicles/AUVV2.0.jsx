@@ -5,19 +5,23 @@ import V2 from "../../assets/vehicles/auvv2.jpg";
 const AUVV2 = ({ setView }) => {
   return (
     <React.Fragment>
-      <ScrollAnimation animateIn="fadeIn">
-        <div className="col-sm-3">
+      <div className="col-sm-3">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
             <li className="list-group-item" onClick={() => setView("auv1")}>
               AUV V1.0
             </li>
             <li className="list-group-item active">AUV V2.0</li>
           </ul>
-        </div>
-        <div className="col-sm-5">
+        </ScrollAnimation>
+      </div>
+      <div className="col-sm-5">
+        <ScrollAnimation animateIn="fadeIn">
           <img src={V2} alt="version2" className="img-fluid" />
-        </div>
-        <div className="col-sm-4">
+        </ScrollAnimation>
+      </div>
+      <div className="col-sm-4">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item">
               <a className="nav-link active" data-toggle="tab" href="#menu1">
@@ -51,7 +55,7 @@ const AUVV2 = ({ setView }) => {
                   piezoceramic materials which acts as a passive sonar system.
                 </li>
               </ul>
-              <h5 className="sub-heading pt-3">Software Side</h5>
+              <h5 className="sub-heading pt-">Software Side</h5>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   Developed complete simulation stack for vehicle to test
@@ -108,8 +112,8 @@ const AUVV2 = ({ setView }) => {
               </table>
             </div>
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </React.Fragment>
   );
 };

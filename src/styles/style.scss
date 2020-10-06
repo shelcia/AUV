@@ -443,8 +443,18 @@ h2.title {
         }
       }
     }
+    .col-sm-5 {
+      height: 65vh;
+      // @include border(green);
+      overflow-y: hidden;
+      img {
+        height: 65vh;
+        width: auto;
+      }
+    }
     .col-sm-4 {
       height: 65vh;
+      // @include border(red);
       h5.sub-heading {
         color: $primary;
         font-size: $fontmedium;

@@ -5,19 +5,23 @@ import V1 from "../../assets/vehicles/auvv1.png";
 const AUVV1 = ({ setView }) => {
   return (
     <React.Fragment>
-      <ScrollAnimation animateIn="fadeIn">
-        <div className="col-sm-3">
+      <div className="col-sm-3">
+        <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
             <li className="list-group-item  active">AUV V1.0</li>
             <li className="list-group-item" onClick={() => setView("auv2")}>
               AUV V2.0
             </li>
           </ul>
-        </div>
-        <div className="col-sm-5">
+        </ScrollAnimation>
+      </div>
+      <div className="col-sm-5">
+        <ScrollAnimation animateIn="fadeIn">
           <img src={V1} alt="version" className="img-fluid" />
-        </div>
-        <div className="col-sm-4">
+        </ScrollAnimation>
+      </div>
+      <div className="col-sm-4">
+        <ScrollAnimation animateIn="fadeIn">
           <h5 className="sub-heading">Details</h5>
           <table className="table table-dark table-striped">
             <tbody>
@@ -54,8 +58,8 @@ const AUVV1 = ({ setView }) => {
               </tr>
             </tbody>
           </table>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </React.Fragment>
   );
 };
