@@ -30,7 +30,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     let isLoading = null;
-    isLoading = setTimeout(() => setLoading(false), 500);
+    isLoading = setTimeout(() => setLoading(false), 6000);
     return () => clearInterval(isLoading);
   });
   return (
@@ -104,3 +104,7 @@ export default App;
 //   );
 // };
 // export default App;
+
+//  "homepage": "http://auv.github.io/AUV",
+//    "predeploy": "npm run build",
+//"deploy": "gh-pages -d build",

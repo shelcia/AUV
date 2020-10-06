@@ -64,9 +64,9 @@ const AUVV2 = ({ setView }) => {
                 <li className="list-group-item">
                   In-house quaternion based sensor fusion
                 </li>
-
                 <li className="list-group-item">
-                  ML and other HLS stuff by bosch and subs
+                  Yolov3 running in parallel with ROS for obstacle avoidance and
+                  object detection.
                 </li>
               </ul>
             </div>
