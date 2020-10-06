@@ -15,33 +15,46 @@ const Sponsors = () => {
               Our Sponsors
             </h2>
             <hr></hr>
-            <div className="card-container p-4 ">
-              <div className="cards">
-                <a href="https://bluerobotics.com/" target="blank">
-                  <img src={BlueRobotics} alt="Bluerobotics logo" />
-                  <p>Blue Robotics</p>
-                </a>
-              </div>
-              <div className="cards">
-                <a href="https://www.simscale.com/" target="blank">
-                  <img src={SimScale} alt="Simscale logo" />
-                  <p>Simscale</p>
-                </a>
-              </div>
-              <div className="cards">
+            <div className="mentor text-center">
+              <h6 className="sub-heading mb-3">Sponsored by</h6>
+              <div className="card text-center p-4">
                 <a href="https://www.iiitdm.ac.in/" target="blank">
-                  <img src={IIITDM} alt="IIITDM logo" />
-                  <p>IIITDM</p>
+                  <img src={IIITDM} alt="IIITDMK logo" height="50px" />
+                  <p>IIITDMK</p>
                 </a>
               </div>
             </div>
-            <div className="mt-3 mentor text-center">
-              <h6 className="sub-heading mb-3">Mentored by</h6>
-              <div className="card text-center p-4">
-                <a href="https://www.drdo.gov.in/home" target="blank">
-                  <img src={DRDO} alt="DRDO logo" height="50px" />
-                  <p>DRDO</p>
-                </a>
+            <div className="card-container p-4 ">
+              <div className="mentor text-center">
+                <h6 className="sub-heading mb-3">Special Thanks</h6>
+                <div className="card text-center p-4">
+                  <a href="https://bluerobotics.com/" target="blank">
+                    <img
+                      src={BlueRobotics}
+                      alt="BlueRobotics logo"
+                      height="50px"
+                    />
+                    <p>Blue Robotics</p>
+                  </a>
+                </div>
+              </div>
+              <div className="mentor text-center">
+                <h6 className="sub-heading mb-3">Mentored by</h6>
+                <div className="card text-center p-4">
+                  <a href="https://www.drdo.gov.in/home" target="blank">
+                    <img src={DRDO} alt="DRDO logo" height="50px" />
+                    <p>DRDO</p>
+                  </a>
+                </div>
+              </div>
+              <div className="mentor text-center">
+                <h6 className="sub-heading mb-3">Past Sponsors</h6>
+                <div className="card text-center p-4">
+                  <a href="https://www.simscale.com/" target="blank">
+                    <img src={SimScale} alt="SimScale logo" height="50px" />
+                    <p>Sim Scale</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -493,6 +493,10 @@ h2.title {
     }
     .col-sm-5 {
       margin-top: 1rem;
+      height: 40vh;
+      img {
+        height: 40vh;
+      }
     }
   }
 }
@@ -619,19 +623,36 @@ h2.title {
           }
         }
       }
-
+      .instagram-flow {
+        height: 75vh !important;
+        overflow-x: scroll;
+        // width: 400px;
+        // @include border(blue);
+        overflow-y: hidden;
+        .instagram-feed {
+          display: grid;
+          grid-template-columns: repeat(17, 300px);
+          grid-gap: 10px;
+          overflow-x: scroll;
+          .instagram-media-rendered {
+            overflow-y: auto;
+            min-width: 100% !important;
+            max-height: 70vh !important;
+          }
+          // .row {
+          //   .col-sm-6 {
+          //     .instagram-media-rendered {
+          //       min-width: 100% !important;
+          //       max-height: 70vh !important;
+          //     }
+          //   }
+          // }
+        }
+      }
       .flow-control {
         height: 75vh !important;
         position: relative;
-        .instagram-feed {
-          .row {
-            .col-sm-6 {
-              .instagram-media-rendered {
-                min-width: 100% !important;
-              }
-            }
-          }
-        }
+
         .row {
           .col-sm-4 {
             .image-wrapper {

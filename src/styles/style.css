@@ -665,6 +665,10 @@ h2.title {
   }
   .vehicles .container .row .col-sm-5 {
     margin-top: 1rem;
+    height: 40vh;
+  }
+  .vehicles .container .row .col-sm-5 img {
+    height: 40vh;
   }
 }
 
@@ -823,13 +827,30 @@ h2.title {
           transform: scale(1.2, 1.2);
 }
 
+.posts .container .row .instagram-flow {
+  height: 75vh !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.posts .container .row .instagram-flow .instagram-feed {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[17];
+      grid-template-columns: repeat(17, 300px);
+  grid-gap: 10px;
+  overflow-x: scroll;
+}
+
+.posts .container .row .instagram-flow .instagram-feed .instagram-media-rendered {
+  overflow-y: auto;
+  min-width: 100% !important;
+  max-height: 70vh !important;
+}
+
 .posts .container .row .flow-control {
   height: 75vh !important;
   position: relative;
-}
-
-.posts .container .row .flow-control .instagram-feed .row .col-sm-6 .instagram-media-rendered {
-  min-width: 100% !important;
 }
 
 .posts .container .row .flow-control .row .col-sm-4 .image-wrapper {

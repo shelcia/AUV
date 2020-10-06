@@ -11,7 +11,7 @@ const Loading = () => {
 };
 
 const Instagram = ({ setView }) => {
-  const [firstColumn] = useState([
+  const [feed] = useState([
     `https://www.instagram.com/p/CE36fL7gjLH/`,
     `https://instagr.am/p/CD8uHoZg56y/`,
     `https://instagr.am/p/CClmUCyg1c8/`,
@@ -21,8 +21,6 @@ const Instagram = ({ setView }) => {
     `https://www.instagram.com/p/B0U3RrJAn6-/`,
     `https://www.instagram.com/p/BwO1VwNAk6S/`,
     `https://www.instagram.com/p/BwEpizjgyOv/`,
-  ]);
-  const [secondColumn] = useState([
     `https://instagr.am/p/CCq--regz9o/`,
     `https://instagr.am/p/CDrDFB-A1o8/`,
     `https://instagr.am/p/CDOzSQtAqRz/`,
@@ -32,6 +30,7 @@ const Instagram = ({ setView }) => {
     `https://www.instagram.com/p/BwTb05LAtrY/`,
     `https://www.instagram.com/p/BwJTW0PAh9G/`,
   ]);
+
   return (
     <React.Fragment>
       <div className="col-sm-3">
@@ -47,44 +46,23 @@ const Instagram = ({ setView }) => {
           </ul>
         </ScrollAnimation>
       </div>
-      <div className="col-sm-9 flow-control">
+      <div className="col-sm-9 instagram-flow">
         <div className="instagram-feed">
-          <div className="row">
-            <div className="col-sm-6 mb-3">
-              {firstColumn.map((url) => (
-                <InstagramEmbed
-                  key={url}
-                  url={url}
-                  maxWidth={320}
-                  hideCaption={true}
-                  containerTagName="div"
-                  protocol=""
-                  injectScript
-                  onLoading={() => Loading()}
-                  onSuccess={() => {}}
-                  onAfterRender={() => {}}
-                  onFailure={() => {}}
-                />
-              ))}
-            </div>
-            <div className="col-sm-6">
-              {secondColumn.map((url) => (
-                <InstagramEmbed
-                  key={url}
-                  url={url}
-                  maxWidth={320}
-                  hideCaption={true}
-                  containerTagName="div"
-                  protocol=""
-                  injectScript
-                  onLoading={() => Loading()}
-                  onSuccess={() => {}}
-                  onAfterRender={() => {}}
-                  onFailure={() => {}}
-                />
-              ))}
-            </div>
-          </div>
+          {feed.map((url) => (
+            <InstagramEmbed
+              key={url}
+              url={url}
+              maxWidth={320}
+              hideCaption={true}
+              containerTagName="div"
+              protocol=""
+              injectScript
+              onLoading={() => Loading()}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+          ))}
         </div>
       </div>
     </React.Fragment>
