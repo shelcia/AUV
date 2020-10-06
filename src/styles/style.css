@@ -1084,6 +1084,7 @@ h2.title {
 
 .contact .toast {
   margin-top: 12vh;
+  z-index: 10000;
 }
 
 .contact .row .col-sm-6 .btn-group .btn a i.fa {
@@ -1195,7 +1196,7 @@ h2.title {
 
 @media (max-width: 1800px) {
   .contact .row .col-sm-6 iframe {
-    height: 300px;
+    height: 250px;
   }
 }
 

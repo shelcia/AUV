@@ -129,8 +129,8 @@ const Contacts = () => {
                   src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
                   allowFullScreen
                   width="100%"
-                  // height="220px"
                 ></iframe>
+
                 <div className="links pt-1">
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Mail to :</b>
@@ -144,7 +144,14 @@ const Contacts = () => {
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Contact us :</b>
                     {"      "}
-                    <a href="!#">{"      "}9999999999</a>
+                    <br />
+                    <span>
+                      <b>Subash Mylraj:</b> 7338815308
+                    </span>
+                    <br />
+                    <span>
+                      <b>Vishva Bhate:</b> 7710003212
+                    </span>
                   </p>
                 </div>
                 <div className="btn-group">

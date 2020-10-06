@@ -813,11 +813,15 @@ h2.title {
     transform: translateX(-25%);
   }
 }
+
+//CONTACT PAGE STYLES
+
 .contact {
   @include fullWidthHeight();
   position: relative;
   .toast {
     margin-top: 12vh;
+    z-index: 10000;
   }
   .row {
     .col-sm-6 {
@@ -895,7 +899,7 @@ h2.title {
 @media (max-width: 1800px) {
   .contact .row .col-sm-6 {
     iframe {
-      height: 300px;
+      height: 250px;
     }
   }
 }
