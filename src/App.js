@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/About";
 import AchievementsPage from "./components/Achievement";
+import Vehicles from "./components/Vehicles/Vehicles";
 import Sponsors from "./components/Sponsors";
 import Posts from "./components/Posts/Posts";
 import Teams from "./components/Teams/Teams";
@@ -29,7 +30,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     let isLoading = null;
-    isLoading = setTimeout(() => setLoading(false), 6000);
+    isLoading = setTimeout(() => setLoading(false), 500);
     return () => clearInterval(isLoading);
   });
   return (
@@ -43,6 +44,7 @@ const App = () => {
           <Navbar />
           <AboutPage />
           <AchievementsPage />
+          <Vehicles />
           <Sponsors />
           <Posts />
           <Teams />

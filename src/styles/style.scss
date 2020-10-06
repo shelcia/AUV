@@ -421,6 +421,72 @@ h2.title {
   }
 }
 
+//VEHILES PAGE STYLES
+
+.vehicles {
+  @include fullWidthHeight();
+  .container {
+    .col-sm-3 {
+      .list-group {
+        background-color: $bg;
+        .list-group-item {
+          background-color: $bg !important;
+          cursor: pointer;
+          transition: all 0.2s ease-in;
+          &:hover {
+            color: white;
+            transform: translateX(5px);
+          }
+        }
+        .list-group-item.active {
+          border-color: $primary;
+        }
+      }
+    }
+    .col-sm-4 {
+      height: 65vh;
+      h5.sub-heading {
+        color: $primary;
+        font-size: $fontmedium;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+      }
+      .nav-tabs {
+        border-bottom: none;
+        li .nav-link.active {
+          background-color: $primary;
+          border: none;
+          color: $secondary;
+        }
+        li .nav-link {
+          border: none;
+          transition: all 0.2s ease-in;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      .tab-content {
+        margin-top: -60px;
+        ul li {
+          background-color: $bg;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .vehicles .container .row {
+    .col-sm-4 {
+      margin-top: 1rem;
+    }
+    .col-sm-5 {
+      margin-top: 1rem;
+    }
+  }
+}
+
 //SPONSORS PAGE STYLES
 
 .sponsors {
@@ -431,11 +497,7 @@ h2.title {
       .cards {
         width: 250px;
         height: 180px;
-        // border: 1px solid rgb(21, 21, 21);
-        // border: 1px solid $primary;
         border: 1.5px solid #121212;
-        // box-shadow: 20px 20px 6px #00000029;
-        // box-shadow: 0 0 0.1px 0.1px rgb(0, 229, 255), 0 0 0.2px 0.2px $primary;
         @include displayFlex(center);
         a {
           @include displayFlex(center);
@@ -453,13 +515,10 @@ h2.title {
     .mentor {
       .card {
         @include displayFlex(center);
-        // border: 1px solid rgb(21, 21, 21);
-        // border: 1px solid $primary;
         border: 1.5px solid #121212;
         margin-left: 50%;
         transform: translateX(-50%);
         background-color: $bg;
-        // box-shadow: 20px 20px 6px #00000029;
         width: 250px;
         height: 180px;
         margin-bottom: 15px;

@@ -583,6 +583,81 @@ h2.title {
   }
 }
 
+.vehicles {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.vehicles .container .col-sm-3 .list-group {
+  background-color: #161a22;
+}
+
+.vehicles .container .col-sm-3 .list-group .list-group-item {
+  background-color: #161a22 !important;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.vehicles .container .col-sm-3 .list-group .list-group-item:hover {
+  color: white;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.vehicles .container .col-sm-3 .list-group .list-group-item.active {
+  border-color: #0dc1f7;
+}
+
+.vehicles .container .col-sm-4 {
+  height: 65vh;
+}
+
+.vehicles .container .col-sm-4 h5.sub-heading {
+  color: #0dc1f7;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.vehicles .container .col-sm-4 .nav-tabs {
+  border-bottom: none;
+}
+
+.vehicles .container .col-sm-4 .nav-tabs li .nav-link.active {
+  background-color: #0dc1f7;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.vehicles .container .col-sm-4 .nav-tabs li .nav-link {
+  border: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.vehicles .container .col-sm-4 .nav-tabs li .nav-link:hover {
+  color: #fff;
+}
+
+.vehicles .container .col-sm-4 .tab-content {
+  margin-top: -60px;
+}
+
+.vehicles .container .col-sm-4 .tab-content ul li {
+  background-color: #161a22;
+}
+
+@media (max-width: 600px) {
+  .vehicles .container .row .col-sm-4 {
+    margin-top: 1rem;
+  }
+  .vehicles .container .row .col-sm-5 {
+    margin-top: 1rem;
+  }
+}
+
 .sponsors {
   width: 100%;
   min-height: 100vh;
