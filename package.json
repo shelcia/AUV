@@ -2,7 +2,7 @@
   "name": "auv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://shelcia.github.io",
+  "homepage": "http://shelcia.github.io/AUV",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.2.0",
     "@testing-library/jest-dom": "^4.2.4",
