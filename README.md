@@ -13,10 +13,13 @@ https://auviiitdm.github.io/
 
 - Run <code>npm install</code>
 
-- Get API Keys for google maps and instgram ombed
+- Get API Key for google maps and Access token for instagram ombed
 
-Ref:  https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-      https://developers.facebook.com/docs/instagram/oembed/
+#### Ref:  
+
+<link href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map">Google Maps API</link>
+<link href="https://developers.facebook.com/docs/instagram/oembed/">Instagram Ombed</link>
+
 
 - Then Run <code>npm start</code>
 
