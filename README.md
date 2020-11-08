@@ -3,7 +3,7 @@
 
 ### Frontend deployment
 
-https://auv-iiitdm.netlify.app/
+https://auviiitdm.github.io/
 
 
 ### To work with this repo
