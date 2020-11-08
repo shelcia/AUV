@@ -1,14 +1,6 @@
-import React from "react";
-import InstagramEmbed from "react-instagram-embed";
+import React, { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import Loader from "react-loader-spinner";
-import { useState } from "react";
-
-const Loading = () => {
-  return (
-    <Loader type="MutatingDots" color="#0dc1f7" height={100} width={100} />
-  );
-};
+import axios from "axios";
 
 const Instagram = ({ setView }) => {
   const [feed] = useState([
@@ -31,39 +23,44 @@ const Instagram = ({ setView }) => {
     `https://www.instagram.com/p/BwJTW0PAh9G/`,
   ]);
 
+  useEffect(() => {
+    const getInstagramFeed = () => {
+      // eslint-disable-next-line array-callback-return
+      feed.map((feed) => {
+        axios
+          .get(
+            `https://graph.facebook.com/v8.0/instagram_oembed?url=${feed}&access_token=368302131272255|i5AeKmUAjx8BVo2q0NMU3LI7J0s`
+          )
+          .then((response) => {
+            console.log(response);
+            document.getElementsByClassName("instagram-feed")[0].innerHTML =
+              document.getElementsByClassName("instagram-feed")[0].innerHTML +
+              // response.data.html +
+              `<div class="feed"><img src=${response.data.thumbnail_url} class="img-fluid thumbnail"/>${response.data.html}</div>`;
+          })
+          .catch((error) => console.log(error));
+      });
+    };
+    getInstagramFeed();
+  }, [feed]);
+
   return (
     <React.Fragment>
-      <div className="col-sm-3">
-        <ScrollAnimation animateIn="fadeIn">
-          <ul className="list-group">
-            <li className="list-group-item  active">Instagram</li>
-            <li className="list-group-item" onClick={() => setView("youtube")}>
+      <div className='col-sm-3'>
+        <ScrollAnimation animateIn='fadeIn'>
+          <ul className='list-group'>
+            <li className='list-group-item  active'>Instagram</li>
+            <li className='list-group-item' onClick={() => setView("youtube")}>
               Youtube
             </li>
-            <li className="list-group-item" onClick={() => setView("gallery")}>
+            <li className='list-group-item' onClick={() => setView("gallery")}>
               Gallery
             </li>
           </ul>
         </ScrollAnimation>
       </div>
-      <div className="col-sm-9 instagram-flow">
-        <div className="instagram-feed">
-          {feed.map((url) => (
-            <InstagramEmbed
-              key={url}
-              url={url}
-              maxWidth={320}
-              hideCaption={true}
-              containerTagName="div"
-              protocol=""
-              injectScript
-              onLoading={() => Loading()}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
-          ))}
-        </div>
+      <div className='col-sm-9 instagram-flow'>
+        <div className='instagram-feed'></div>
       </div>
     </React.Fragment>
   );

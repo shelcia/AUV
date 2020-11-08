@@ -8,10 +8,10 @@ const AUVV2 = ({ setView }) => {
       <div className="col-sm-3">
         <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
+          <li className="list-group-item active">AUV V2.0</li>
             <li className="list-group-item" onClick={() => setView("auv1")}>
               AUV V1.0
             </li>
-            <li className="list-group-item active">AUV V2.0</li>
           </ul>
         </ScrollAnimation>
       </div>
