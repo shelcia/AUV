@@ -13,7 +13,7 @@ const PastYear1920modal = () => {
   return (
     <React.Fragment>
       <div className="modal fade" id="past1819team">
-        <div className="modal-dialog pastteam modal-dialog-centered">
+        <div className="modal-dialog pastteam modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">2018-2019</h4>

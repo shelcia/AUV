@@ -836,16 +836,30 @@ h2.title {
 .posts .container .row .instagram-flow .instagram-feed {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[17];
-      grid-template-columns: repeat(17, 300px);
+  -ms-grid-columns: (auto)[17];
+      grid-template-columns: repeat(17, auto);
   grid-gap: 10px;
   overflow-x: scroll;
 }
 
-.posts .container .row .instagram-flow .instagram-feed .instagram-media-rendered {
-  overflow-y: auto;
-  min-width: 100% !important;
-  max-height: 70vh !important;
+.posts .container .row .instagram-flow .instagram-feed div.feed {
+  min-width: 326px !important;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.posts .container .row .instagram-flow .instagram-feed div.feed img.thumbnail {
+  min-width: 326px !important;
+}
+
+.posts .container .row .instagram-flow .instagram-feed div.feed blockquote.instagram-media {
+  max-width: 600px !important;
+  background: #00000020 !important;
+}
+
+.posts .container .row .instagram-flow .instagram-feed div.feed blockquote.instagram-media div p,
+.posts .container .row .instagram-flow .instagram-feed div.feed blockquote.instagram-media div a {
+  color: #fff !important;
 }
 
 .posts .container .row .flow-control {

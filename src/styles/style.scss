@@ -626,29 +626,57 @@ h2.title {
       .instagram-flow {
         height: 75vh !important;
         overflow-x: scroll;
-        // width: 400px;
-        // @include border(blue);
         overflow-y: hidden;
         .instagram-feed {
           display: grid;
-          grid-template-columns: repeat(17, 300px);
+          grid-template-columns: repeat(17, auto);
           grid-gap: 10px;
           overflow-x: scroll;
-          .instagram-media-rendered {
-            overflow-y: auto;
-            min-width: 100% !important;
-            max-height: 70vh !important;
+          div.feed {
+            min-width: 326px !important;
+            height: 75vh;
+            overflow-y: scroll;
+            img.thumbnail {
+              min-width: 326px !important;
+            }
+            blockquote.instagram-media {
+              // min-width: 100px !important;
+              max-width: 600px !important;
+              background: #00000020 !important;
+              div p,
+              div a {
+                color: #fff !important;
+              }
+            }
           }
-          // .row {
-          //   .col-sm-6 {
-          //     .instagram-media-rendered {
-          //       min-width: 100% !important;
-          //       max-height: 70vh !important;
-          //     }
-          //   }
-          // }
         }
       }
+      // .instagram-flow {
+      //   height: 75vh !important;
+      //   overflow-x: scroll;
+      //   // width: 400px;
+      //   // @include border(blue);
+      //   overflow-y: hidden;
+      //   .instagram-feed {
+      //     display: grid;
+      //     grid-template-columns: repeat(17, 300px);
+      //     grid-gap: 10px;
+      //     overflow-x: scroll;
+      //     .instagram-media-rendered {
+      //       overflow-y: auto;
+      //       min-width: 100% !important;
+      //       max-height: 70vh !important;
+      //     }
+      //     // .row {
+      //     //   .col-sm-6 {
+      //     //     .instagram-media-rendered {
+      //     //       min-width: 100% !important;
+      //     //       max-height: 70vh !important;
+      //     //     }
+      //     //   }
+      //     // }
+      //   }
+      // }
       .flow-control {
         height: 75vh !important;
         position: relative;

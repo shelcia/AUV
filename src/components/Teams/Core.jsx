@@ -10,7 +10,7 @@ const Coremodal = () => {
     <React.Fragment>
       <div className="modal fade" id="coreteam">
         <div
-          className="modal-dialog modal-dialog-centered"
+          className="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           style={{ maxWidth: "600px" }}
         >
           <div className="modal-content">

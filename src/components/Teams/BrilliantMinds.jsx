@@ -7,7 +7,7 @@ const BrilliantMindmodal = () => {
   return (
     <React.Fragment>
       <div className="modal fade" id="brilliant">
-        <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">Brilliant Minds</h4>
