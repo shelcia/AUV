@@ -17,8 +17,8 @@ https://auviiitdm.github.io/
 
 #### Ref:  
 
-<link href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map">Google Maps API</link>
-<link href="https://developers.facebook.com/docs/instagram/oembed/">Instagram Ombed</link>
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+https://developers.facebook.com/docs/instagram/oembed/
 
 
 - Then Run <code>npm start</code>
