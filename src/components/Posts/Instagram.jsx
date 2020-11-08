@@ -3,6 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import axios from "axios";
 
 const Instagram = ({ setView }) => {
+  const ACCESS_TOKEN  = process.env.REACT_APP_ACCESS_TOKEN ;
   const [feed] = useState([
     `https://www.instagram.com/p/CE36fL7gjLH/`,
     `https://instagr.am/p/CD8uHoZg56y/`,
@@ -29,7 +30,7 @@ const Instagram = ({ setView }) => {
       feed.map((feed) => {
         axios
           .get(
-            `https://graph.facebook.com/v8.0/instagram_oembed?url=${feed}&access_token=368302131272255|i5AeKmUAjx8BVo2q0NMU3LI7J0s`
+            `https://graph.facebook.com/v8.0/instagram_oembed?url=${feed}&access_token=${ACCESS_TOKEN}`
           )
           .then((response) => {
             console.log(response);
@@ -42,7 +43,7 @@ const Instagram = ({ setView }) => {
       });
     };
     getInstagramFeed();
-  }, [feed]);
+  }, [ACCESS_TOKEN, feed]);
 
   return (
     <React.Fragment>
