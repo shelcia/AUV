@@ -229,6 +229,9 @@ h2.title {
     margin-left: auto;
   }
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: $primary !important;
+}
 @media (min-width: 1800px) {
   .navbar .navbar-nav .nav-item .nav-link {
     font-size: 1.6rem;
@@ -248,7 +251,7 @@ h2.title {
       transition: width 0.3s;
     }
     &:hover::after {
-      width: 50%;
+      width: 100%;
     }
   }
 }

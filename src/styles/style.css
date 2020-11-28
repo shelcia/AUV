@@ -340,6 +340,10 @@ h2.title {
   margin-left: auto;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #0dc1f7 !important;
+}
+
 @media (min-width: 1800px) {
   .navbar .navbar-nav .nav-item .nav-link {
     font-size: 1.6rem;
@@ -361,7 +365,7 @@ h2.title {
     transition: width 0.3s;
   }
   .navbar .navbar-nav .nav-item:hover::after {
-    width: 50%;
+    width: 100%;
   }
 }
 
