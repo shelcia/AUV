@@ -8,9 +8,6 @@ $noopacity: rgba(0, 0, 0, 0);
 $fontlarge: 1.4rem;
 $fontmedium: 1.2rem;
 $fontsmall: 1rem;
-// $secondary: rgba(0, 0, 0, 0.8);
-// $primary: #0dc1f7;
-// $bg: #ebebeb;
 
 @mixin fullWidthHeight {
   width: 100%;
@@ -230,29 +227,37 @@ h2.title {
   }
   .navbar-nav {
     margin-left: auto;
-
-    .nav-item {
-      .nav-link {
-        color: $primary;
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 1.5px;
-          background: $primary;
-          transition: width 0.3s;
-        }
-        &:hover::after {
-          width: 100%;
-        }
-      }
-    }
   }
 }
 @media (min-width: 1800px) {
-  .navbar .navbar-nav .nav-item {
+  .navbar .navbar-nav .nav-item .nav-link {
     font-size: 1.6rem;
     padding: 0.4rem 0.85rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    color: $primary;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1.5px;
+      background: $primary;
+      transition: width 0.3s;
+    }
+    &:hover::after {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    color: $primary;
+    &:hover {
+      color: $secondary;
+    }
   }
 }
 
@@ -263,7 +268,6 @@ h2.title {
   .card-deck .card {
     background-color: $bg;
     border: 1px solid $primary;
-    // box-shadow: 0 0 0.1px 0.1px rgb(0, 229, 255), 0 0 0.2px 0.2px $primary;
     @include displayFlex(center);
     flex-direction: column;
     border: none;

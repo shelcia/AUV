@@ -340,28 +340,37 @@ h2.title {
   margin-left: auto;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #0dc1f7;
-}
-
-.navbar .navbar-nav .nav-item .nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 1.5px;
-  background: #0dc1f7;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover::after {
-  width: 100%;
-}
-
 @media (min-width: 1800px) {
-  .navbar .navbar-nav .nav-item {
+  .navbar .navbar-nav .nav-item .nav-link {
     font-size: 1.6rem;
     padding: 0.4rem 0.85rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    color: #0dc1f7;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #0dc1f7;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    color: #0dc1f7;
+  }
+  .navbar .navbar-nav .nav-item:hover {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
